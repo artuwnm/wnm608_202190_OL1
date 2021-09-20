@@ -1,0 +1,9 @@
+
+:root {
+	--color-offwhite: #f4f4f4;
+	--color-yellow: #FEFCF0;
+}
+
+body {
+	background-color: var(--color-offwhite) ;
+}
