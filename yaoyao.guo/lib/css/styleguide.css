@@ -131,18 +131,21 @@ a:hover {
 		box-shadow: 0 0 10px rgba(0,0,0,0.1);
 		
 	}
-	.card.warm{
-		color: var(--color-white);
-		border-radius: 0.8em;
-		background-color: var(--color-peach-dark);
-		box-shadow: 0 0 10px rgba(0,0,0,0.1);
-		
-	}
+
+
 	.card.medium{
 		border-radius: 0.8em;
 		background-color: var(--color-peach-medium);
 		color: var(--color-black);
 		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	.card.warm{
+		color: var(--color-white);
+		border-radius: 0.8em;
+		background-color: var(--color-peach-dark);
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
 	}
 
 	.card.falt{
