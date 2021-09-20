@@ -1,0 +1,167 @@
+
+/*CSS RESET*/
+
+*,*::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-peach-light:#F4EEED;
+	--color-peach-medium:#EFD9D1;
+	--color-peach-dark:#DDB7AB;
+
+	--color-green-medium:#7E9D9E;
+	--color-green-dark:#46615C;
+
+	--color-black:#000;
+	--color-white:#fff;
+
+	--header-height:3rem;
+	--spacing:1rem;
+
+
+
+	--font-serif: Georgia,"Times New Roman", serif;
+	--font-sans: Helvetica, Arial, sans-serif;
+}
+
+body {
+	margin:0;
+	font-size: 100%;
+	font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: var(--font-serif);
+}
+
+a {
+	color:inherit;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
+
+
+
+/*LAYOUT CLASSES*/
+.container {
+	max-width:800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+
+.display-flex {display: flex;}
+.display-inline-flex {display: inline-flex;}
+.display-block {display: block;}
+.display-inline-block {display: inline-block;}
+
+.flex-stretch {flex: 1 1 auto;}
+.flex-none {flex: none;}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-self: center;}
+
+
+
+/* COMPONENT CLASSES*/
+
+.nav ul{
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+
+.navbar {
+	background-color:var(--color-green-dark) ;
+	color: var(--color-white);
+	line-height: var(--header-height);
+}
+
+	.navbar h1 {
+		font-size: 1em;
+		margin: 0;
+		font-family: var(--font-sans);
+	}
+
+	.navbar a{
+		padding: 0 1em;
+	}
+
+
+
+/*CARD CLASSES*/
+.card{	
+	
+	background-color: var(--color-white);
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 1em;
+
+	overflow: hidden;
+	position: relative;
+}
+	.card.soft {
+		border-radius: 0.8em;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+	.card.hard {
+		border-radius: 0.8em;
+		border: 2px solid var(--color-peach-dark);
+	}
+
+	.card.dark{
+		color: var(--color-white);
+		border-radius: 0.8em;
+		background-color: var(--color-green-dark);
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		
+	}
+	.card.warm{
+		color: var(--color-white);
+		border-radius: 0.8em;
+		background-color: var(--color-peach-dark);
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		
+	}
+	.card.medium{
+		border-radius: 0.8em;
+		background-color: var(--color-peach-medium);
+		color: var(--color-black);
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	.card.falt{
+		border-radius: 0.8em;
+		padding: 0;
+	}
+
+	.view-window{
+		height:70vh;
+		position: relative;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+
+/*TEXT BOX*/
+.text_box{
+	width: 100%;
+	margin: auto;
+}
