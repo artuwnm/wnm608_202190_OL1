@@ -8,9 +8,21 @@
 }
 
 :root {
-	--color-neutral-light: #eee;
+/*	--color-neutral-light: #eee;
 	--color-neutral-medium: #999;
-	--color-neutral-dark: #555;
+	--color-neutral-dark: #555;*/
+
+	--color-neutral-light: #efefef;
+	--color-neutral-medium: #888888;
+	--color-neutral-dark: #3c3c3c;
+
+	--color-primary-light: #77A4FF;
+	--color-primary-medium: #042E84;
+	--color-primary-dark: #04173E;
+
+	--color-secondary-light: #ffb292;
+	--color-secondary-medium: #fe4c04;
+	--color-secondary-dark: #812601;
 
 	--color-black: #000;
 	--color-white: #fff;
@@ -23,16 +35,17 @@
 	--spacing: 1rem;
 
 	/*--font-serif: Georgia, "Times New Roman", sans-serif;*/
-	--font-serif: 'Abril Fatface', cursive;
+	/*--font-serif: 'Abril Fatface', cursive;*/
+	--font-serif: abril-display, serif;
 	/*--font-sans: helvetica, Arial, sans-serif;*/
 	--font-sans: 'Open Sans', sans-serif;
 }
 
 body {
-
 	margin: 0;
 	font-size: 100%;
 	font-family: var(--font-sans);
+	color: var(--color-neutral-dark);
 }
 
 h1,
@@ -41,12 +54,28 @@ h3,
 h4,
 h5 {
 	font-family:var(--font-serif);
-	color: var(--color-coral);
+	color: var(--color-primary-dark);
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.25em;
 }
 
 a {
 	color: inherit;
-	font-weight: bold;
 	text-decoration: none;
 
 }
@@ -83,6 +112,13 @@ a:hover {
 
 
 
+/*small classes*/
+
+.media-image {
+	max-width: 100%;
+	vertical-align: text-bottom;
+}
+
 
 /*Component Classes*/
 
@@ -97,7 +133,7 @@ a:hover {
 
 
 .navbar {
-	background-color:var(--color-coral);
+	background-color:var(--color-primary-medium);
 	color:var(--color-white);
 	line-height:var(--header-height);
 }
@@ -107,11 +143,13 @@ a:hover {
 		margin: 0;
 		font-family: var(--font-sans);
 		color:var(--color-white);
+		font-weight: 700;
 	}
 
 
 	.navbar a {
 		padding: 0 0.5em;
+		font-weight: 700;
 	}
 
 
@@ -133,17 +171,18 @@ a:hover {
 
 	.card.hard {
 		border-radius: 0.2em;
-		border: 2px solid var(--color-coral);
+		border: 2px solid var(--color-primary-medium);
 	}
 
 	.card.dark {
 		background-color: var(--color-neutral-dark);
-		color: var(--color-neutrual-light);
+		/*color: var(--color-neutral-light);*/
+		color: var(--color-white);
 	}
 
 	.card.medium {
 		background-color: var(--color-neutral-medium);
-		color: var(--color-neutrual-light);
+		color: var(--color-white);
 	}
 
 	.card.flat {

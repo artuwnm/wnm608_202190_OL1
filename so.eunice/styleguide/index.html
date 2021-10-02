@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>CSS Styleguide</title>
+
+	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
+
+	<link rel="stylesheet" href="https://use.typekit.net/coc1xhb.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- header>h1+p -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Styleguide</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			
+			<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
+			<nav class="flex-none nav">
+				 <ul class="container display-flex">
+				 	<li><a href="#tableofcontents">Table of Contents</a></li>
+				 </ul>
+			</nav>
+		</div>
+	</header>
+
+<!-- table of contents -->
+	<div class="container" id="#tableofcontents">
+		<h2>Table of Contents</h2>
+		<div class="card">
+			<nav class="nav">
+				<ul>
+					<li><a href="#typography">Typography</a></li>
+					<ul>
+						<li><a href="#headings">Headings</a></li>
+						<li><a href="#paragraphs">paragraphs</a></li>
+					</ul>
+					<li><a href="#colors">Colors</a></li>
+					<li><a href="#cards">Cards</a></li>
+					<li><a href="#viewwindow">View Window</a></li>
+					<li><a href="#navigations">Navigations</a></li>
+					<li><a href="#gridsystem">Grid System</a></li>
+					<li><a href="#flexsystem">Flex System</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+<!-- typography -->
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+		<div class="card" id="headings">
+			<h3>Headings</h3>
+			<h1>Heading 1&#8212;48px</h1>
+			<h2>Heading 2&#8212;36px</h2>
+			<h3>Heading 3&#8212;28px</h3>
+			<h4>Heading 4&#8212;20px</h4>
+		</div>
+
+		<div class="card" id="paragraphs">
+			<h3>Paragraphs</h3>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ut, explicabo tempora totam a accusamus, veritatis obcaecati maxime culpa. Ullam sed minus odio molestias expedita, ipsum dolorem. Molestias facere, facilis.</p>
+			<p>Aliquam consequatur odio eum voluptates veritatis laboriosam. Voluptatibus veritatis nemo, aspernatur dolores dolore ab, id harum dolorem, velit consequatur dignissimos repellendus, ipsum explicabo at delectus sapiente beatae quo totam unde?</p>
+			<p>Possimus atque voluptatum consectetur, iusto earum illo commodi temporibus? Quasi, libero tempore! Aperiam et tempora dolores hic est eum amet minus nobis doloremque voluptatibus enim excepturi sunt aliquam, officiis iure!</p>
+
+		</div>
+	</div>
+
+<!-- colors -->
+	<div class="container" id="colors">
+		<h2>Colors</h2>
+			<div class="grid gap">
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-primary-medium);">
+						<p>HEX #042E84</p>
+						<p>RGB 4, 46, 132</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-primary-light);">
+						<p>HEX #77A4FF</p>
+						<p>RGB 119, 164, 255</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-primary-dark);">
+						<p>HEX #77A4FF</p>
+						<p>RGB 119, 164, 255</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-secondary-medium);">
+						<p>HEX #FE4C04</p>
+						<p>RGB 243, 76, 4</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-secondary-light);">
+						<p>HEX #77A4FF</p>
+						<p>RGB 255, 178, 146</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-secondary-dark);">
+						<p>HEX #812601</p>
+						<p>RGB 129, 39, 1</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-neutral-medium);">
+						<p>HEX #888888</p>
+						<p>RGB 136, 136, 136</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-neutral-light); color: var(--color-neutral-dark); border: 2px solid var(--color-neutral-medium);">
+						<p>HEX #EFEFEF</p>
+						<p>RGB 239, 239, 239</p>
+					</div>		
+				</div>
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-neutral-dark);">
+						<p>HEX #3C3C3C</p>
+						<p>RGB 60, 60, 60</p>
+					</div>		
+				</div>
+			</div>
+		
+		
+	</div>
+
+<!-- cards -->
+	<div class="container" id="cards">
+		<h2>Cards</h2>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-4">
+					<div class="card">Card</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card soft">Card Soft</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card hard">Card Hard</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card dark">Card Dark</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card medium">Card Medium</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card flat">Card Flat</div>
+				</div>
+			</div>		
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
