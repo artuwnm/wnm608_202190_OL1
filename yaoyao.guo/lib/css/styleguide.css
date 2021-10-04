@@ -10,6 +10,7 @@
 	--color-peach-medium:#EFD9D1;
 	--color-peach-dark:#DDB7AB;
 
+	--color-green-light:#EAF5F4;
 	--color-green-medium:#CFD8DC;
 	--color-green-dark:#46615C;
 
@@ -20,11 +21,9 @@
 	--spacing:1rem;
 
 
-
 	--font-serif: Georgia,"Times New Roman", serif;
 	--font-sans: Helvetica, Arial, sans-serif;
 }
-
 
 
 body{
@@ -33,24 +32,43 @@ body{
 	font-family:var(--font-sans);
 }
 
+
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-	font-family: var(--font-serif);
+h5 {
+	font-family:var(--font-serif);
+	color: var(--color-green-dark);
+	font-weight: 700;
 }
 
-a{
-	color:inherit; 
-	font-weight:bold;
-	text-decoration:none;
+h1 {
+	font-size: 3em;
 }
 
-a: hover{
-	text-decoration:  underline;
+h2 {
+	font-size: 2.25em;
 }
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 
 
 /* LAYOUT CLASSES */
@@ -90,13 +108,13 @@ a: hover{
 }
 
 .nav a:hover {
-	background-color: var(--color-peach-medium);
+	background-color: var(--color-green-medium);
 	color: var(--color-white);
 	text-decoration: none;
 }
 
 .nav .active a {
-	background-color: var(--color-peach-light);
+	background-color: var(--color-green-light);
 	color: inherit;
 }
 
@@ -117,7 +135,7 @@ a: hover{
 
 .nav-pills a {
 	border-radius: 2em;
-	padding:  0.5em 1em;
+	padding: 0.5em 1em;
 }
 
 .nav-crumbs a {
@@ -148,7 +166,7 @@ a: hover{
 }
 
 .nav-material a:hover {
-	background-color: var(--color-green-light);
+	background-color: var(--color-peach-light);
 	color: inherit;
 }
 
@@ -159,7 +177,7 @@ a: hover{
 	left: 0;
 	width: 100%;
 	height: 0;
-	background-color: var(--color-peach-light);
+	background-color: var(--color-green-light);
 	transition: all 0.3s;
 }
 
@@ -170,7 +188,7 @@ a: hover{
 
 
 .navbar{
-	background-color:var(--color-green-dark);
+	background-color:var(--color-peach-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
 
@@ -203,19 +221,22 @@ a: hover{
 }
 .card.hard{
 	border-radius: 0.2em;
-	border:  2px solid var(--color-green-medium);
+	border:  2px solid var(--color-peach-medium);
 }
 .card.dark {
-	background-color: var(--color-green-dark);
-	color: var(--color-green-light);
+
+	color: var(--color-peach-light);
 }
 .card.medium {
-	background-color: var(--color-green-medium);
-}
-.card.flat {
-	padding: 0;
+	background-color: var(--color-peach-medium);
 }
 
+.card.flat {
+	padding:0;
+}
+
+
+/*view window*/
 .view-window{
 	height: 50vh;
 	position: relative;
@@ -239,24 +260,24 @@ a: hover{
 }
 
 .table.striped tbody tr:nth-child(odd) {
-	background-color: var(--color-peach-light);
+	background-color: var(--color-green-light);
 }
 
 .table.lined.all th:not(:first-child), 
 .table.lined.all td:not(:first-child),
 .table.lined.vertical th:not(:first-child), 
 .table.lined.vertical td:not(:first-child) {
-	border-left: 1px solid var(--color-peach-medium);
+	border-left: 1px solid var(--color-green-medium);
 }
 
 .table.lined.all tbody tr,
 .table.lined.all tbody tr {
-	border-top: 1px solid var(--color-peach-medium);
+	border-top: 1px solid var(--color-green-medium);
 }
 
 .table.lined.all,
 .table.lined.border {
-	border: 1px solid var(--color-green-medium);
+	border: 1px solid var(--color-peach-medium);
 }
 
 
@@ -272,6 +293,6 @@ a: hover{
 }
 
 .figure figcaption {
-	padding: 1em;
+	padding: 2em;
 
 }

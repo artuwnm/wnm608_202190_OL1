@@ -8,7 +8,7 @@
 }
 
 .grid.gap {
-	--grid-gap: 1em;
+	--grid-gap: 2em;
 	grid-gap:var(--grid-gap);
 	gap:var(--grid-gap);
 }

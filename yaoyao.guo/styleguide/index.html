@@ -2,133 +2,154 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Styleguide</title>
 
-	<meta name="viewport" content="width=device-width">
-	
-	<link rel="stylesheet" href="../lib/css/styleguide.css">
-	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
 
+	
 </head>
 <body>
-
-	<!-- header>h1+p-->
+	 
 	<header class="navbar">
-		<div  class="container display-flex">
+		<div class="container display-flex">
 			<div class="flex-none">
 				<h1>Styleguide</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			
+			<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
 			<nav class="flex-none nav">
-				<ul class="container display-flex">
-					<li ><a href="#tableofcontents">Table of Contents</a></li>
-				</ul>
+				 <ul class="container display-flex">
+				 	<li><a href="#tableofcontents">Table of Contents</a></li>
+				 </ul>
 			</nav>
 		</div>
 	</header>
 
-	<div class="container" id="tableofcontents">
-			<h2>Table of Contents</h2>
-			<div class="card hard">	
-				<nav class="nav">
+<!-- table of contents -->
+	<div class="container" id="#tableofcontents">
+		<h2>Table of Contents</h2>
+		<div class="card">
+			<nav class="nav">
+				<ul>
+					<li><a href="#typography">Typography</a></li>
 					<ul>
-						<li><a href="#typography">Typography</a></li>
-							<ul>
-								<li><a href="#headings">Headings</a></li>
-								<li><a href="#bodytext">Body Text</a></li>
-							</ul>
-						<li><a href="#colors">Colors</a></li>
-						<li><a href="#navigations">Navigations</a></li>
-						<li><a href="#tables">Tables</a></li>
-						<li><a href="#gridsystem">Grid System</a></li>
-						<!-- <li><a href="#buttons">Buttons</a></li> -->
+						<li><a href="#headings">Headings</a></li>
+						<li><a href="#paragraphs">paragraphs</a></li>
 					</ul>
-				</nav>
-			</div>
-	</div>	
-
-	<div class="container" id="typography">
-		<h2>Typography</h2>
-		
-		<div class="card soft" id="headings"> 
-				<h3>Headings - Georgia</h3>
-				<h1>Heading1 - 32px</h1>
-				<h2>Heading2 - 24px</h2>
-				<h2>Heading3 - 18px</h2>
-				<h4>Heading4 - 16px</h3>
-				<h5>Heading5 - 13px</h5>
-				<h6>Heading6 - 10px</h6>
-			</div>
-
-			<div class="card soft" id="bodytext">
-				<h3>Body Text - Helvetica, 16px</h3>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor rem animi perferendis laborum excepturi blanditiis aliquam? Expedita accusantium vitae laborum. Labore itaque voluptatum quidem repudiandae ad velit quasi quibusdam tenetur.</p>
-				<p>Et similique quo sit, minus, explicabo maiores tempora voluptate totam praesentium nemo quis sunt iste iure, officia doloribus error incidunt. Saepe dolorum sed, sit ipsa dicta eaque velit quam, pariatur!</p>
-				<p>Accusamus atque sit voluptas animi ex quam consequuntur repellendus eligendi dolores cupiditate, et repudiandae praesentium laboriosam ratione error facilis culpa possimus amet, quia cum minus eaque? Vel nemo temporibus quidem.</p>
-			
-			</div>
+					<li><a href="#colors">Colors</a></li>
+					<li><a href="#cards">Cards</a></li>
+					<li><a href="#navigations">Navigations</a></li>
+					<li><a href="#gridsystem">Grid System</a></li>
+					<li><a href="#tables">Tables</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 
+<!-- typography -->
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+		<div class="card" id="headings">
+			<h3>Headings: Georgia </h3>
+			<h1>Heading 1 &#8212; 32px</h1>
+			<h2>Heading 2 &#8212; 24px</h2>
+			<h3>Heading 3 &#8212; 18px</h3>
+			<h4>Heading 4 &#8212; 16px</h4>
+		</div>
 
- <script>makeTable("table lined vertical border striped")</script>
-      </div>
-      <h2 id="figures">Figures</h2>
-      <h3>Figure Grid</h3>
-      <div class="grid gap">
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-peach-light)"></div>
-            <figcaption>Natural - Light</figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-peach-medium)"></div>
-            <figcaption>Natural - Medium</figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-peach-dark)"></div>
-            <figcaption>Natural - Dark</figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-green-medium)"></div>
-            <figcaption>Main - Light</figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-green-dark)"></div>
-            <figcaption>Main - Medium</figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-white)"></div>
-            <figcaption>Main - Dark</figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-12 col-md-3
-        ">
-          <figure class="figure">
-            <div class="colorboard" style="background-color:var(--color-black)"></div>
-            <figcaption>Sub - Light</figcaption>
-          </figure>
+		<div class="card" id="paragraphs">
+			<h3>Paragraphs: Helvetica &#8212; 16px</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consequatur? Illum, odio cum fugit adipisci praesentium? Maxime, eum impedit natus molestias, corrupti eveniet eaque animi molestiae! In iste, magni animi.</p>
+			<p>Cum autem porro sequi dicta eius animi assumenda totam provident officia debitis repudiandae sapiente eos molestias a nam nobis aspernatur odit hic quos accusantium, qui illum ullam rerum laudantium nostrum.</p>
+			<p>Quasi explicabo animi deleniti, cum a sint enim tempore quo laudantium mollitia sunt. Repellendus eligendi neque eos minus id modi, quam et cum odio nemo sint, cumque corporis quisquam eum?</p>
 
+		</div>
+	</div>
 
-<div class="container" id="navigations">
+<!-- colors -->
+	<div class="container" id="colors">
+		<h2>Colors</h2>
+			<div class="grid gap">
+
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-peach-light); color: var(--color-green-dark); border: 2px solid var(--color-peach-medium);">
+						<p>#F4EEED</p>
+					</div>		
+				</div>
+
+				
+				
+
+				
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-peach-medium);">
+						<p>#EFD9D1</p>	
+					</div>		
+				</div>
+				
+				
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-peach-dark);">
+						<p>#DDB7AB</p>
+					</div>		
+				</div>
+				
+
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-green-light); color: var(--color-green-dark); border: 2px solid var(--color-green-medium);">
+						<p>#EAF5F4</p>
+					</div>		
+				</div>
+			
+
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-green-medium);">
+						<p>#CFD8DC</p>
+					</div>		
+				</div>
+				
+				<div class="col-xs-4">
+					<div class="card dark" style="background-color: var(--color-green-dark);">
+						<p>#46615C</p>
+					</div>		
+				</div>
+
+			</div>
+		
+		
+	</div>
+
+<!-- cards -->
+	<div class="container" id="cards">
+		<h2>Cards</h2>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-4">
+					<div class="card">Card</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card soft">Card Soft</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card hard">Card Hard</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card dark">Card Dark</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card medium">Card Medium</div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<div class="card flat">Card Flat</div>
+				</div>
+			</div>		
+	</div>
+
+ <div class="container" id="navigations">
 	<h2>Navigations</h2>
 
 	<script>
@@ -137,7 +158,7 @@
 			let ran = Math.floor(Math.random()*links.length);
 			document.write(`
 				<div>
-					<nav class="${classes}">
+					<nav class=" ${classes}">
 				<ul>
 					${links.reduce((r,o,i)=>{
 						return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
@@ -156,36 +177,7 @@
 	</div>
 
 
-	<div class="card soft">
-		<h3>Flex Nav</h3>
-
-		<script>makeNav('nav nav-flex')</script>
-	</div>
-
-
-	<div class="card soft">
-		<h3>Stretch Nav</h3>
-
-		<script>makeNav('nav nav-stretch')</script>
-	</div>
-
-		<div class="card soft">
-		<h3>Pills Nav</h3>
-
-		<script>makeNav('nav nav-pills')</script>
-	</div>
-
-	<div class="card soft">
-		<h3>Crumbs Nav</h3>
-
-		<script>makeNav('nav nav-crumbs')</script>
-	</div>
-
-	<div class="card soft">
-		<h3>Material Nav</h3>
-
-		<script>makeNav('nav nav-material')</script>
-	</div>
+		
 
 	<script>
 		$("#navigations a").on("click",function(e){
@@ -200,35 +192,35 @@
 	<h2>Grid System</h2>
 </div>
 
-<div class="container" id="flexsystem">
-	<h2>Flex system</h2>
+
 </div>
 
 <script>
 	const makeTable = (classes='') => {
 		const head = ['ID','Office','Name','Email', 'Phone'];
 		const body = [
-						['522','Hamilton Cline', 'hcline@academyart.edu', '555-2424'],
-						['512','Fred McHale', 'fmchale@academyart.edu', '555-2424'],
-						['522','Michael Catanzaro', 'mcatanzaro@academyart.edu', '555-2424'],
+		['101',"Michael Wise", 'jillianjones@hoover.biz','376-024-3600'],
+		['102',"Amy Smith", 'angelaleblanc@hotmail.com','057-964-7306'],
+		['103',"Bill Anderson", 'anthonydiaz@gmail.com','262-616-6203'],
+		['104',"Richard Jenkins", 'garzakevin@peterson.com','724-056-5116'],
+		];
 
-					];
-					document.write(`
-						
-							<table class="${classes}">
-								<thead>
-									<tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr>
-								</thead>
-								<tbody>
-									${body.reduce((r,o,i)=>r+`<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`,'')}
-								</tbody>
-								
-							</table>	
-					`);
-				}
-			</script>
+		//let ran = Math.floor(Math.random()*links.length);
+		document.write(`
+		<table class="${classes}">
+		<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+		<tbody>${body.reduce((r,o,i)=>r+
+			`<tr>${
+				[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+			}</tr>`,'')
+	}</tbody>
+	</table>
+	`);
+	}
+</script>
 
-		<div class="container">
+
+<div class="container" id="tables">
 	<h2>Tables</h2>
 
 	<div class="card soft">
@@ -237,150 +229,7 @@
 		<script>makeTable("table")</script>
 	</div>	
 
-<div class="card soft">
-	<h3>Striped Tables</h3>
 
-	<script>makeTable("table striped")</script>
-</div>
-
-<div class="card soft">
-	<h3>Striped Line Vertical</h3>
-
-	<script>makeTable("table lined vertical")</script>
-</div>
-
-<div class="card soft">
-	<h3>Striped Line Horizontal</h3>
-
-	<script>makeTable("table lined horizontal")</script>
-</div>
-
-
-<div class="card soft">
-	<h3>Striped Line Border</h3>
-
-	<script>makeTable("table lined border")</script>
-</div>
-
-<div class="card soft">
-	<h3>Striped Lined All</h3>
-
-	<script>makeTable("table lined all")</script>
-</div>
-
-<div class="card soft">
-	<h3>Combinations</h3>
-
-	<script>makeTable("table lined vertical border striped")</script>
-</div>
-
-
-
-
-<h2 id="figures">Figures</h2>
-
-	<div class="card">
-		<h3>Basic Figure</h3>
-
-		<figure class="figure">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>Product</figcaption>
-		</figure>
-
-	</div>
-
-		<h3>Figure Grid</h3>
-
-		<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>Product</figcaption>
-		</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>Product</figcaption>
-		</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>Product</figcaption>
-		</figure>
-		</div>
-	</div>
-
-	<h3>Product Grid</h3>
-
-		<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>
-				<div>Product Name</div>
-				<div>$19.99</div>
-			</figcaption>
-		</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>
-				<div>Product Name</div>
-				<div>$19.99</div>
-			</figcaption>
-		</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>
-				<div>Product Name</div>
-				<div>$19.99</div>
-			</figcaption>
-		</figure>
-		</div>
-	</div>
-
-	<h3>Product Overlay</h3>
-
-		<div class="grid gap">
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>
-				<div class="caption-body">
-					<div>Product Name</div>
-					<div>$19.99</div>
-				</div>
-			</figcaption>
-		</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>
-				<div class="caption-body">
-					<div>Product Name</div>
-					<div>$19.99</div>
-				</div>
-			</figcaption>
-		</figure>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<figure class="figure product-overlay">
-			<img src="http://via.placeholder.com/400x400?text=product" alt="">
-			<figcaption>
-				<div class="caption-body">
-					<div>Product Name</div>
-					<div>$19.99</div>
-				</div>
-			</figcaption>
-		</figure>
-		</div>
-	</div>
-</div>
+	
 </body>
 </html>
