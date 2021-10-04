@@ -1,0 +1,139 @@
+/*Changed from styleguide*/
+body{
+	background-color: #f0ebe8;
+	margin-bottom: 50px;
+}
+.navbar{
+	background-color: #020809;
+}
+.card2{
+	overflow: hidden;
+	position: relative;
+
+	background-color: var(--color-white);
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-material a{
+	padding: 0.5em 1em;
+	position: relative;
+}
+.nav-material .active a{
+	background-color: transparent;
+	color: inherit;
+}
+.nav-material a:hover{
+	background-color: #f3ede1;
+	color: inherit;
+}
+
+.nav-material a::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: #de8b47;
+	transition: all 0.3s;
+}
+.nav-material .active a::after{
+	height: 4px;
+}
+
+#colors .figure figcaption{
+	padding:  0.4em 1em 1em;
+}
+
+.product img{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 70%;
+}
+
+
+
+
+/* ============ */
+
+h1,h2,h3,h4,h5,h6{
+	font-family:  "Gotham", sans-serif;;
+}
+
+
+#headings>h3:first-child,
+#paragraphs>h3:first-child{
+	border-bottom: 3px solid #ececec;
+	width: 70%;
+	margin-bottom: 1.5em;
+}
+
+#typography-wrp{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+#typography-wrp>div{
+	width: 48%;
+	margin: 0 1em;
+}
+
+#paragraphs>p{
+	font-family: "Arial", sans-serif;
+
+}
+
+
+/*colors*/
+#colors p{
+	width: 100%;
+	height: 14em;
+}
+ 
+.color1{background-color: #afafaf;}
+.color2{background-color: #f3ede1;}
+.color3{background-color: #de8b47;}
+.color4{background-color: #686868;}
+.color5{background-color: #d6d1c6;}
+.color6{background-color: #aa6e52;}
+.color7{background-color: #020809;}
+.color8{background-color: #aaa7a0;}
+.color9{background-color: #82552e;}
+
+.product{
+	padding: 1.5em 0 0.5em;
+	text-align: center;
+}
+.product h4{
+	margin: 0 0 ;
+}
+
+.product div{
+	margin: 0.3em;
+}
+
+.more-btn{
+	border: none;
+	padding: 0.5em 0.7em;
+	background-color: #000;
+}
+.more-btn a{
+	color: #fff;
+	font-weight: initial;
+}
+.more-btn a:hover{
+	text-decoration: none;
+}
+
+
+.more-btn:hover{
+	background-color: #de8b47;
+	transition: all 0.3s;
+}
+

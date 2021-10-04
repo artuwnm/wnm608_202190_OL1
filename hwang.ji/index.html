@@ -5,12 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Beans</title>
 	<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" type="text/css" href="css/storetheme.css">
 </head>
 <body>
-	
 	<!-- header>h1+p -->
-	<header class="navbar">
+	<header class="navbar nav"> <!-- class nav 임의로 추가함-->
 		<div class="container display-flex">
 			<div class="flex-none">
 				<h1>The Beans</h1>
@@ -19,14 +19,92 @@
 			<!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
 			<nav class=" flex-none nav">
 				<ul class="container display-flex">
-					<li><a href="#article1">SHOP</a></li>
-					<li><a href="#article2">PRODUCTS</a></li>
-					<li><a href="#article3">SUBSCRIPTIONS</a></li>
-					<li><a href="#article4">ABOUT</a></li>
+					<li><a href="#article1">Link1</a></li>
+					<li><a href="#article2">Link2</a></li>
+					<li><a href="#article3">Link3</a></li>
+					<li><a href="#article4">Link4</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+
+
+	<div class="container">
+		<div class="card soft">
+			<h2>Grid</h2>
+			<div class="grid">
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 3</div>
+				<div class="col-xs-4">column 6</div>
+				<div class="col-xs-4">column 3</div>
+				
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="card soft">
+			<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-4 col-xl-3">column 4</div>
+				<div class="col-xs-4 col-xl-6">column 4</div>
+				<div class="col-xs-4 col-xl-3">column 4</div>
+				
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+			<div class="grid ten gap">	
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="grid gap sx-samll md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="http://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="http://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="http://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="http://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<!-- .container>article#article$.article*4>{Article $}+div.article-body>p*3>lorem40 -->
 	<div class="container">
 		<article id="article1" class="article card soft">
@@ -39,40 +117,18 @@
 				</div>
 			</div>
 			<div class="article-body">
-				<p>The highest quality coffees from farms around the world, freshly roasted by hand to bring out every nuance, so you can taste the craft in every cup.</p>
-				<!-- <p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Veritatis officia sit expedita, ullam repellendus natus, eum error qui eligendi itaque molestiae nobis nostrum soluta magni ea veniam distinctio, blanditiis aperiam? Quis, perspiciatis at dicta excepturi culpa illum, reprehenderit et doloremque?</p>
+				<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Veritatis officia sit expedita, ullam repellendus natus, eum error qui eligendi itaque molestiae nobis nostrum soluta magni ea veniam distinctio, blanditiis aperiam? Quis, perspiciatis at dicta excepturi culpa illum, reprehenderit et doloremque?</p>
 				<p>Nihil ad praesentium doloribus, dolorem, dolor ex soluta dignissimos illum labore magni vero sed excepturi non voluptatibus voluptates assumenda enim corrupti harum. Eaque, eligendi odio laborum dolor tempore? Veritatis quasi quaerat libero omnis, corrupti alias maiores hic, debitis. Eos, quasi!</p>
-				<p>Eligendi ullam ipsa mollitia quo fuga exercitationem nemo suscipit officia eaque repudiandae perferendis, laborum dolorum quas, non, similique modi blanditiis amet! Repellat, neque! Aspernatur minus optio placeat, eaque ipsam? Eos odit molestiae nihil? Quia at veritatis quae illo et laudantium.</p> -->
+				<p>Eligendi ullam ipsa mollitia quo fuga exercitationem nemo suscipit officia eaque repudiandae perferendis, laborum dolorum quas, non, similique modi blanditiis amet! Repellat, neque! Aspernatur minus optio placeat, eaque ipsam? Eos odit molestiae nihil? Quia at veritatis quae illo et laudantium.</p>
 			</div>
 		</article>
 		<article id="article2" class="article card hard">
-<!-- 			<h2>Article 2</h2>
- -->			<div class="best_product">
-				<h2>Best Products</h2>
-				<p>Sun-Dried Premium Coffee by The Beans</p>
-				<div class=" coffee_wrp display-flex">
-					<div class="coffee">
-						<img src="img/coffee1.png" alt="">
-						<h4>Ethiopia Blend</h4>
-						<p>$17.95 / LB</p>
-					</div>
-					<div class="coffee">
-						<img src="img/coffee2.png" alt="">
-						<h4>Jamaica Blend</h4>
-						<p>$15.95 / LB</p>
-					</div>
-					<div class="coffee">
-						<img src="img/coffee3.png" alt="">
-						<h4>Guatemala Blend</h4>
-						<p>$18.95 / LB</p>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="article-body">
+			<h2>Article 2</h2>
+			<div class="article-body">
 				<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Iure sit magni doloremque velit distinctio repellendus culpa, eum asperiores necessitatibus quasi explicabo perferendis repellat quia cum quos accusamus ratione vel dolorem excepturi architecto libero. Facilis expedita mollitia hic illum praesentium dolorem.</p>
 				<p>Recusandae esse iure consequatur, saepe molestias maiores culpa aliquid beatae vero laudantium ipsa architecto maxime aspernatur. Minus, nobis fugiat. Unde quibusdam nesciunt nobis laudantium, at, dolore ipsa officia quas asperiores culpa quisquam ipsum esse possimus enim voluptatem deleniti velit, quo.</p>
 				<p>Veniam, eum eos accusamus optio quod tempora ut. Dicta ea, quasi magnam, ut, odio ad inventore maxime qui, tenetur quae repellendus eveniet doloribus enim praesentium quo vel nobis! Deleniti voluptate vero, eius quis. Consequatur labore numquam, expedita exercitationem, error doloremque?</p>
-			</div> -->
+			</div>
 		</article>
 	</div>
 	<div class="view-window" style="background-image: url('img/coffee-beans.jpeg');">
@@ -82,23 +138,17 @@
 		<article id="article3" class="article about">
 			<h2>About Us</h2>
 			<div class="article-body">
-				<p>We're part of the Sustainable Coffee Challenge, a global initiative to make coffee the first sustainable commodity. Since 2015, we've participated in the Checkoff Program from World Coffee Research.The program helps drive essential research on the coffee plant and the conditions that allow it to thrive. In 2020 we engaged Enveritas to perform a third-party verification of our sustainability practices and our Environmental, Social and Corporate Governance (ESG) criteria. This process covered approximately 17% of our total green coffee purchasing.</p>
-				<button class="btn_style">Learn More</button>
-				<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laudantium beatae unde neque non atque impedit voluptate totam asperiores similique rem obcaecati voluptas eos eum sit, mollitia possimus dignissimos laborum. Porro voluptatibus, nam atque nemo corporis fugit. Facilis ab, quo.</p>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laudantium beatae unde neque non atque impedit voluptate totam asperiores similique rem obcaecati voluptas eos eum sit, mollitia possimus dignissimos laborum. Porro voluptatibus, nam atque nemo corporis fugit. Facilis ab, quo.</p>
 				<p>Quaerat neque dicta quibusdam. A sed est consequuntur vitae ducimus culpa voluptatibus tempora eligendi officiis quisquam doloribus officia veritatis, iure mollitia reiciendis? Aut porro rerum soluta odio ex nobis quia officia quo aspernatur possimus laborum quasi ratione, perspiciatis laboriosam inventore.</p>
-				<p>Nemo exercitationem necessitatibus molestias quia non eos blanditiis quo. Exercitationem minima dolore ab veniam corrupti, fugiat blanditiis maxime iure maiores ex delectus in doloribus fuga consequatur dicta repudiandae. Voluptates officia facilis illum, neque architecto repudiandae dolorum optio. Temporibus, quam. Laboriosam.</p> -->
+				<p>Nemo exercitationem necessitatibus molestias quia non eos blanditiis quo. Exercitationem minima dolore ab veniam corrupti, fugiat blanditiis maxime iure maiores ex delectus in doloribus fuga consequatur dicta repudiandae. Voluptates officia facilis illum, neque architecto repudiandae dolorum optio. Temporibus, quam. Laboriosam.</p>
 			</div>
 		</article>
 		<article id="article4" class="article">
-			<!-- <h2>Article 4</h2> -->
-			<div class=" subscribe article-body">
-				<h2>Get updates from The Beans</h2>
-				<p>Sign up for stories, coffee tips, and 10% Discount</p>
-				<input type="text" placeholder="your email">
-				<button class="btn_style">SIGN UP</button>
-				<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti hic ad est nam nemo ut vel eos quia tenetur, odit fugiat laudantium omnis soluta accusantium provident laboriosam non, repellendus, excepturi. Veritatis, repellendus consequuntur architecto, nostrum natus ducimus quas necessitatibus. Asperiores!</p>
+			<h2>Article 4</h2>
+			<div class="article-body">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti hic ad est nam nemo ut vel eos quia tenetur, odit fugiat laudantium omnis soluta accusantium provident laboriosam non, repellendus, excepturi. Veritatis, repellendus consequuntur architecto, nostrum natus ducimus quas necessitatibus. Asperiores!</p>
 				<p>In ea minima quaerat quisquam repellat laudantium ipsum doloribus quae nobis saepe, quidem sint dicta excepturi a atque ipsa, voluptatum nihil consequuntur, culpa? Est velit a voluptatum quisquam molestiae architecto cupiditate tempore sequi facere placeat officiis fugit, tenetur earum odio.</p>
-				<p>Ea velit modi sapiente distinctio harum iure. A earum temporibus vel non, perferendis assumenda quaerat! Alias est necessitatibus, expedita deserunt, temporibus quae assumenda eveniet fugiat dolorum libero ducimus natus voluptatibus vel! A, earum, inventore! Quos, officia minus accusamus rem ipsam?</p> -->
+				<p>Ea velit modi sapiente distinctio harum iure. A earum temporibus vel non, perferendis assumenda quaerat! Alias est necessitatibus, expedita deserunt, temporibus quae assumenda eveniet fugiat dolorum libero ducimus natus voluptatibus vel! A, earum, inventore! Quos, officia minus accusamus rem ipsam?</p>
 			</div>
 		</article>
 	</div>
