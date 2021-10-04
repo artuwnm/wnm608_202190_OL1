@@ -7,10 +7,6 @@
 }
 
 :root {
-	--color-neutral-light:#eee;
-	--color-neutral-medium:#999;
-	--color-neutral-dark:#555;
-
 	--color-main-light:lightblue;
 	--color-main-medium:blue;
 	--color-main-dark:darkblue;
@@ -24,9 +20,11 @@
     --color-beige:#F6F3D2;
     --color-yellow-crayola:#EAE799;
     --color-straw:#DDD655;
-    
-    
 
+    --color-neutral-light:#eee;
+    --color-neutral-medium:#999;
+    --color-neutral-dark:var(--color-mortuum);
+    
 
 	--color-black:#000;
 	--color-white:#fff;
@@ -128,12 +126,12 @@ a:hover {
     	padding:0.2em 0.5em;
     }
     .nav a:hover {
-    	background-color: var(--color-main-medium);
+    	background-color: var(--color-green);
     	color: var(--color-white);
     	text-decoration: none;
     }
     .nav .active a {
-    	background-color: var(--color-main-light);
+    	background-color: var(--color-olivine);
     	color: inherit;
     }
 
@@ -224,7 +222,7 @@ a:hover {
     }
 
 
-/* CARD */ 
+/* BUTTON */ 
 
 
 .card {
