@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Styleguide</title>
+
+	<meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../lib/css/styleguide.css">
+    <link rel="stylesheet" href="../lib/css/gridsystem.css">
+    <link rel="stylesheet" href="../css/storetheme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container display-flex">
+        <div class="flex-none">
+  	         <h1>Kickin Hard Style Guide</h1>
+        </div>
+        <div class="flex-stretch"></div>    
+          <nav class="flex-none nav">
+            <ul class="container display-flex">
+                <li ><a href="#tableofcontents">Table of Contents</a></li>
+
+            </ul>
+          </nav>
+    </div>
+  </header>
+
+  <div class="container" id="tableofcontents">
+  	<h2>Table of Contents</h2>
+  	<div class="card">
+  		<nav class="nav">
+  		<ul>
+  			<li><a href="#typography">Typography</a></li>
+  			<li><a href="#colors">Colors</a></li> 
+        <li><a href="#navigations">Navigations</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#productgrids">Product Grids</a></li>
+        </ul>
+  		</nav>
+  	</div>
+  </div>
+
+	<div class="container" id="typography">
+		<h2>Typography</h2>
+		<div class="card soft" id="headings">
+			
+      <h3>Headings: Racing Sans One</h3>
+			    <h1>Heading 1</h1>
+			    <h2>Heading 2</h2>
+			    <h3>Heading 3</h3>
+
+		</div>
+
+    <div class="card soft" id="paragraphs">
+			<h3>Paragraphs: Poppins</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam rem asperiores ut voluptas repellendus illo sit in voluptate, voluptatibus. Corrupti, deleniti. Eos magni iusto omnis mollitia magnam, illum recusandae dicta.</p>
+			<p>Facilis saepe voluptatum rem quae maxime ex nisi culpa dolorem quod molestias! Placeat odio eos, laboriosam obcaecati tenetur cumque labore quis ad ullam quam, ipsum praesentium mollitia, amet adipisci dicta.</p>
+			<p>Earum vero ex nam hic, esse itaque modi harum in, tenetur rem accusantium, magni, amet blanditiis voluptates alias illo qui ad id voluptate. Error officia atque quaerat, quibusdam quis nemo!</p>
+		</div>
+	</div>
+
+<div class="container">
+	<div class="card" id="colors">	
+		<h2>Colors</h2>
+
+		<div class="grid gap">	
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<p class="color1"></p>
+			<figcaption>
+				#FF914D
+			</figcaption>	
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<p class="color2"></p>
+			<figcaption>
+				#000000
+			</figcaption>	
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<p class="color3"></p>
+			<figcaption>
+			#D8D3CF
+			</figcaption>	
+		</figure>
+			</div>
+		</div>
+	</div>
+</div>
+    
+    <div class="container" id="navigations">
+		<h2>Navigations</h2>
+
+		<script>
+			const makeNav = (classes='') => {
+               const links = ['Home','Men','Cart'];
+               let ran = Math.floor(Math.random()*links.length);
+               document.write( `
+               <div>
+                 <nav class="${classes}">
+                     <ul>
+                     ${links.reduce((r,o,i)=>{
+                        return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+                     },'')}
+			         </ul>
+			      </nav>
+               </div>
+               `);
+			}
+		</script>
+
+		<div class="card soft">
+
+        <div class="card soft">
+			<h3>Crumbs Nav</h3>
+            <script>makeNav('nav nav-crumbs')</script>
+		</div>
+
+
+        <div class="card soft">
+			<h3>Material Nav</h3>
+            <script>makeNav('nav nav-material')</script>
+		</div>
+
+		<script>
+			$("#navigations a").on("click",function(e) {
+				e.preventDefault();
+				$(this).closest("li").addClass("active")
+				   .siblings().removeClass("active")
+			})
+		</script>
+
+	</div>
+
+<script>
+				const makeTable = (classes = '')=>{
+					const head = ['','UK','US','EU','AUS','Length(CM)'];
+					const body = [
+						['6','6.5','39.5','6','24.5'],
+						['7','7.5', '41', '7','25.5'],
+						['8','8.5', '42', '8','26.5'],
+
+					];
+					document.write(`
+							<table class="${classes}">
+								<thead>
+									<tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr>
+								</thead>
+								<tbody>
+									${body.reduce((r,o,i)=>r+`<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`,'')}
+								</tbody>
+								
+							</table>	
+					`);
+				}
+			</script>
+
+	<div class="container">
+    <div class="card soft">
+    	<h2 id="tables">Men's Size Table</h2>
+
+    	<script>makeTable("table striped")</script>
+    </div>
+	</div>
+
+<div class="container">
+	<h2 id="figures">Product Grids</h2>
+
+		<div class="grid gap" id="productgrids">	
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<img src="../img/grayvapormax.jpg" alt="">
+			<figcaption>
+				<div>Nike Vapor Max</div>
+				<div>$219.99</div>	
+			</figcaption>	
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<img src="../img/97blackairmax.jpg" alt="">
+			<figcaption>
+				<div>'97 Air Max Black</div>
+				<div>$129.99</div>
+			</figcaption>	
+		</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<img src="../img/whitecdgconverse.jpg" alt="">
+			<figcaption>
+				<div>CDG X Converse White Low</div>
+				<div>$119.99</div>
+			</figcaption>	
+		</figure>
+			</div>
+		</div>
+</div>	
+	
+
+</body>
+</html>
