@@ -15,12 +15,12 @@
 	<header class="navbar nav"> <!-- class nav 임의로 추가함-->
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Styleguide</h1>
+				<h1>Happy Donuts</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class=" flex-none nav">
 				<ul class="container display-flex">
-					<li><a href="#talbeofcontents">Table of Contents</a></li>
+					<li><a href="#talbeofcontents">Styleguide</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -36,7 +36,8 @@
 						<li><a href="#navigations">Navigations</a></li>
 						<li><a href="#tables">Tables</a></li>
 						<li><a href="#product-grid">Product Grid</a></li>
-						<!-- <li><a href="#buttons">Buttons</a></li> -->
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#select">Select</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -71,56 +72,20 @@
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4 card2">
 					<figure class="figure">
-						<p class="color1"></p>
-						<figcaption>#afafaf</figcaption>
+						<p class="color_1"></p>
+						<figcaption>#fcf9f1</figcaption>
 					</figure>
 				</div>
 				<div class="col-xs-12 col-md-4 card2">
 					<figure class="figure">
-						<p class="color2"></p>
-						<figcaption>#f3ede1</figcaption>
+						<p class="color_2"></p>
+						<figcaption>#dfc87c</figcaption>
 					</figure>
 				</div>
 				<div class="col-xs-12 col-md-4 card2">
 					<figure class="figure">
-						<p class="color3"></p>
-						<figcaption>#de8b47</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4 card2">
-					<figure class="figure">
-						<p class="color4"></p>
-						<figcaption>#686868</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4 card2">
-					<figure class="figure">
-						<p class="color5"></p>
-						<figcaption>#d6d1c6</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4 card2">
-					<figure class="figure">
-						<p class="color6"></p>
-						<figcaption>#aa6e52</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4 card2">
-					<figure class="figure">
-						<p class="color7"></p>
-						<figcaption>#020809</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4 card2">
-					<figure class="figure">
-						<p class="color8"></p>
-						<figcaption>#aaa7a0</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4 card2">
-					<figure class="figure">
-						<p class="color9"></p>
-						<figcaption>#82552e</figcaption>
+						<p class="color_3"></p>
+						<figcaption>#000000</figcaption>
 					</figure>
 				</div>
 			</div>
@@ -195,11 +160,11 @@
 
 		<script>
 				const makeTable = (classes = '')=>{
-					const head = ['ID','Office','Name','Email','Phone'];
+					const head = ['ID','Order Numbers','Name','Email','Phone'];
 					const body = [
-						['522','Hamilton Cline', 'hcline@academyart.edu', '555-2424'],
-						['512','Fred McHale', 'fmchale@academyart.edu', '555-2424'],
-						['522','Michael Catanzaro', 'mcatanzaro@academyart.edu', '555-2424'],
+						['522-123','Hamilton Cline', 'hcline@academyart.edu', '555-2424'],
+						['512-234','Fred McHale', 'fmchale@academyart.edu', '555-2424'],
+						['522-345','Michael Catanzaro', 'mcatanzaro@academyart.edu', '555-2424'],
 
 					];
 					document.write(`
@@ -301,7 +266,7 @@
 					<figcaption>
 						<h4>BAVARIAN FILLED</h4>
 						<div>$2.99</div>
-						<button class="more-btn"><a href="#">MORE</a></button>
+						<button class="basic-btn"><a href="#">MORE</a></button>
 					</figcaption>
 				</figure>
 			</div>
@@ -311,7 +276,7 @@
 					<figcaption>
 						<h4>BANANA CHOCOLATE</h4>
 						<div>$4.99</div>
-						<button class="more-btn"><a href="#">MORE</a></button>
+						<button class="basic-btn"><a href="#">MORE</a></button>
 					</figcaption>
 				</figure>
 			</div>
@@ -321,7 +286,7 @@
 					<figcaption>
 						<h4>STRAWBERRY MILK</h4>
 						<div>$3.99</div>
-						<button class="more-btn"><a href="#">MORE</a></button>
+						<button class="basic-btn"><a href="#">MORE</a></button>
 					</figcaption>
 				</figure>
 			</div>
@@ -367,6 +332,88 @@
 		
 		</div>
  -->
+	 		<h2>Input</h2>
+	 		<div class="card">
+				<form action="">
+					<div class="form-control">
+						<label for="" class="form-label">Example</label>
+						<input type="text" placeholder="Text" class="form-input">
+					</div>
+					<div class="form-control">
+						<label for="" class="form-label">Example</label>
+						<input type="number" placeholder="Number" class="form-input">
+					</div>
+					<div class="form-control">
+						<label for="" class="form-label">Example</label>
+						<input type="password" placeholder="Password" class="form-input">
+					</div>
+					<div class="form-control display-flex flex-align-center">
+						<div class="flex-none"><label for="" class="form-label">Example</label></div>
+						<div class="flex-stretch"><input type="" placeholder="Search" class="form-input"></div>
+						<div class="flex-none"><label for="" class="form-label">Example</label></div>
+						<div class="flex-stretch"><input type="" placeholder="Search" class="form-input"></div>
+					</div>
+				</form>
+			</div>		
+
+
+ 		<h3 id="buttons">Buttons</h3>
+		<div class="card">
+			<div class="display-flex">
+				<button class="basic-btn"><a href="#">Button</a></button>
+				<button class="dark-btn"><a href="#">Button</a></button>
+				<button class="round-btn"><a href="#">Button</a></button>
+				<button class="round-btn dark-round-btn"><a href="#">Button</a></button>
+			</div>
+		</div>
+
+		<h2>Search Bar</h2>
+		<div class="card soft">
+			<div class="form-control">
+				<form action="" >
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+		</div>
+
+		<h2 id="select">Select</h2>
+		<div class="card">
+			<div class="form-select">
+				<select name="" class="items">
+					<option value="">Standard Shipping</option>
+					<option value="">2days Shipping</option>
+				</select>
+			</div>
+		</div>
+
+		<h2 id="checkboxes">Check Boxes</h2>
+		<div class="card soft">
+			<label>Label <input type="checkbox" id="input-1"></label>
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+
+			<h3>Toggle</h3>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1" class="toggle-off"><span class="toggle-on">On</span></label>
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+				<div class="felx-none">
+					<div class="toggle" style="font-size: 2em;">
+						<input type="checkbox" id="toggle-2" class="hidden">
+						<label for="toggle-2"></label>
+					</div>
+				</div>
+			</div>
+			
+	
+		</div>
 
 
 

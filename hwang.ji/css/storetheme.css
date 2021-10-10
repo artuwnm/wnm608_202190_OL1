@@ -9,11 +9,25 @@
 }
 body{
 	background-color: var(--color-offwhite);
+	padding-bottom: 4em;
 }
 
-li{
-	list-style: none;
+
+.favorite label{
+	 transition: all 0.3s;
+	 display: inline-block;
+	 transform: scale(1.0,1.0);
+	 color: var(--color-neutral-medium);
 }
+/* fovortie 자손 input이 checked 되면 다음에 오는 label 선택 */
+.favorite input:checked + label{
+	color: red;
+	transform: scale(1.5,1.5);
+}
+
+
+
+li{list-style: none;}
 
 @media(max-width:800px){
 	.container{
