@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Styleguide</title>
-
 	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 
 	
 </head>
 <body>
 	 
-	<header class="navbar">
+	<header class="navbar nav">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Styleguide</h1>
+				<h1>Petus</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			
 			<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
 			<nav class="flex-none nav">
 				 <ul class="container display-flex">
-				 	<li><a href="#tableofcontents">Table of Contents</a></li>
+				 	<li><a href="#tableofcontents">Styleguide</a></li>
 				 </ul>
 			</nav>
 		</div>
@@ -39,13 +38,19 @@
 					<li><a href="#typography">Typography</a></li>
 					<ul>
 						<li><a href="#headings">Headings</a></li>
-						<li><a href="#paragraphs">paragraphs</a></li>
+						<li><a href="#paragraphs">Paragraphs</a></li>
 					</ul>
+					<li><a href="#navigations">Navigations</a></li>
 					<li><a href="#colors">Colors</a></li>
 					<li><a href="#cards">Cards</a></li>
-					<li><a href="#navigations">Navigations</a></li>
-					<li><a href="#gridsystem">Grid System</a></li>
+					<li><a href="#product-list">Product List</a></li>
 					<li><a href="#tables">Tables</a></li>
+					<li><a href="#input">Input</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#search-bar">Search Bar</a></li>
+					<li><a href="#select">Select</a></li>
+					<li><a href="#check-box">Check Box</a></li>
+					<li><a href="#toggle">Toggle</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -56,17 +61,15 @@
 		<h2>Typography</h2>
 		<div class="card" id="headings">
 			<h3>Headings: Georgia </h3>
-			<h1>Heading 1 &#8212; 32px</h1>
-			<h2>Heading 2 &#8212; 24px</h2>
-			<h3>Heading 3 &#8212; 18px</h3>
-			<h4>Heading 4 &#8212; 16px</h4>
+			<h1>Heading 1 &#8212; 48px</h1>
+			<h2>Heading 2 &#8212; 36px</h2>
+			<h3>Heading 3 &#8212; 28px</h3>
 		</div>
 
 		<div class="card" id="paragraphs">
-			<h3>Paragraphs: Helvetica &#8212; 16px</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consequatur? Illum, odio cum fugit adipisci praesentium? Maxime, eum impedit natus molestias, corrupti eveniet eaque animi molestiae! In iste, magni animi.</p>
-			<p>Cum autem porro sequi dicta eius animi assumenda totam provident officia debitis repudiandae sapiente eos molestias a nam nobis aspernatur odit hic quos accusantium, qui illum ullam rerum laudantium nostrum.</p>
-			<p>Quasi explicabo animi deleniti, cum a sint enim tempore quo laudantium mollitia sunt. Repellendus eligendi neque eos minus id modi, quam et cum odio nemo sint, cumque corporis quisquam eum?</p>
+			<h3>Paragraphs: Helvetica &#8212;</h3>
+			<p><b>16px:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consequatur? Illum, odio cum fugit adipisci praesentium? Maxime, eum impedit natus molestias, corrupti eveniet eaque animi molestiae! In iste, magni animi.</p>
+			<p style = "font-size:13px"><b>13px:</b>  Cum autem porro sequi dicta eius animi assumenda totam provident officia debitis repudiandae sapiente eos molestias a nam nobis aspernatur odit hic quos accusantium, qui illum ullam rerum laudantium nostrum.</p>
 
 		</div>
 	</div>
@@ -82,8 +85,6 @@
 					</div>		
 				</div>
 
-				
-				
 
 				
 				<div class="col-xs-4">
@@ -124,6 +125,58 @@
 		
 	</div>
 
+
+
+<!-- navigations -->
+
+	<div class="container" id="navigations">
+		<h2>Navigations</h2>
+
+			<script>
+				const makeNav = (classes = '')=>{
+					const links = ['HOME', 'STORE', 'ABOUT'];
+					let ran = Math.floor(Math.random()*links.length);
+					document.write(`
+						<div>
+							<nav class="${classes}">
+								<ul>
+								${links.reduce((r,o,i)=>{
+									return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
+								},'')}
+								</ul>
+							</nav>
+						</div>
+					
+					`);
+				}
+			</script>
+
+			<div class="card">
+			<!-- <h3>Crumbs Nav</h3> -->
+				<script>makeNav('nav nav-crumbs')</script>
+			</div>
+
+
+			<div class="card">
+				<!-- <h3>Material Nav</h3> -->
+				<script>makeNav('nav nav-material')</script>
+			</div>
+
+
+			<script>
+				$('#navigations a').on("click",function(e){
+					e.preventDefault();
+					$(this).closest('li').addClass('active')
+					.siblings().removeClass('active')
+				})
+			</script>
+
+
+	</div>
+
+
+
+
 <!-- cards -->
 	<div class="container" id="cards">
 		<h2>Cards</h2>
@@ -149,87 +202,192 @@
 			</div>		
 	</div>
 
- <div class="container" id="navigations">
-	<h2>Navigations</h2>
 
-	<script>
-		const makeNav = (classes='') => {
-			const links = ['home','store','about'];
-			let ran = Math.floor(Math.random()*links.length);
-			document.write(`
-				<div>
-					<nav class=" ${classes}">
-				<ul>
-					${links.reduce((r,o,i)=>{
-						return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`;
-					},'')}
-				</ul>
-			</nav>
+
+
+<!-- product-list -->
+	<h2 id="product-list">Product List</h2>
+
+	<div class="grid gap">
+		<div class="col-xs-12 col-md-4">
+			<figure class="figure product">
+				<img src="../img/toy1.JPG" alt="">
+				<figcaption>
+					<h4>Zebra Squeaky Toy</h4>
+					<div>$4.49</div>
+					<button class="basic-btn"><a href="#">MORE</a></button>
+				</figcaption>
+			</figure>
 		</div>
-		`);
-		}
-	</script>
-
-	<div class="card soft">
-		<h3>Basic Nav</h3>
-
-		<script>makeNav('nav')</script>
+		<div class="col-xs-12 col-md-4">
+			<figure class="figure product">
+				<img src="../img/toy2.JPG"  alt="">
+				<figcaption>
+					<h4>Cozie Marvin the Moose Plush Toy</h4>
+					<div>$11.49</div>
+					<button class="basic-btn"><a href="#">MORE</a></button>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<figure class="figure product">
+				<img src="../img/toy3.JPG"  alt="">
+				<figcaption>
+					<h4>Squeezz Ball Toy</h4>
+					<div>$4.49</div>
+					<button class="basic-btn"><a href="#">MORE</a></button>
+				</figcaption>
+			</figure>
+		</div>
+	
 	</div>
 
 
-		
-
+<!-- tables -->
 	<script>
-		$("#navigations a").on("click",function(e){
-			e.preventDefault();
-			$(this).closest("li").addClass("active")
-			.siblings().removeClass("active")
-		})
+		const makeTable = (classes = '')=>{
+			const head = ['ID','Order Numbers','Name','Email','Phone'];
+			const body = [
+				['101',"Michael Wise", 'jillianjones@hoover.biz','376-024-3600'],
+				['102',"Amy Smith", 'angelaleblanc@hotmail.com','057-964-7306'],
+				['103',"Bill Anderson", 'anthonydiaz@gmail.com','262-616-6203'],
+				['104',"Richard Jenkins", 'garzakevin@peterson.com','724-056-5116'],
+				];
+
+				//let ran = Math.floor(Math.random()*links.length);
+				document.write(`
+					<table class="${classes}">
+						<thead>
+							<tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr>
+						</thead>
+						<tbody>
+							${body.reduce((r,o,i)=>r+`<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`,'')}
+						</tbody>
+						
+					</table>	
+			`);
+		}
 	</script>
-  </div>
-
-<div class="container" id="gridsystem">
-	<h2>Grid System</h2>
-</div>
 
 
-</div>
-
-<script>
-	const makeTable = (classes='') => {
-		const head = ['ID','Office','Name','Email', 'Phone'];
-		const body = [
-		['101',"Michael Wise", 'jillianjones@hoover.biz','376-024-3600'],
-		['102',"Amy Smith", 'angelaleblanc@hotmail.com','057-964-7306'],
-		['103',"Bill Anderson", 'anthonydiaz@gmail.com','262-616-6203'],
-		['104',"Richard Jenkins", 'garzakevin@peterson.com','724-056-5116'],
-		];
-
-		//let ran = Math.floor(Math.random()*links.length);
-		document.write(`
-		<table class="${classes}">
-		<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
-		<tbody>${body.reduce((r,o,i)=>r+
-			`<tr>${
-				[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
-			}</tr>`,'')
-	}</tbody>
-	</table>
-	`);
-	}
-</script>
-
-
-<div class="container" id="tables">
+	<div class="container" id="tables">
 	<h2>Tables</h2>
 
-	<div class="card soft">
-		<h3>Basic Table</h3>
+	<div class="card">
+			<h3>Striped Table</h3>
+			<script>makeTable('table striped')</script>
+		</div>
 
-		<script>makeTable("table")</script>
-	</div>	
-
+		<div class="card">
+			<h3>Lined Table</h3>
+			<script>makeTable('table lined all')</script>
+		</div>
+	</div>
 
 	
+
+<!-- input -->
+		<h2 id="input">Input</h2>
+ 		<div class="card">
+			<form action="">
+				<div class="form-control">
+					<label for="" class="form-label">Example</label>
+					<input type="text" placeholder="Text" class="form-input">
+				</div>
+				<div class="form-control">
+					<label for="" class="form-label">Example</label>
+					<input type="number" placeholder="Number" class="form-input">
+				</div>
+				<div class="form-control">
+					<label for="" class="form-label">Example</label>
+					<input type="password" placeholder="Password" class="form-input">
+				</div>
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none"><label for="" class="form-label">Example</label></div>
+					<div class="flex-stretch"><input type="" placeholder="Search" class="form-input"></div>
+					<div class="flex-none"><label for="" class="form-label">Example</label></div>
+					<div class="flex-stretch"><input type="" placeholder="Search" class="form-input"></div>
+				</div>
+			</form>
+		</div>		
+
+
+<!-- bottons -->
+		<h3 id="buttons">Buttons</h3>
+		<div class="card">
+			<div class="display-flex">
+				<button class="basic-btn"><a href="#">Button</a></button>
+				<button class="dark-btn"><a href="#">Button</a></button>
+				<button class="round-btn"><a href="#">Button</a></button>
+				<button class="round-btn dark-round-btn"><a href="#">Button</a></button>
+			</div>
+		</div>
+
+
+<!-- search-bar -->
+		<h2 id="search-bar">Search Bar</h2>
+		<div class="card soft">
+			<div class="form-control">
+				<form action="" >
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+		</div>
+
+
+
+<!-- select -->
+		<h2 id="select">Select</h2>
+		<div class="card">
+			<div class="form-select">
+				<select name="" class="items">
+					<option value="">Standard Shipping</option>
+					<option value="">2days Shipping</option>
+				</select>
+			</div>
+		</div>
+
+
+
+
+<!-- check-box -->
+		<h2 id="checkboxes">Check Boxes</h2>
+		<div class="card soft">
+			<label>Label <input type="checkbox" id="input-1"></label>
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+
+
+
+<!-- toggle -->
+			<h3 id="toggle">Toggle</h3>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1" class="toggle-off"><span class="toggle-on">On</span></label>
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+				<div class="felx-none">
+					<div class="toggle" style="font-size: 2em;">
+						<input type="checkbox" id="toggle-2" class="hidden">
+						<label for="toggle-2"></label>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+
+
+
+
+
+
+	</div>
 </body>
 </html>

@@ -12,11 +12,29 @@ body{
 	padding-bottom: 10em;
 }
 
+
+
+.favorite label{
+	 transition: all 0.3s;
+	 display: inline-block;
+	 transform: scale(1.0,1.0);
+	 color: var(--color-green-medium);
+}
+
+.favorite input:checked + label{
+	color: red;
+	transform: scale(1.5,1.5);
+}
+
+
+
+
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
 }
+
 
 .product-overlay {
 	position: relative;
@@ -62,6 +80,8 @@ body{
 	transform: scale(1.4,1.4);
 }
 
+li{list-style: none;}
+
 @media(max-width: 767px) {
 	.product-overlay figcaption {
 		position: relative;
@@ -76,5 +96,24 @@ body{
 	.product-overlay .caption-body {
 		transform: none;
 		padding: 0;
+	}
+}
+
+
+@media(max-width:800px){
+	.container{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.navbar h1{
+		padding-left: 0.5em;
+	}
+}
+@media(max-width:400px){
+	.nav .display-flex{
+		display: block;
+	}
+	.navbar .nav ul li{
+		line-height: 2em;
 	}
 }

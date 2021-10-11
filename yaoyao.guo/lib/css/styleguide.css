@@ -37,7 +37,7 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+{
 	font-family:var(--font-serif);
 	color: var(--color-green-dark);
 	font-weight: 700;
@@ -52,17 +52,14 @@ h2 {
 }
 
 h3 {
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 
-h4 {
-	font-size: 1.25em;
-}
 
 a {
 	color: inherit;
+	font-weight: bold;
 	text-decoration: none;
-
 }
 
 a:hover {
@@ -74,23 +71,22 @@ a:hover {
 /* LAYOUT CLASSES */
 
 .container{
-	max-width:1200px;
-	margin-right:auto;
-	margin-left: auto;	
-	padding-left: 1em;
-	padding-right: 1em;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.display-flex { display:flex; }
-.display-inline-flex { display:inline-flex; }
-.display-block { display:block; }
-.display-inline-block { display:inline-block; }
 
-.flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
+.display-flex{ display: flex;}
+.display-inline-flex{ display: inline-flex;}
+.display-block{ display: block;}
+.display-inline-block{ display: inline-block;}
 
-.flex-align-center { align-items:  center; }
-.flex-justify-center { justify-items:  center; }
+.flex-stretch{flex: 1 1 auto;} /*grow shrink basis*/
+.flex-none{flex: none;}
+
+.flex-align-center{align-items: center;}/*up&down*/
+.flex-justify-center{justify-content: center;} /*left&right*/
 
 
 /* COMPONENET CLASSES */
@@ -124,7 +120,6 @@ a:hover {
 .nav-stretch ul,
 .nav-flex ul{
 	display: flex;
-
 }
 
 .nav-material li,
@@ -149,10 +144,8 @@ a:hover {
 	text-decoration: underline;
 }
 
-
-
 .nav-crumbs li:not(:first-child)::before {
-	content: '/';
+	content: '>';
 }
 
 .nav-material a {
@@ -188,20 +181,30 @@ a:hover {
 
 
 .navbar{
-	background-color:var(--color-peach-dark);
+	background-color:var(--color-green-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
 
 }
 
 .navbar h1{
-	font-size: 1em;
+	font-size: 1.5em;
 	margin: 0;
 	font-family: var(--font-sans);
 }
 .navbar a{
 	padding: 0 0.5em ;
 }
+
+
+
+/* SMALL CLASSES */
+.media-image{
+	max-width: 100%;
+	vertical-align: text-bottom;
+}
+.hidden{display: none;}
+
 
 
 /* CARD */
