@@ -38,13 +38,45 @@
 						<li><a href="#typography">1. Typography</a></li>
 					</ul>
 					<ul>
-						<li><a href="#Paragraphs">2. Paragraph</a></li>
+						<li><a href="#paragraphs">2. Paragraph</a></li>
 	
-						<li><a href="#cards">3. Color Palettes</a></li>
-						<li><a href="#Navigations">4. Navigations</a></li>
-						<li><a href="#gridsystem">5. Table</a></li>
-						<li><a href="#flexsystem">6. Products</a></li>
+						<li><a href="#color">3. Color Palettes</a></li>
+						<li><a href="#navigations">4. Navigations</a></li>
+						<li><a href="#table">5. Table</a></li>
+						<li><a href="#products">6. Products</a></li>
 					</ul>
+
+					<ul>
+					<li><a href="#forms">7. Forms</a></li>
+					</ul>
+						
+						<ul>
+							<li><a href="#inputs">- Inputs</a></li>
+							<li><a href="#labels">- Labels</a></li>
+							<li><a href="#controls">- Controls</a></li>
+						</ul>
+
+					<ul>
+						<li><a href="#buttons">8. Buttons</a></li>
+					
+					</ul>
+
+					<ul>
+						<li><a href="#hotdog">9. Hotdog</a></li>
+					
+					</ul>
+
+
+					<ul>
+						<li><a href="#select">10. Select</a></li>
+					
+					</ul>
+
+					<ul>
+						<li><a href="#checkboxes">11. Checkboxes</a></li>
+					
+					</ul>
+
 				</nav>	
 			</div>
 		</div>	
@@ -73,7 +105,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="color">
 		<h2>3. Color Palettes</h2>
 
 
@@ -171,7 +203,7 @@
 
 	</script>
 
-	<div class="container">
+	<div class="container" id="table">
 		<h2>5. Tables</h2>
 		<div class="card soft">
 			<h3> Combinations</h3>
@@ -182,7 +214,7 @@
 
 		<h2>6. Products </h2>
 
-			<div class="grid gap">
+			<div class="grid gap" id="products">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
 						<img src="../img/hasami_1.png"  alt="">
@@ -221,6 +253,142 @@
 			</div>
 
 	</div>
+		<div class="container" id="forms">
+			<h2>7. Forms</h2>
+
+			<div class="card soft">
+
+				<h3>Default Inputs</h3>
+				<form>
+					<input type="text"><br>
+					<input type="number"><br>
+					<input type="password"><br>
+					<input type="url"><br>
+					<input type="email"><br>
+					<input type="datetime-local"><br>
+					<input type="date"><br>
+					<input type="search"><br>
+				</form>
+				
+				<h3>Form Input</h3>
+				<form>
+					<input type="text" placeholder="Text" class="form-input">
+					<input type="number" placeholder="Number" class="form-input">
+					<input type="password" placeholder="Password" class="form-input">
+					<input type="search" placeholder="Search" class="form-input">
+				</form>
+
+				<h3>Form Label</h3>
+				<form>
+					<label class="form-label">Example</label>
+					<input type="text" placeholder="Text" class="form-input">
+					<label class="form-label">Example</label>
+					<input type="number" placeholder="Number" class="form-input">
+					<label class="form-label">Example</label>
+					<input type="password" placeholder="Password" class="form-input">
+					<label class="form-label">Example</label>
+					<input type="search" placeholder="Search" class="form-input">
+			    </form>	
+
+
+				<h3>7. Form Control</h3>
+				<form>
+					
+					<div class="form control">
+						<label class="form-label">Example</label>
+						<input type="text" placeholder="Text" class="form-input">
+					</div>
+
+					<div class="form control">
+						<label class="form-label">Example</label>
+						<input type="number" placeholder="Number" class="form-input">
+					</div>
+
+					<div class="form-control">
+						<label class="form-label">Example</label>
+						<input type="password" placeholder="Password" class="form-input flex-stretch">
+					</div>
+
+					<div class="form-control display-flex">
+						<div class="flex-none">
+							<label class="form-label">Example</label>
+						</div>
+
+						<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+						</div>
+
+						<div class="flex-none">
+						<label class="form-label">Example</label>
+						</div>
+						
+						<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+						</div>
+					
+					</div>
+			    </form>	
+
+
+			</div>
+
+
+			<div class="container" id="buttons">
+			<h2>8. Buttons</h2>
+
+			<div class="card soft">
+				<h3>Default Buttons</h3>
+
+				<button>Button</button>
+
+				<h3>Form Buttons</h3>
+				
+				<button type="button" class="form-button">Button</button>
+				<input type="button" class="form-button" value="input">
+				<a href="#" class="form-button">Anchor</a>
+
+			</div>
+
+			<div class="container" id="hotdog">
+			<h2>9. Hotdog</h2>
+
+
+				<div class="card soft">
+					<form class="hotdog">
+						<input type="search" placeholder="Search">
+						<span>&equiv;</span>
+					</form>
+				</div>
+				</div>
+
+				<div class="container" id="select">
+				<h2 id="select">10. Select</h2>
+
+			<div class="card soft">
+				<div class="form-select">
+				<select>
+					<option>XS</option>
+					<option>S</option>
+					<option>M</option>
+					<option>L</option>
+					<option>XL</option>
+				</select>
+				</div>
+			</div>
+
+			<div class="container" id="checkboxes">
+			<h2 id="chekboxes">11. Check Boxes</h2>
+
+			<div class="card soft">
+
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+		</div>
+	</div>
+
 
 	</body>
 </html>
