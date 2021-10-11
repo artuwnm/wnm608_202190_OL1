@@ -7,9 +7,9 @@
 
 	<meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="../lib/css/styleguide.css">
-    <link rel="stylesheet" href="../lib/css/gridsystem.css">
-    <link rel="stylesheet" href="../css/storetheme.css">
+    <link rel="stylesheet" href="../lib/css/styleguide_proj.css">
+    <link rel="stylesheet" href="../lib/css/gridsystem_proj.css">
+    <link rel="stylesheet" href="../css/storetheme_proj.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Racing+Sans+One&display=swap" rel="stylesheet">
@@ -47,6 +47,10 @@
         <li><a href="#navigations">Navigations</a></li>
         <li><a href="#tables">Tables</a></li>
         <li><a href="#productgrids">Product Grids</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#searchbar">Search Bar</a></li>
+        <li><a href="#select">Select</a></li>
+        <li><a href="#checkboxes">Check Boxes</a></li>
         </ul>
   		</nav>
   	</div>
@@ -172,6 +176,7 @@
 			</script>
 
 	<div class="container">
+		<h2 id="tables">Men's Size Table</h2>
     <div class="card soft">
     	<h2 id="tables">Men's Size Table</h2>
 
@@ -211,6 +216,142 @@
 		</figure>
 			</div>
 		</div>
+ 
+      
+			<h2>Input</h2>
+			<div class="card soft">
+	   	<form>
+	   		<div class="form-control">
+	   		<label class="form-label">Example</label>
+	   	  <input type="text" placeholder="Text" class="form-input">
+	   	  </div>
+        <div class="form-control">
+	   	  <label class="form-label">Example</label>
+	   	  <input type="number" placeholder="Number" class="form-input">
+	   	  </div>
+	   	  <div class="form-control">
+	   	  <label class="form-label">Example</label>
+	   	  <input type="number" placeholder="Number" class="form-input">
+	   	  </div>
+ 			  <div class="form-control display-flex flex-align-center">
+	   	  <div class="flex-none">
+	   	  <label class="form-label">Example</label>
+	   	  </div>
+	   	  <div class="flex-stretch">
+	   	  <input type="password" placeholder="Password" class="form-input">
+	   	  </div>
+	   	  <div class="flex-none">
+	   	  <label class="form-label">Example</label>
+	   	  </div>
+	   	  <div class="flex-stretch">
+	   	  <input type="search" placeholder="Search" class="form-input">
+	   	  </div>
+	   	  </div>
+	   	</form>
+       </div>
+
+       <div class="container" id="buttons">
+         <h2>Buttons</h2>
+
+        <div class="card soft">
+					<h3>Default Buttons</h3>
+
+					<button>Add to Cart</button>
+
+					<h3>Form Buttons</h3>
+					<div class="form-control">
+					<button type="button" class="form-button">Checkout</button>
+				  </div>
+				  <div class="form-control">
+					<input type="button" class="form-button" value="Input">
+				  </div>
+					<div class="form-control">
+					<a href="#" class="form-button">Return to List </a>
+					</div>	
+        </div>
+      </div>
+
+					<div class="container" id="searchbar">
+       				 <h2>Search Bar</h2>
+        		 			<div class="card soft">
+						<div class="form-control">
+							<form>
+								<input type="search" class="hotdog" placeholder="Search">
+							</form>
+							</div>
+						</div>
+					</div>
+
+				<h2 id="select">Select</h2>
+       	 <div class="card soft">
+       	 	 <div class="form-select">
+       		     <select>
+       		     	 <option>Select Size</option>
+       			     <option>W 6.5 / M 5 </option>
+       			     <option>W 7 / M 5.5 </option>
+       			     <option>W 7.5 / M 6 </option>
+       			     <option>W 8 / M 6.5 </option>
+       		     </select>
+       	  </div>
+       	</div>
+
+				<h2 id="checkboxes">Check Boxes</h2>
+				       	<div class="card soft">
+				       		<h3>Basic Checkbox</h3>
+				       		<label>Label <input type="checkbox" id="input-1"></label>
+				       		
+
+				       	<h3>Heart Checkbox</h3>
+				       	    <div class="favorite">
+				       		    <input type="checkbox" id="heart-example" class="hidden">
+				       		    <label for="heart-example">&hearts;</label>
+				       	    </div>
+
+				       	<h3>Toggle</h3>
+				       	    <div class="toggle">
+				       		    <input type="checkbox" id="toggle-1" class="hidden">
+				       		    <label for="toggle-1"></label>
+				       	    </div>
+
+				       	    <div class="display-flex flex-align-center">
+				       	    	<div class="flex-stretch">
+				       	    		<label for="toggle-2" class="form-label">Turn on notification</label>
+				       	    	</div>
+				       	    	<div class="flex-none">
+				       	    		   <div class="toggle" style="font-size: 2em">
+				       		           <input type="checkbox" id="toggle-2" class="hidden">
+				       		           <label for="toggle-2"></label>
+				       	           </div>
+				       	    	</div>	
+				       	    </div>
+
+				       	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>	
 	
 
