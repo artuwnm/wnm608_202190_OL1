@@ -8,7 +8,7 @@
 }
 
 body{
-	background-color:  var(--color-offwhite);
+	background-color:#F4EEED;
 	padding-bottom: 10em;
 }
 
@@ -17,13 +17,13 @@ body{
 .favorite label{
 	 transition: all 0.3s;
 	 display: inline-block;
-	 transform: scale(1.0,1.0);
+	 transform: scale(1.2,1.2);
 	 color: var(--color-green-medium);
 }
 
 .favorite input:checked + label{
 	color: red;
-	transform: scale(1.5,1.5);
+	transform: scale(1.8,1.8);
 }
 
 
@@ -82,8 +82,10 @@ body{
 
 li{list-style: none;}
 
-@media(max-width: 767px) {
-	.product-overlay figcaption {
+
+
+@media(max-width:600px){
+	.product-overlay figcaption{
 		position: relative;
 		display: block;
 		top: initial;
@@ -93,12 +95,10 @@ li{list-style: none;}
 		opacity: 1;
 		background-color: initial;
 	}
-	.product-overlay .caption-body {
+	.product-overlay .caption-body{
 		transform: none;
 		padding: 0;
 	}
-}
-
 
 @media(max-width:800px){
 	.container{
