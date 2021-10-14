@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik:ital,wght@0,400;1,300&display=swap');
 /*CSS RESET*/
 
 *,*::after, *::before {
@@ -36,8 +37,7 @@ body{
 h1,
 h2,
 h3,
-h4,
-{
+h4{
 	font-family: var(--font-serif);
 	color: var(--color-green-dark);
 	font-weight: 700;
