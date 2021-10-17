@@ -2,10 +2,22 @@
 :root {
 	--color-offwhite: #f4f4f4;
 	--color-yellow: #FEFCF0;
+
+	--color-neutral-light: #efefef;
+	--color-neutral-medium: #888888;
+	--color-neutral-dark: #3c3c3c;
+
+	--color-primary-light: #B4C6D5;
+	--color-primary-medium: #064275;
+	--color-primary-dark: #03223C;
+
+	--color-secondary-light: #F9E8DA;
+	--color-secondary-medium: #D56504;
+	--color-secondary-dark: #632C0B;
 }
 
 body {
-	background-color: var(--color-offwhite) ;
+	background-color: var(--color-secondary-light);
 
 	padding-bottom: 4em;
 }
@@ -23,6 +35,8 @@ body {
 	color: red;
 	transform: scale(1.3,1.3);
 }
+
+
 
 @media (max-width: 800px) {
 	.container {
