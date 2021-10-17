@@ -2,10 +2,10 @@
 :root{
 	--color-offwhite: #f4f4f4;
 	
-	--color-main-light: #f3ede1;
-	--color-main-medium: #d6d1c6;
-	--color-main-dark: #aaa7a0;
-
+	
+	--color-main-light: #f9e08f;
+	--color-main-medium: #dfc87c;
+	--color-main-dark: #aa8a49;
 }
 body{
 	background-color: var(--color-offwhite);

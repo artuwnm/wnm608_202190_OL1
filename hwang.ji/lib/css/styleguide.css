@@ -11,9 +11,14 @@
 	--color-neutral-medium: #999;
 	--color-neutral-dark: #555;
 
-	--color-main-light: #f3ede1;
-	--color-main-medium: #d6d1c6;
-	--color-main-dark: #aaa7a0;
+	--color-main-light: #f9e08f;
+	--color-main-medium: #dfc87c;
+	--color-main-dark: #aa8a49;
+
+	--color-sub-light: #fcf9f1;
+	--color-sub-medium: #e2ded7;
+	--color-sub-dark: #d8cdba;
+
 
 
 	--color-black: #000;
@@ -205,15 +210,20 @@ a:hover{
 }
 .card.hard{
 	border-radius: 0.2em;
-	border: 2px solid var(--color-neutral-medium);
+	border: 2px solid var(--color-main-medium);
 }
 
 .card.dark{
-	background-color: var(--color-neutral-dark);
-	color: var(--color-neutral-light);
+	/*background-color: var(--color-neutral-dark);
+	color: var(--color-neutral-light);*/
+	background-color: var(--color-main-dark);
+	color: var(--color-sub-light)
+
 }
 .card.medium{
-	background-color: var(--color-neutral-medium);
+	/*background-color: var(--color-neutral-medium);*/
+	background-color: var(--color-main-light);
+	color: var(--color-main-dark);
 }
 .card.flat{
 	padding: 0;
@@ -241,24 +251,24 @@ a:hover{
 }
 
 .table.striped tbody tr:nth-child(odd){
-	background-color: var(--color-neutral-light);
+	background-color: var(--color-sub-light);
 }
 
 .table.lined.all th:not(:first-child),
 .table.lined.all td:not(:first-child),
 .table.lined.vertical th:not(:first-child),
 .table.lined.vertical td:not(:first-child){
-	border-left: 1px solid var(--color-neutral-medium);
+	border-left: 1px solid var(--color-sub-medium);
 }
 
 .table.lined.all tbody tr,
 .table.lined.horizontal tbody tr{
-	border-top: 1px solid var(--color-neutral-medium);
+	border-top: 1px solid var(--color-sub-medium);
 }
 
 .table.lined.all,
 .table.lined.border{
-	border: 1px solid var(--color-neutral-medium);
+	border: 1px solid var(--color-sub-medium);
 }
 
 /* Figure */
@@ -366,7 +376,7 @@ a:hover{
 	right: 0.2em;
 	transform: translateY(-50%);
 	pointer-events: none;
-	color: var(--color-neutral-medium);
+	color: var(--color-neutral-light);
 }
 
 
@@ -376,19 +386,19 @@ a:hover{
 	display: inline-block;
 	width: 2em;
 	height: 1em;
-	border: 0.1em solid var(--color-neutral-medium);
-	background-color: var(--color-neutral-light);
+	border: 0.1em solid var(--color-main-medium);
+	background-color: var(--color-main-light);
 	border-radius: 1em;
 	position: relative;
 }
 .toggle label::after{
 	content: ''; /*after 쓸 때 꼭 content를 써야 입력한 스타일이 보여짐*/
 	display: inline-block;
-	width: 0.8em;
-	height: 0.8em;
+	width: 0.81em;
+	height: 0.81em;
 	border-radius: 1em;
 	position: absolute;
-	background-color: var(--color-white);
+	background-color: var(--color-main-light);
 	transition: all 0.3s;
 
 }
@@ -403,11 +413,11 @@ a:hover{
 
 /* == */
 
-ul{
+/*ul{
 		padding: 0 ; margin: 0;
 }
 
-
+*/
 
 
 

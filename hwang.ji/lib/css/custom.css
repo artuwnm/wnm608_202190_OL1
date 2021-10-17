@@ -4,7 +4,7 @@ body{
 	margin-bottom: 50px;
 }
 .navbar{
-	background-color: #020809;
+	background-color: var(--color-main-medium);
 }
 .card2{
 	overflow: hidden;
@@ -58,7 +58,7 @@ body{
 .hotdog{
 	border: 1px solid #dfc87c;
 	background-color: #fcf9f1;
-	color: #dfc87c;
+	color: var(--color-main-dark);
 }
 ::placeholder{
 	color: #dfc87c;
@@ -82,22 +82,10 @@ body{
 
 /* Toggle */
 .toggle label{
-	font-size: 1.5em;
-	display: inline-block;
-	width: 2em;
-	height: 1em;
-	border: 0.1em solid #cca65a;
 	background-color: #fcf9f1;
-	border-radius: 1em;
-	position: relative;
 
 }
-.toggle label::after{
-	content: ''; /*after 쓸 때 꼭 content를 써야 입력한 스타일이 보여짐*/
-	background-color: #dfc87c;
-	transition: all 0.3s;
-	top: 0;
-}
+
 
 .toggle-off::before{
 	content: "Off";
@@ -105,11 +93,13 @@ body{
 	font-size: 10px;
 	margin-top:  2px;
 	margin-left: 57%;
+	color: var(--color-main-dark);
 }
 .toggle-on{
 	font-size: 10px;
-	margin: 2px 0 0 5px;
+	margin: 2px 0 0 2.7px;
 	position: absolute;
+	color: var(--color-main-dark);
 }
 
 
@@ -153,11 +143,12 @@ h1,h2,h3,h4,h5,h6{
 	height: 14em;
 }
 
-.color_1{background-color: #fcf9f1;}
-.color_2{background-color: #dfc87c;}
-.color_3{background-color: #000000;}
-
-
+.color_1{background-color: var(--color-main-light);}
+.color_2{background-color: var(--color-main-medium);}
+.color_3{background-color: var(--color-main-dark);}
+.color_4{background-color: var(--color-sub-light);}
+.color_5{background-color: var(--color-sub-medium);}
+.color_6{background-color: var(--color-sub-dark);}
 
  
 /*.color1{background-color: #afafaf;}
