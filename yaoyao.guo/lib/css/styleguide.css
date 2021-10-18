@@ -415,10 +415,10 @@ a:hover {
 .round-btn,
 .basic-btn{
 	border: none;
-	padding: 0.5em 1em;
+	padding: 0.5em 3em;
 	background-color: transparent;
-	border: 2px solid #DDB7AB;
-	color: #DDB7AB;
+	border: 2px solid #46615C;
+	color: #46615C;
 	
 }
 .dark-btn a,
@@ -436,7 +436,7 @@ a:hover {
 .dark-btn:hover,
 .round-btn:hover,
 .basic-btn:hover{
-	background-color: #DDB7AB;
+	background-color: #46615C;
 	transition: all 0.3s;
 }
 
@@ -451,17 +451,17 @@ a:hover {
 }
 .dark-round-btn,
 .dark-btn{
-	background-color:#46615C;
+	background-color:#DDB7AB;
 	margin-left: 1em;
-	border: 2px solid #46615C;
+	border: 2px solid #DDB7AB;
 }
 .dark-round-btn a,
 .dark-btn a{
-	color: #fff;
+	color: #000;
 }
 .dark-round-btn:hover,
 .dark-btn:hover{
-	background-color: #EAF5F4;
+	background-color: #EFD9D1;
 }
 .dark-round-btn:hover a,
 .dark-btn:hover a{
