@@ -439,7 +439,6 @@ a:hover {
 	background-color: #46615C;
 	transition: all 0.3s;
 }
-
 .round-btn:hover a,
 .basic-btn:hover a{
 	color: #ffffff;
@@ -461,7 +460,7 @@ a:hover {
 }
 .dark-round-btn:hover,
 .dark-btn:hover{
-	background-color: #EFD9D1;
+	background-color: #fff;
 }
 .dark-round-btn:hover a,
 .dark-btn:hover a{
