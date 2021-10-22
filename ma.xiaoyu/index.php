@@ -1,33 +1,11 @@
 <!doctype html>
 <html lang="en"> 
 <head>
-    <meta charset="UTF-8">
     <title>OH MY TOKYO</title>
-
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="lib/css/styleguide.css">
-    <link rel="stylesheet" href="lib/css/gridsystem.css">
-    <link rel="stylesheet" href="css/storetheme.css">
+    <?php include "parts/meta.php"; ?>
 </head>
 <body>
-
-    	<!-- header>h1+p -->
-    	<header class="navbar">
-         <div class="container display-flex">
-           <div class="flex-none">
-            <h1>Summer Is Over</h1>
-          </div>
-          <div class="flex-stretch"></div>
-          <nav class="flex-none nav"> 
-             <ul class="container display-flex">
-                <li><a href="">HOME</a><li>
-                <li><a href="article2">SWEATERS</a><li>
-                <li><a href="article3">GIFT CARD</a><li>
-             </ul>
-          </nav>
-        </div>
-      </header>
+    <?php include "parts/navbar.php"; ?>
 
       <div class="container">
          <div class="card soft">
