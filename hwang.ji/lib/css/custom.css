@@ -1,20 +1,20 @@
 /*Changed from styleguide*/
 body{
-	background-color: #f0ebe8;
+	/*background-color: #f0ebe8;*/
 	margin-bottom: 50px;
-}
-.navbar{
-	background-color: var(--color-main-medium);
 }
 .card2{
 	overflow: hidden;
 	position: relative;
-
 	background-color: var(--color-white);
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 0 1em;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar{
+	background-color: var(--color-main-medium);
 }
 
 .nav-material a{
@@ -26,22 +26,13 @@ body{
 	color: inherit;
 }
 .nav-material a:hover{
-	background-color: #f3ede1;
+	background-color: var(--color-main-medium);
 	color: inherit;
 }
 
 .nav-material a::after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0;
 	background-color: #dfc87c;
-	transition: all 0.3s;
-}
-.nav-material .active a::after{
-	height: 4px;
+	
 }
 
 #colors .figure figcaption{
@@ -176,7 +167,8 @@ h1,h2,h3,h4,h5,h6{
 .round-btn,
 .basic-btn{
 	border: none;
-	padding: 0.5em 1em;
+	/*padding: 0.5em 1em;*/
+	padding: 1em 2em;
 	background-color: transparent;
 	border: 1px solid #dfc87c;
 	color: #dfc87c;
@@ -212,7 +204,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .dark-round-btn,
 .dark-btn{
-	background-color:#fff;
+	background-color: transparent;
 	margin-left: 1em;
 	border: 1px solid #000;
 }
