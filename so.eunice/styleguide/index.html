@@ -21,14 +21,14 @@
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Styleguide</h1>
+				<h1>Book World</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			
 			<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
 			<nav class="flex-none nav">
 				 <ul class="container display-flex">
-				 	<li><a href="#tableofcontents">Table of Contents</a></li>
+				 	<li><a href="#tableofcontents">Styleguide</a></li>
 				 </ul>
 			</nav>
 		</div>
@@ -36,8 +36,8 @@
 
 <!-- table of contents -->
 	<div class="container" id="tableofcontents">
-		<h2>Table of Contents</h2>
-		<div class="card">
+		<h3>Table of Contents</h3>
+		<div class="card soft">
 			<nav class="nav">
 				<ul>
 					<li><a href="#typography">Typography</a></li>
@@ -50,7 +50,7 @@
 					<li><a href="#viewwindow">View Window</a></li>
 					<li><a href="#navigations">Navigations</a></li>
 					<li><a href="#gridsystem">Grid System</a></li>
-					<li><a href="#flexsystem">Flex System</a></li>
+					<!-- <li><a href="#flexsystem">Flex System</a></li> -->
 					<li><a href="#figures">Figures</a></li>
 					<li><a href="#tables">Tables</a></li>
 					<li><a href="#forms">Forms</a></li>
@@ -58,8 +58,10 @@
 						<li><a href="#inputs">Inputs</a></li>
 						<li><a href="#labels">Labels</a></li>
 						<li><a href="#controls">Controls</a></li>
-						<li><a href="#button">Buttons</a></li>
-						<li><a href="#button">Hotdog</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#hotdogs">Hotdogs</a></li>
+						<li><a href="#selects">Select</a></li>
+						<li><a href="#checkboxes">Check Boxes</a></li>
 					</ul>
 				</ul>
 			</nav>
@@ -68,17 +70,17 @@
 
 <!-- typography -->
 	<div class="container" id="typography">
-		<h2>Typography</h2>
-		<div class="card" id="headings">
-			<h3>Headings</h3>
+		<h3>Typography</h3>
+		<div class="card soft" id="headings">
+			<h4>Headings</h4>
 			<h1>Heading 1&#8212;48px</h1>
 			<h2>Heading 2&#8212;36px</h2>
 			<h3>Heading 3&#8212;28px</h3>
 			<h4>Heading 4&#8212;20px</h4>
 		</div>
 
-		<div class="card" id="paragraphs">
-			<h3>Paragraphs</h3>
+		<div class="card soft" id="paragraphs">
+			<h4>Paragraphs</h4>
 
 			<!-- p*3>lorem30 -->
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ut, explicabo tempora totam a accusamus, veritatis obcaecati maxime culpa. Ullam sed minus odio molestias expedita, ipsum dolorem. Molestias facere, facilis.</p>
@@ -90,42 +92,43 @@
 
 <!-- colors -->
 	<div class="container" id="colors">
-		<h2>Colors</h2>
+		<h3>Colors</h3>
+		<div class="card soft">
 			<div class="grid gap">
 				<div class="col-xs-4">
 					<div class="card dark" style="background-color: var(--color-primary-medium);">
-						<p>HEX #042E84</p>
-						<p>RGB 4, 46, 132</p>
+						<p>HEX #064275</p>
+						<p>RGB 6, 66, 117</p>
 					</div>		
 				</div>
 				<div class="col-xs-4">
 					<div class="card dark" style="background-color: var(--color-primary-light);">
-						<p>HEX #77A4FF</p>
-						<p>RGB 119, 164, 255</p>
+						<p>HEX #B4C6D5</p>
+						<p>RGB 180, 198, 213</p>
 					</div>		
 				</div>
 				<div class="col-xs-4">
 					<div class="card dark" style="background-color: var(--color-primary-dark);">
-						<p>HEX #04173E</p>
-						<p>RGB 4,23,62</p>
+						<p>HEX #03223C</p>
+						<p>RGB 3, 34, 60</p>
 					</div>		
 				</div>
 				<div class="col-xs-4">
 					<div class="card dark" style="background-color: var(--color-secondary-medium);">
-						<p>HEX #FE4C04</p>
-						<p>RGB 254, 76, 4</p>
+						<p>HEX #D56504</p>
+						<p>RGB 213, 101, 4</p>
 					</div>		
 				</div>
 				<div class="col-xs-4">
-					<div class="card dark" style="background-color: var(--color-secondary-light);">
-						<p>HEX #FFB292</p>
-						<p>RGB 255, 178, 146</p>
+					<div class="card" style="background-color: var(--color-secondary-light);">
+						<p>HEX #F9E8DA</p>
+						<p>RGB 249, 232, 218</p>
 					</div>		
 				</div>
 				<div class="col-xs-4">
 					<div class="card dark" style="background-color: var(--color-secondary-dark);">
-						<p>HEX #812601</p>
-						<p>RGB 129, 39, 1</p>
+						<p>HEX #632C0B</p>
+						<p>RGB 99, 44, 11</p>
 					</div>		
 				</div>
 				<div class="col-xs-4">
@@ -147,13 +150,13 @@
 					</div>		
 				</div>
 			</div>
-		
-		
+		</div>			
 	</div>
 
 <!-- cards -->
 	<div class="container" id="cards">
-		<h2>Cards</h2>
+		<h3>Cards</h3>
+		<div class="card soft" style="background-color: var(--color-primary-light);">
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<div class="card">Card</div>
@@ -173,19 +176,38 @@
 				<div class="col-xs-12 col-md-4">
 					<div class="card flat">Card Flat</div>
 				</div>
-			</div>		
+			</div>
+		</div>		
 	</div>
 
 <!-- ViewWindow -->
 	
 	<div class="container" id="viewwindow">
+<<<<<<< HEAD
+<<<<<<< HEAD
 		<h2>View Window</h2>
+=======
+		<h3>View Window</h3>
+		<div class="card">
+<<<<<<< HEAD
+			<!-- <div class="view-window" style="background-image: url('../img/fluffy_pancake.jpg');"> -->
+=======
+>>>>>>> 985478f (3rd draft of styleguide)
+			<div class="view-window" style="background-image: url('../img/mock-hero-1.png');">
+		</div> 		
+>>>>>>> 318c131 (3rd draft of styleguide)
+=======
+		<h3>View Window</h3>
+		<div class="card">
+			<div class="view-window" style="background-image: url('../img/mock-hero-1.png');">
+		</div> 		
+>>>>>>> 985478f (3rd draft of styleguide)
 	</div>
 
 <!-- Navigations -->
 
 	<div class="container" id="navigations">
-		<h2>Navigations</h2>
+		<h3>Navigations</h3>
 
 		<script>
 		const makeNav = (classes='') => {
@@ -207,7 +229,7 @@
 		</script>
 
 		<div class="card soft">
-			<h3>Basic Nav</h3>
+			<h4>Basic Nav</h4>
 			<!-- nav.nav>ul>li*4>a[href=#]>{Link $} -->
 			<nav class="nav">
 
@@ -222,35 +244,35 @@
 		</div>
 
 		<div class="card soft">
-			<h3>Flex Nav</h3>
+			<h4>Flex Nav</h4>
 			<!-- <nav class="nav nav-flex"> -->		
 				<script>makeNav('nav nav-flex')</script>
 			<!-- </nav> -->
 		</div>
 
 		<div class="card soft">
-			<h3>Stretch Nav</h3>
+			<h4>Stretch Nav</h4>
 			
 				<script>makeNav('nav nav-stretch')</script>
 			
 		</div>
 
 		<div class="card soft">
-			<h3>Pills Nav</h3>
+			<h4>Pills Nav</h4>
 			
 				<script>makeNav('nav nav-pills')</script>
 			
 		</div>
 
 		<div class="card soft">
-			<h3>Crumbs Nav</h3>
+			<h4>Crumbs Nav</h4>
 			
 				<script>makeNav('nav nav-crumbs')</script>
 			
 		</div>
 
 		<div class="card soft">
-			<h3>Material Nav</h3>
+			<h4>Material Nav</h4>
 			
 				<script>makeNav('nav nav-material')</script>
 			
@@ -271,14 +293,59 @@
 
 <!-- Grid System -->
 	<div class="container" id="gridsystem">
-		<h2>Grid System</h2>
+		<h3>Grid System</h3>
+		<!-- grid system -->
+		<div class="card soft">
+			<h4>Grid</h4>
+			<div class="grid">
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+		</div>		
+
+		<div class="card soft">
+			<h4>Responsive Grid</h4>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+		</div>		
 	</div>
 
 <!-- Flex System -->
 	
-	<div class="container" id="flexsystem">
-		<h2>Flex System</h2>
-	</div>
+<!-- 	<div class="container" id="flexsystem">
+		<h3>Flex System</h3>
+	</div> -->
 
 
 <!-- Table -->
@@ -306,54 +373,56 @@
 		}
 	</script>
 	<div class="container" id="tables">
-		<h2>Tables</h2>
+		<h3>Tables</h3>
 		<div class="card soft">
-			<h3>Basic</h3>
+			<h4>Basic</h4>
 			<script>makeTable("table")</script>
 		</div>
 
 		<div class="card soft">
-			<h3>Striped</h3>
+			<h4>Striped</h4>
 			<script>makeTable("table striped")</script>
 		</div>
 
 		<div class="card soft">
-			<h3>Striped Lined Vertical</h3>
+			<h4>Striped Lined Vertical</h4>
 			<script>makeTable("table lined vertical")</script>
 		</div>
 
 		<div class="card soft">
-			<h3>Striped Lined Horizontal</h3>
+			<h4>Striped Lined Horizontal</h4>
 			<script>makeTable("table lined horizontal")</script>
 		</div>
 
 		<div class="card soft">
-			<h3>Striped Lined</h3>
+			<h4>Striped Lined</h4>
 			<script>makeTable("table lined border")</script>
 		</div>
 
 		<div class="card soft">
-			<h3>Lined All</h3>
+			<h4>Lined All</h4>
 			<script>makeTable("table lined all")</script>
 		</div>
 
 		<div class="card soft">
-			<h3>Combinations</h3>
+			<h4>Combinations</h4>
 			<script>makeTable("table lined striped vertical border")</script>
 		</div>
 
 	</div>
 
 	<div class="container" id="figures">
-		<h2>Figures</h2>
+		<h3>Figures</h3>
 		<div class="card soft">
-			<h3>Basic Figure</h3>
+			<h4>Basic Figure</h4>
 			<figure class="figure">
 				<img src="https://via.placeholder.com/400x400?text=product" alt="">
 				<figcaption>Product</figcaption>
 			</figure>
 		</div>
-			<h3>Figure Grid</h3>
+
+		<div class="card soft">
+			<h4>Figure Grid</h4>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure">
@@ -376,7 +445,10 @@
 				</div>
 			</div>
 
-			<h3>Product Grid</h3>
+		</div>
+			
+		<div class="card soft">
+			<h4>Product Grid</h4>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product">
@@ -407,8 +479,10 @@
 					</figure>
 				</div>
 			</div>
+		</div>
 
-			<h3>Product Overlay</h3>
+		<div class="card soft">
+			<h4>Product Overlay</h4>
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product-overlay">
@@ -445,17 +519,19 @@
 					</figure>
 				</div>
 			</div>
+		</div>
+			
 	</div>
 
 	<!-- Forms -->
 
 	<div class="container" id="forms">
 		
-		<h2>Forms</h2>
+		<h3>Forms</h3>
 
-		<h3>Inputs</h3>
+		<h4 id="inputs">Inputs</h4>
 		<div class="card soft">
-			<h3>Default Input</h3>
+			<h4>Default Input</h4>
 			<form>
 				<input type="text"><br>
 				<input type="number"><br>
@@ -466,7 +542,7 @@
 				<input type="date"><br>
 				<input type="search"><br>
 			</form>
-			<h3>Form Input</h3>
+			<h4>Form Input</h4>
 			<form>
 				<input type="text" placeholder="Text" class="form-input">
 				<input type="number" placeholder="Number" class="form-input">
@@ -474,7 +550,7 @@
 				<input type="search" placeholder="Search" class="form-input">
 			</form>
 
-			<h3>Form Label</h3>
+			<h4 id="labels">Form Label</h4>
 			<form>
 				<label class="form-label">Example</label>
 				<input type="text" placeholder="Text" class="form-input">
@@ -489,7 +565,7 @@
 				<input type="search" placeholder="Search" class="form-input">
 			</form>
 
-			<h3>Form Controls</h3>
+			<h4 id="controls">Form Controls</h4>
 			<form>
 				<div class="form-control">
 					<label class="form-label">Example</label>
@@ -516,12 +592,12 @@
 			</form>
 		</div>
 
-		<h3>Buttons</h3>
+		<h3 id="buttons">Buttons</h3>
 		<div class="card soft">
-			<h3>Default Buttons</h3>
+			<h4>Default Buttons</h4>
 			<button>Default Button</button>
 
-			<h3>Form Button</h3>
+			<h4>Form Button</h4>
 			<div class="form-control">
 				<button type="button" class="form-button">Button</button>
 			</div>
@@ -532,7 +608,8 @@
 				<a href="#" class="form-button">Anchor</a>
 			</div>
 		</div>
-		<h2>Hotdog</h2>
+
+		<h3 id="hotdogs">Hotdog</h3>
 		<div class="card soft">
 			<div class="form-control">
 				<form>
@@ -563,7 +640,7 @@
 
 	<!-- Select -->
 
-		<h2 id="select">Select</h2>
+		<h3 id="select">Select</h3>
 		<div class="card soft">
 			<div class="form-select">
 				<select>
@@ -587,23 +664,24 @@
 					</div>
 				</div>
 			</div>
-			
-			<h2>Check Boxes</h2>
+			</div>
+
+			<h3 id="checkboxes">Check Boxes</h3>
 			<div class="card soft">
 				<!-- !!!! use label warp around checkbox, use id, for id-->
 				<!-- <label>Label <input type="checkbox" id="input-1"></label>
 				<label for="input-1">Label</label> -->
-				<h3>Basic Checkbox</h3>
+				<h4>Basic Checkbox</h4>
 				<label>Label <input type="checkbox" id="input-1"></label>
 				<label for="input-1">Label</label>
 
-				<h3>Heart Checkbox</h3>
+				<h4>Heart Checkbox</h4>
 				<div class="favorite">
 					<input type="checkbox" id="heart-example" class="hidden">
 					<label for="heart-example">&hearts;</label>
 				</div>
 
-				<h3>Toggle</h3>
+				<h4>Toggle</h4>
 				<div class="toggle">
 					<input type="checkbox" id="toggle-1" class="hidden">
 					<label for="toggle-1"></label>
