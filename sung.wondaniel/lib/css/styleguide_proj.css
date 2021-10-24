@@ -338,11 +338,12 @@ a: hover{
 }
 
 .form-button {
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-main-medium);
     border-width: 0;
     cursor: pointer;
     text-align: center;
     padding: 0.5em 1em;
+    font-weight: bold;
 }
 
 .form-button: hover {
@@ -421,3 +422,33 @@ a: hover{
 .toggle input:checked + label::after{
 	transform: translateX(1em);
 }
+
+
+
+/*Custom*/
+
+.main{
+	padding:  4em 0;
+	margin: 0 auto;
+}
+
+.main-wrap {
+	width:  850px;
+	margin:  0 auto;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-wrap img{
+	width: 43%;
+}
+
+.main-text {
+	width: 43%;
+	text-align: center;
+}
+
+.main-text p{
+	line-height: 1.5em;
+}
+
