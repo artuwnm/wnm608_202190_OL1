@@ -33,19 +33,23 @@
 }
 
 body {
-	margin:0;
+	margin:0 auto;
 	font-size:100%;
 	font-family: var(--font-serif_2);
+	text-align: center;
 }
 
 h1 {
 	font-family: "Montserrat", sans-serif;
 	font-size: 32px;
+	color: black;
+	text-align: center;
 }
 
 h2 {
 	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
+	text-align: center;
 }
 
 h3 {
@@ -115,7 +119,19 @@ a:hover {
 .hidden {display: none;}
 
 
+/*cover photo*/
+
+.cover_image {
+  background-image: url('..img/picture.jpg');
+  width: 100%;
+  justify-content: center;
+
+}
+
+
 /* COMPONENT CLASSES */
+
+
 
 .nav ul {
 	list-style-type: none;
