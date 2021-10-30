@@ -57,7 +57,7 @@
 				<div class="grid gap hard">
 					<div class="col-xs-12 col-md-4">
 						<figure class="figure product">
-							<img src="../img/toy1scaled.jpg" alt="">
+							<img src="../img/toy1.jpg" alt="" width=100px>
 							<figcaption>
 								<h4>Zebra Squeaky Toy</h4>
 								<div>$4.49</div>
