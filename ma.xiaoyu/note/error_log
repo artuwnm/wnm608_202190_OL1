@@ -1,0 +1,9 @@
+[14-Oct-2021 06:00:08 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/index.php on line 10
+[14-Oct-2021 06:00:25 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/index.php on line 10
+[14-Oct-2021 06:00:28 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/index.php on line 10
+[14-Oct-2021 06:01:14 UTC] PHP Warning:  Use of undefined constant hello - assumed 'hello' (this will throw an Error in a future version of PHP) in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/index.php on line 9
+[20-Oct-2021 04:17:30 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/index.php on line 11
+[20-Oct-2021 04:18:30 UTC] PHP Warning:  Use of undefined constant hello - assumed 'hello' (this will throw an Error in a future version of PHP) in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/index.php on line 10
+[29-Oct-2021 04:38:19 UTC] PHP Parse error:  syntax error, unexpected '$note' (T_VARIABLE), expecting ')' in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/reading.data.php on line 9
+[29-Oct-2021 04:58:44 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/reading.data.php on line 30
+[29-Oct-2021 05:28:43 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/u8hsjh0lrie6/public_html/code.xiaoyu-ma.com/wnm608/ma.xiaoyu/note/reading.data.php on line 39

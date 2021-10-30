@@ -1,0 +1,26 @@
+[
+      {
+        "name":"Xiaoyu Ma",
+        "type":"Student",
+        "email":"xiaoyuma0214@gmail.com",
+        "classes":[609, 704]
+      },
+      {
+        "name":"Lala La",
+        "type":"Chef",
+        "email":"lala0214@gmail.com",
+        "classes":[506, 213]
+      },
+      {
+        "name":"Hoho Do",
+        "type":"Teacher",
+        "email":"huhu0214@gmail.com",
+        "classes":[447, 988]
+      },
+      {
+        "name":"Dudu Du",
+        "type":"Actor",
+        "email":"dudu0214@gmail.com",
+        "classes":[447, 506, 704]
+      }
+]

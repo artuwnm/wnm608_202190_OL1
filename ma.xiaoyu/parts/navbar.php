@@ -1,5 +1,4 @@
- 
- <header class="navbar">
+<header class="navbar">
         <div class="container display-flex">
             <div class="flex-none">
                <h1>OH MY TOKYO</h1>
