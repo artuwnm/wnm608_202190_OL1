@@ -1,0 +1,43 @@
+[
+	
+	{
+		"name":"Ji Hwnag",
+		"type":"Student",
+		"email":"ghkdwl05@gmail.com",
+		"classes": [608, 617, 820]
+	},
+		
+		{
+		"name":"Phoebe",
+		"type":"Singer",
+		"email":"Phoebe5@gmail.com",
+		"classes": [608, 617, 820, 111]
+	},
+		
+		{
+		"name":"Joey",
+		"type":"Actor",
+		"email":"Joey@gmail.com",
+		"classes": [608, 617, 820, 222]
+	},
+		
+		{
+		"name":"Chandler",
+		"type":"Who knows",
+		"email":"Chandler@gmail.com",
+		"classes": [608, 617, 820, 333]
+	},	
+	{
+		"name":"Monica",
+		"type":"Chef",
+		"email":"Monica@gmail.com",
+		"classes": [608, 617, 820, 444]
+	}, 
+	{
+		"name":"Ross",
+		"type":"Professor",
+		"email":"Ross@gmail.com",
+		"classes": [608, 617, 820, 555]
+	}
+
+]
