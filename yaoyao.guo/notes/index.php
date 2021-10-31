@@ -168,10 +168,16 @@
 
 	
 
-
-
-
 	?>
+// brackets
+// []
+// braces
+// {}
+// parenthesese
+// ()
+// carrots / angle brackets
+// <>
+
 
 </body>
 </html>

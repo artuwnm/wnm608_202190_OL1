@@ -5,15 +5,15 @@
 	<meta charset="UTF-8">
 	<title>PetUs</title>
 
-	<?php include "../parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 
 <body>
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
-	<div class="view-window" style="background-image: url('../img/pets.jpg')">
+	<div class="view-window" style="background-image: url('img/pets.jpg')">
 	</div>
 
 	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
@@ -55,7 +55,7 @@
 	
 
 
-	<div class="view-window" style="background-image: url('../img/pets.jpg')"> 
+	<div class="view-window" style="background-image: url('img/snack.jpg')">  
 	</div>
 		
 		<div class="container">
