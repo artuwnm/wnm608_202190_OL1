@@ -44,9 +44,6 @@ function saveUserData($user) {
     file_save_json("../data/users.json", $users);
 }
 
-function isPosting() {
-    return !empty($_POST['iname']) || !empty($_POST['itype']) || !empty($_POST['iemail']) || !empty($_POST['iclass']);
-}
 function isSubmit() {
     return !empty($_POST['submit']) && $_POST['submit'] == 'Submit';
 }
@@ -84,7 +81,8 @@ function isSubmit() {
             if (isSubmit()) {
                 $user = $users[$_GET['id']];
                 saveUserData($user);
-                showUserPage($user);
+                // Redirect
+                header("Location: user.php"); 
             } else if(isset($_GET['id'])) {
                 showUserPage($users[$_GET['id']]);
             } else {
