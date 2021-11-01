@@ -1,3 +1,3 @@
-# Yaoyao Guo
+# wnm608_202190_OL1
 
--https://github.com/gyyashley/wnm608/tree/main/yaoyao.guo
+Repository for WNM608
