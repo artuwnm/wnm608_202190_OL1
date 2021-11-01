@@ -17,23 +17,23 @@ $classes = implode(",", $user->classes);
 echo <<<HTML
 <nav class="nav nav-crumbs">
 	<ul> <!--href="admin/users.php"-->
-		<li><a href="users.php">Back</a></li>
+		<li><button class="back-btn"><a href="users.php">Back</a></button></li>
 	</ul>
 </nav>
 <form>
-	<div>
+	<div class="form-control">
 		<label for="" class="form-label">Name</label>
 		<input type="text" value="$user->name" placeholder="Name" class="form-input">
-	</div>
+	</div class="form-control">
 	<div>
 		<label for="" class="form-label">Type</label>
 		<input type="text" value="$user->type" placeholder="Type" class="form-input">
 	</div>
-	<div>
+	<div class="form-control">
 		<label for="" class="form-label">Email</label>
 		<input type="text" value="$user->email" placeholder="Email" class="form-input">
 	</div>
-	<div>
+	<div class="form-control">
 		<label for="" class="form-label">Classes</label>
 		<input type="text" value="$classes" placeholder="Classes" class="form-input">
 	</div>
