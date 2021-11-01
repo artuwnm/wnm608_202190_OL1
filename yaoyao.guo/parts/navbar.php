@@ -9,8 +9,8 @@
 				<ul>
 					<!-- li*3>a[href=#]>{Link $} -->
 					<li><a href="index.php">Home</a></li>
-					<li><a href="product_list.php">Shop</a></li>
-					<li><a href="cart.php">Cart</a></li>
+					<li><a href="styleguide/product_list.php">Shop</a></li>
+					<li><a href="styleguide/cart.php">Cart</a></li>
 				</ul>
 			</nav>
 		</div>

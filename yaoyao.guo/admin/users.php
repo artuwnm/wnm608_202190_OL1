@@ -2,23 +2,37 @@
 <?php
 
 
+
+
 include "../lib/php/functions.php";
 
 $users = file_get_json("../data/users.json");
+//file_put_contnents json_encode explode $_POST
 
 
-function showUserPage($user) {
+function showUserPage($user){
 
 $classes = implode(",", $user->classes);
+
 //heredoc
 echo <<<HTML
 
+<!--
 <nav class="nav nav-crumbs">
 	<ul>
-		<li><a href="users.php">Back</a></li>
+		<button class="round-btn">
+			<a href="http://gyyashley.com/aau/wnm608/yaoyao.guo/admin/users.php">BACK</a>
+		</button>
+
 	</ul>
 </nav>
+-->
 
+
+	<button class="round-btn"><a href="admin/users.php">BACK</a></button>
+
+<br>
+<br>
 <!--
 <div>
 	<h2>$user->name</h2>
@@ -41,20 +55,24 @@ echo <<<HTML
 <form>
 	<div>
 		<label for="" class="form-label">Name</label>
-		<input type="text" value="$user->name" placeholder="Name" class="form-input">
+		<strong><input type="text" value="$user->name" placeholder="Name" class="form-input"></strong>
 	</div>
+	<br>
 	<div>
 		<label for="" class="form-label">Type</label>
-		<input type="text" value="$user->type" placeholder="Type" class="form-input">
+		<strong><input type="text" value="$user->type" placeholder="Type" class="form-input"></strong>
 	</div>
+	<br>
 	<div>
 		<label for="" class="form-label">Email</label>
-		<input type="text" value="$user->email" placeholder="Email" class="form-input">
+		<strong><input type="text" value="$user->email" placeholder="Email" class="form-input"></strong>
 	</div>
+	<br>
 	<div>
 		<label for="" class="form-label">Classes</label>
-		<input type="text" value="$classes" placeholder="Classes" class="form-input">
-	</div>
+		<strong><input type="text" value="$classes" placeholder="Classes" class="form-input"></strong>
+	</div><strong>
+	<br>
 	<div class="form-control">
 		<input type="submit" value="SUBMIT" class="form-button">
 	</div>
@@ -86,7 +104,7 @@ HTML;
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
-					<li><a href="users.php">User List</a></li>
+					<li><a href="admin/users.php">User List</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -111,7 +129,7 @@ HTML;
 
 				for($i=0; $i<count($users);$i++){
 					echo "<li>
-					<a href='users.php?id=$i'>{$users[$i]->name}</a>
+					<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
 					</li>";
 				}
 				?>	

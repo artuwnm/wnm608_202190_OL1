@@ -1,9 +1,9 @@
 [
 	{
-		"name":"Yaoyao Guo",
-		"type":"Student",
-		"email":"yguo28@art.edu",
-		"classes":[608, 700]
+		"name":"Bailey Fields",
+		"type":"Actor",
+		"email":"baileyf@yahoo.com",
+		"classes":[601, 606]
 	},
 
 	{
@@ -14,23 +14,15 @@
 	},
 
 	{
-		"name":"Yaoyao Guo",
-		"type":"Student",
-		"email":"yguo28@art.edu",
-		"classes":[608, 700]
+		"name":"Alice Cheng",
+		"type":"Designer",
+		"email":"Alice@gmail.com",
+		"classes":[605, 606, 700]
 	},
-
 	{
-		"name":"Yaoyao Guo",
-		"type":"Student",
-		"email":"yguo28@art.edu",
-		"classes":[608, 700]
-	},
-
-	{
-		"name":"Yaoyao Guo",
-		"type":"Student",
-		"email":"yguo28@art.edu",
-		"classes":[608, 700]
+		"name":"Carol Cliff",
+		"type":"Teacher",
+		"email":"carolc@art.edu",
+		"classes":[608, 613]
 	}
 ]

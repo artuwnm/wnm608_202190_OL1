@@ -6,15 +6,6 @@
 	<title>PetUs Product List</title>
 	<?php include "../parts/meta.php"; ?>
 
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="stylesheet" href="../lib/css/styleguide.css">
-	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
-		<link rel="stylesheet" href="../css/storetheme.css">
-</head>
-
-
-
 <body>
 	<?php include "../parts/navbar.php"; ?>
 
@@ -57,11 +48,11 @@
 				<div class="grid gap hard">
 					<div class="col-xs-12 col-md-4">
 						<figure class="figure product">
-							<img src="../img/toy1.jpg" alt="" width=100px>
+							<img src="img/toy1.jpg" alt="" width=100px>
 							<figcaption>
 								<h4>Zebra Squeaky Toy</h4>
 								<div>$4.49</div>
-								<button class="round-btn"><a href="#">Add to Cart</a></button>
+								<button class="round-btn"><a href="styleguide/cart.php">Add to Cart</a></button>
 							</figcaption>
 						</figure>
 					</div>
@@ -69,22 +60,22 @@
 
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product">
-						<img src="../img/toy2.jpg" alt="">
+						<img src="img/toy2.jpg" alt="">
 						<figcaption>
 							<h4>Cozie Moose Plush Toy</h4>
 							<div>$11.49</div>
-							<button class="round-btn"><a href="#">Add to Cart</a></button>
+							<button class="round-btn"><a href="styleguide/cart.php">Add to Cart</a></button>
 						</figcaption>
 					</figure>
 				</div>
 
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product">
-						<img src="../img/toy3.jpg"  alt="">
+						<img src="img/toy3.jpg"  alt="">
 						<figcaption>
 							<h4>Squeezz Ball Toy</h4>
 							<div>$4.49</div>
-							<button class="round-btn"><a href="#">Add to Cart</a></button>
+							<button class="round-btn"><a href="styleguide/cart.php">Add to Cart</a></button>
 						</figcaption>
 					</figure>
 				</div>
