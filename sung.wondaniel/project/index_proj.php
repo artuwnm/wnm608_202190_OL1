@@ -46,7 +46,6 @@
 							<img src="../img/97blackairmax.jpg" alt="">
 							<figcaption>
 								<div>'97 Air Max Black</div>
-				
 							</figcaption>	
 					</figure>
 			</div>
