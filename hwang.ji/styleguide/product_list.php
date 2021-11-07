@@ -18,18 +18,18 @@
 			<h2>Product List</h2>
 			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
 			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-				<li><a href="product_item.php?id=5">Product 5</a></li>
-				<li><a href="product_item.php?id=6">Product 6</a></li>
-				<li><a href="product_item.php?id=7">Product 7</a></li>
-				<li><a href="product_item.php?id=8">Product 8</a></li>
-				<li><a href="product_item.php?id=9">Product 9</a></li>
-				<li><a href="product_item.php?id=10">Product 10</a></li>
-				<li><a href="product_item.php?id=11">Product 11</a></li>
-				<li><a href="product_item.php?id=12">Product 12<a></li>
+				<li><a href="product_item.php?id=1">Raspberry Chocolate</a></li>
+				<li><a href="product_item.php?id=2">Banana Chocolate</a></li>
+				<li><a href="product_item.php?id=3">Nuts Chocolate</a></li>
+				<li><a href="product_item.php?id=4">Puffy Vinilla</a></li>
+				<li><a href="product_item.php?id=5">Strawberry Frosted</a></li>
+				<li><a href="product_item.php?id=6">Chocolate Cake</a></li>
+				<li><a href="product_item.php?id=7">Plain Glazed </a></li>
+				<li><a href="product_item.php?id=8">Caramel Drizzled</a></li>
+				<li><a href="product_item.php?id=9">New York Cheese cake</a></li>
+				<li><a href="product_item.php?id=10">Peanut butter Jelly</a></li>
+				<li><a href="product_item.php?id=11">Salted Caramel </a></li>
+				<li><a href="product_item.php?id=12">Lemon Buttermilk <a></li>
 			</ul>
 		</div>
 	</div>

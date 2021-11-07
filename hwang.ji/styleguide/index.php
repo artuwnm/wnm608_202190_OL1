@@ -8,7 +8,6 @@
 
 </head>
 <body>
-	
 
 	<?php include "../parts/navbar.php"; ?>
 
@@ -36,8 +35,8 @@
 				<figure class="figure product">
 					<img src="../img/product_4.png" alt="">
 					<figcaption>
-						<h4>BAVARIAN FILLED</h4>
-						<div>$2.99</div>
+						<h4>Puffy Vinilla</h4>
+						<div>$4.00</div>
 				</figcaption>
 				</figure>
 			</div>
@@ -46,7 +45,7 @@
 					<img src="../img/product_2.png" alt="">
 					<figcaption>
 						<h4>BANANA CHOCOLATE</h4>
-						<div>$4.99</div>
+						<div>$4.00</div>
 			</figcaption>
 				</figure>
 			</div>
@@ -54,8 +53,8 @@
 				<figure class="figure product">
 					<img src="../img/product_5.png" alt="">
 					<figcaption>
-						<h4>STRAWBERRY MILK</h4>
-						<div>$3.99</div>
+						<h4>STRAWBERRY FROSTED</h4>
+						<div>$4.00</div>
 					</figcaption>
 				</figure>
 			</div>
