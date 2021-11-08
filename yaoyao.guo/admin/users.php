@@ -1,4 +1,4 @@
-<?
+<?php
 
 include "../lib/php/functions.php";
 
@@ -71,20 +71,20 @@ $userdata = $id=='new' ? '' : <<<HTML
 		<h2 class="flex-stretch">$user->name</h2>
 		<div>
 			<a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-				delete
+				Delete
 			</a>
 		</div>
 	</div>
 	<div>
-		<strong>Type</strong>
+		<strong>Type: </strong>
 		<span>$user->type</span>
 	</div>
 	<div>
-		<strong>Email</strong>
+		<strong>Email: </strong>
 		<span>$user->email</span>
 	</div>
 	<div>
-		<strong>Classes</strong>
+		<strong>Classes: </strong>
 		<span>$classes</span>
 	</div>
 </div> 
@@ -92,33 +92,27 @@ HTML;
 
 
 echo <<<HTML
-<div class="card soft">
-	<nav class="nav crumbs">
-		<ul>
-			<li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
-		</ul>
-	</nav>
-</div>
+<button class="round-btn"><a href="admin/users.php">BACK</a></button>
 <div class="grid gap">
-	<div class="col-xs-12 col-md-4">$userdata</div>
-	<div class="col-xs-12 col-md-8">
+	<div class="col-xs-12 col-md-6">$userdata</div>
+	<div class="col-xs-12 col-md-6">
 		<div class="card soft">
 			<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
-				<h2>$addoredit User</h2>
+				<h3>$addoredit User</h3>
 				<div class="form-control">
-					<label for="user-name" class="form-label">Name</label>
+					<strong><label for="user-name" class="form-label">Name: </label></strong>
 					<input id="user-name" name="user-name" type="text" placeholder="Type User Name" class="form-input" value="$user->name">
 				</div>
 				<div class="form-control">
-					<label for="user-type" class="form-label">Type</label>
+					<strong><label for="user-type" class="form-label">Type: </label></strong>
 					<input id="user-type" name="user-type" type="text" placeholder="Type User Type" class="form-input" value="$user->type">
 				</div>
 				<div class="form-control">
-					<label for="user-email" class="form-label">Email</label>
+					<strong><label for="user-email" class="form-label">Email: </label></strong>
 					<input id="user-email" name="user-email" type="text" placeholder="Type User Email" class="form-input" value="$user->email">
 				</div>
 				<div class="form-control">
-					<label for="user-classes" class="form-label">Classes</label>
+					<strong><label for="user-classes" class="form-label">Classes: </label></strong>
 					<input id="user-classes" name="user-classes" type="text" placeholder="Type User Classes" class="form-input" value="$classes">
 				</div>
 				<div class="form-control">
@@ -151,24 +145,30 @@ HTML;
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
-				<ul>
-					<li><a href="admin/users.php">User List</a></li>
+				<ul class="display-flex">
+					<li><a href="<?= $_SERVER['PHP_SELF'] ?>">User List</a></li>
+					<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New User</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-
 	<div class="container">
-		<div class="card soft">
+		<div >
 			<?php
 
-			if(isset($_GET['id'])){
-				showUserPage($users[$_GET['id']]);
-			} else{
+				if(isset($_GET['id'])) {
+				showUserPage(
+					$_GET['id']=='new' ?
+						$empty_user :
+						$users[$_GET['id']]
+					);
+				} else {
+
 
 			?>
-
+			
+		<div class="card soft">
 			<h2>User List</h2>
 			<nav class="nav">
 				<ul>
@@ -187,7 +187,7 @@ HTML;
 			<?php } ?>
 
 		</div>
-	</div>
+
 
 </body>
 </html>

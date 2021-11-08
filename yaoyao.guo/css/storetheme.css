@@ -2,7 +2,7 @@
 }
 :root {
 	--color-offwhite:#f4f4f4;
-	--color-green-light:#F4EEED;
+	--color-peach-light:#F4EEED;
 	--color-green-medium: #CFD8DC;
 	--color-green-dark:#46615C;
 }
@@ -12,7 +12,20 @@ body{
 	padding-bottom: 10em;
 }
 
-
+.view-window>h2 {
+	position: absolute; 
+	top: 15%;
+	left: 35%;
+	transform: translate(-50%,-25%);
+	background-color: rgba(239,217,209,0.2);
+	padding: 0.5em;
+	border-radius: 2em;
+	font-size: 3em;
+	padding-top: 30px;
+  	padding-right: 50px;
+  	padding-bottom: 30px;
+ 	padding-left: 50px;
+}
 
 .favorite label{
 	 transition: all 0.3s;

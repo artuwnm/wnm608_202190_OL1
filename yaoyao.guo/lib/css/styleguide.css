@@ -28,6 +28,7 @@
 
 
 body{
+	line-height: 28px;
 	margin:0;
 	font-size:100%;
 	font-family:var(--font-sans);
@@ -38,6 +39,7 @@ h1,
 h2,
 h3,
 h4{
+	line-height: 150%;
 	font-family: var(--font-serif);
 	color: var(--color-green-dark);
 	font-weight: 700;
@@ -71,7 +73,7 @@ a:hover {
 /* LAYOUT CLASSES */
 
 .container{
-	max-width: 800px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -215,7 +217,6 @@ a:hover {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding: 1em;
-
 	overflow: hidden;
 	position: relative;
 }
@@ -343,9 +344,11 @@ a:hover {
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
+
 }
 .form-button:hover {
     text-decoration: none;
+    border: 2px solid #DDB7AB;
 }
 .form-button:active {
     background-color: var(--color-green-light)
@@ -412,16 +415,16 @@ a:hover {
 
 
 
-/* BOTTON */
+/* BUTTON */
 .dark-btn,
 .round-btn,
 .basic-btn{
 	border: none;
 	padding: 0.5em 3em;
-	background-color: transparent;
+	background-color: #ffff;
 	border: 2px solid #46615C;
 	color: #46615C;
-	
+	margin: 20px 10px 1px;
 }
 .dark-btn a,
 .round-btn a,

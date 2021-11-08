@@ -14,6 +14,7 @@
 
 
 	<div class="view-window" style="background-image: url('img/pets.jpg')">
+		<h2><i>Dear Pet Parents~</i></h2>
 	</div>
 
 	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
@@ -21,7 +22,7 @@
 		<article id="article1" class="article card hard">
 			<div class="display-flex flex-align-center">
 				<div class="flex-stretch">
-					<h1>Welcome to PetUs</h1>
+					<h1 style = text-align:center;>Welcome to PetUs</h1>
 					<div class="article-body">
 						<p>We have everything you need for your pet at amazing prices, every day. Explore more than 2,000 favorite brands, including Blue Buffalo, Nutro, Natural Balance, and Tidy Cats – all from the comfort of home.</p>
 						<p>Our experts are here 24/7 to answer questions and help you find the perfect items for your pet. We also have a 100% Unconditional Satisfaction Guaranteed Policy on every order, just in case they’re not crazy about that new food or toy. Shopping for your pet has never been easier.</p>

@@ -1,4 +1,6 @@
 [
+
+
 	{
 		"name":"Bailey Fields",
 		"type":"Actor",
@@ -24,5 +26,12 @@
 		"type":"Teacher",
 		"email":"carolc@art.edu",
 		"classes":[608, 613]
+	},
+	
+	{
+		"name":"Anya Taylor",
+		"type":"Actress",
+		"email":"anyataylor@yyds.com",
+		"classes":[608, 650]
 	}
 ]
