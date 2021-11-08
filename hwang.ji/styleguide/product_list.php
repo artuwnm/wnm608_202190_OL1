@@ -31,6 +31,18 @@
 				<li><a href="product_item.php?id=11">Salted Caramel </a></li>
 				<li><a href="product_item.php?id=12">Lemon Buttermilk <a></li>
 			</ul>
+
+			<?php 
+
+			include "../lib/php/functions.php";
+			$result= makeQuery(makeConn(),"SELECT * FROM `products`");
+
+			print_p($result);
+
+			?>
+
+
+
 		</div>
 	</div>
 

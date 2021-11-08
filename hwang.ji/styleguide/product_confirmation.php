@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cart</title>
+	<title>Confirmation Page</title>
 
 	<?php include "../parts/meta.php"; ?>
 
@@ -15,8 +15,8 @@
 
 	<div class="container">
 		<div class="card soft">
-		  <h2>Cart</h2>
-		  <p><a href="checkout.php">Checkout</a></p>
+		  <h2>Thank you for your purchase!</h2>
+		  <p><a href="product_list.php">Continue Shopping</a></p>
 		</div>
 	</div>
 

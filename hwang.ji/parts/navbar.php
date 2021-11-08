@@ -2,13 +2,14 @@
 <header class="navbar">
 		<div class="container display-flex">
 			<div class="flext-none">
-				<a href=""><img src="../img/logo_white.png" alt="" class="logo"></a>
+				<a href="../styleguide/index.php"><img src="../img/logo_white.png" alt="" class="logo"></a>
 			</div>	
 			<div class="flex-stretch"></div>
 			<nav class="navbar nav nav-flex flex-none">
 				<ul>
 					<li><a href="../styleguide/index.php">HOME</a></li>
 					<li><a href="../styleguide/product_list.php">STORE</a></li>
+					<li><a href="../styleguide/about.php">ABOUT</a></li>
 					<li><a href="../styleguide/cart.php">CART</a></li>
 				</ul>
 			</nav>

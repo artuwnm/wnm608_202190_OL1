@@ -14,6 +14,7 @@
 		<div class="card soft">
 			<h2>Product Item</h2>
 			<p>This is item # <?= $_GET['id']?></p>
+			<p><a href="product_added_to_cart.php">Add To Cart</a></p>
 			<button class="round-btn"><a href="product_list.php">Go Back</a></button>
 		</div>
 	</div>
