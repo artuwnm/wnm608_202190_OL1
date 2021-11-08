@@ -7,7 +7,7 @@
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
-					<li><a href="index_proj.php" href-#="">Home</a></li>
+					<li><a href="index.php" href-#="">Home</a></li>
 					<li><a href="product_list_proj.php" href-#="">Store</a></li>
 					<li><a href="cart_proj.php" href-#="">Cart</a></li>
 				</ul>

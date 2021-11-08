@@ -24,6 +24,15 @@
 					<li><a href="product_item.php?id=2">product 2</a></li>
 					<li><a href="product_item.php?id=3">product 3</a></li>
 					<li><a href="product_item.php?id=4">product 4</a></li>
+					<li><a href="product_item.php?id=4">product 5</a></li>
+					<li><a href="product_item.php?id=4">product 6</a></li>
+					<li><a href="product_item.php?id=4">product 7</a></li>
+					<li><a href="product_item.php?id=4">product 8</a></li>
+					<li><a href="product_item.php?id=4">product 9</a></li>
+					<li><a href="product_item.php?id=4">product 10</a></li>
+					<li><a href="product_item.php?id=4">product 11</a></li>
+					<li><a href="product_item.php?id=4">product 12</a></li>
+
 				</ul>	
 		</div>
 	</div>
