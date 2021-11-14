@@ -55,10 +55,10 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
+/*a:hover{
 	text-decoration: underline;
 }
-
+*/
 
 /* LAYOUT CLASSES */
 
@@ -80,6 +80,11 @@ a:hover{
 
 .flex-align-center{align-items: center;}/*up&down*/
 .flex-justify-center{justify-content: center;} /*left&right*/
+
+.flex-column{flex-direction: column;}
+
+
+
 
 /* small classes */
 .media-image{
@@ -229,6 +234,15 @@ a:hover{
 .card.flat{
 	padding: 0;
 }
+
+.card-section~.card-section{
+	border-top: 1px solid var(--color-neutral-light);
+}
+
+.card-section{
+	padding: 1em;
+}
+
 
 
 .view-window{
@@ -421,7 +435,8 @@ a:hover{
 	background-image: url('../../img/main-bg.jpg');
 }
 .main-wrp{
-	width: 850px;
+	width: 80%;
+	max-width: 850px;
 	margin: 0 auto;
 	align-items: center;
 	justify-content: space-between;

@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="card soft">
 		  <h2>Thank you for your purchase!</h2>
-		  <p><a href="product_list.php">Continue Shopping</a></p>
+		  <p><a href="styleguide/product_list.php">Continue Shopping</a></p>
 		</div>
 	</div>
 

@@ -14,36 +14,34 @@
 
 
 	<div class="container">
-		<div class="card soft">
+		<!-- <div class="card soft"> -->
 			<h2>Product List</h2>
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $} -->
-			<ul>
-				<li><a href="product_item.php?id=1">Raspberry Chocolate</a></li>
-				<li><a href="product_item.php?id=2">Banana Chocolate</a></li>
-				<li><a href="product_item.php?id=3">Nuts Chocolate</a></li>
-				<li><a href="product_item.php?id=4">Puffy Vinilla</a></li>
-				<li><a href="product_item.php?id=5">Strawberry Frosted</a></li>
-				<li><a href="product_item.php?id=6">Chocolate Cake</a></li>
-				<li><a href="product_item.php?id=7">Plain Glazed </a></li>
-				<li><a href="product_item.php?id=8">Caramel Drizzled</a></li>
-				<li><a href="product_item.php?id=9">New York Cheese cake</a></li>
-				<li><a href="product_item.php?id=10">Peanut butter Jelly</a></li>
-				<li><a href="product_item.php?id=11">Salted Caramel </a></li>
-				<li><a href="product_item.php?id=12">Lemon Buttermilk <a></li>
-			</ul>
+			<!-- ul>li*4>a[href="product_item.php"]>{Product $}
+			<li><a href="styleguide/product_item.php?id=1">Raspberry Chocolate</a></li>
+		    <li><a href="styleguide/product_item.php?id=2">Banana Chocolate</a></li>-->
 
 			<?php 
 
-			include "../lib/php/functions.php";
-			$result= makeQuery(makeConn(),"SELECT * FROM `products`");
+			include_once "../lib/php/functions.php";
+			include_once "../parts/templates.php";
+			
+			$result= makeQuery(
+				makeConn(),
+				"
+				SELECT * 
+				FROM `products`
+				ORDER BY `date_create` DESC
+				LIMIT 12
+				"
+			);
 
-			print_p($result);
+			echo "<div class='productlist grid gap'>", array_reduce($result, 'productListTemplate'),"</div>";
 
 			?>
 
 
 
-		</div>
+		<!-- </div> -->
 	</div>
 
 </body>
