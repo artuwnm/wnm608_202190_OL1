@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cart</title>
+	<title>Confirmation Page</title>
 
-	<?php include "parts/meta.php"; ?>	
+	<?php include "meta_proj.php"; ?>	
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Racing+Sans+One&display=swap" rel="stylesheet">
@@ -12,15 +12,14 @@
 </head>
 <body>
 	
-	<?php include "parts/navbar.php"; ?>	
+	<?php include "navbar_proj.php"; ?>	
 
 
 	<div class="container">
 		<div class="card soft">
-			<h2>Product Item</h2>	
-
-			<p>This is item # <?= $_GET['id'] ?></p>
-			<p><a href="product_add_to_cart.php">Add To Cart</a></p>
+			<h2>Thank you for your purchase!</h2>	
+			<p><a href="product_list_proj.php">Continue Shopping</p>
+	
 		</div>
 	</div>
 
