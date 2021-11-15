@@ -24,7 +24,7 @@
 	{
 
 		"name":"Jay Ryoo",
-		"type":"Student",
+		"type":"CEO",
 		"email":"jay@gmail.com",
 		"classes":[605,608]
 	},
@@ -43,7 +43,16 @@
 		"type":"Student",
 		"email":"grace@gmail.com",
 		"classes":[605,608]
+	},
+
+		{
+
+		"name":"Jennifer Lee",
+		"type":"Student",
+		"email":"jennifer@gmail.com",
+		"classes":[605,608]
 	}
+
 
 
 ]
