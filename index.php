@@ -19,7 +19,7 @@
 						<img src="img/hasami_1.png"  alt="">
 						<figcaption>
 							<div class="caption-body">
-								<div><a href="product_item.php?id=1">Hasami Porcelain Set</a></div>
+								<div><a href="product_list.php">Hasami Porcelain Set</a></div>
 								<div>$250.00</div>
 							</div>					
 						</figcaption>
