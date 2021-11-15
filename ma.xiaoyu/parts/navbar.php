@@ -9,7 +9,7 @@
                    <li><a href="index.php">HOME</a></li>
                    <li><a href="product_list.php">STORE</a></li>
                    <li><a href="about.php">ABOUT</a></li>
-                   <li><a href="cart.php">CART</a></li>
+                   <li><a href="product_cart.php">CART</a></li>
                </ul> 
             </nav>
         </div>
