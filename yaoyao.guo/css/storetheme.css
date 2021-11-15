@@ -39,13 +39,40 @@ body{
 	transform: scale(1.8,1.8);
 }
 
+.figure img {
+	
+	max-height: 200px;
+	max-width: 200px;
+	vertical-align: text-bottom;
 
+}
 
 
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
+	height: 100%;
+	transition: all 0.3s;
+
+}
+
+
+
+.product.figure img {
+	height: 100%;
+	object-fit: contain;
+
+}
+
+
+.product.figure:hover{
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.productlist a{
+	text-decoration: none;
 }
 
 
@@ -53,6 +80,8 @@ body{
 	position: relative;
 	overflow: hidden;
 }
+
+
 
 .product-overlay figcaption {
 	position: absolute;
@@ -97,6 +126,7 @@ li{list-style: none;}
 
 
 
+
 @media(max-width:600px){
 	.product-overlay figcaption{
 		position: relative;
@@ -130,3 +160,6 @@ li{list-style: none;}
 		line-height: 2em;
 	}
 }
+
+
+
