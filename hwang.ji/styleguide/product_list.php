@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+
+<?php
+include_once "../lib/php/functions.php";
+include_once "../parts/templates.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -16,14 +21,8 @@
 	<div class="container">
 		<!-- <div class="card soft"> -->
 			<h2>Product List</h2>
-			<!-- ul>li*4>a[href="product_item.php"]>{Product $}
-			<li><a href="styleguide/product_item.php?id=1">Raspberry Chocolate</a></li>
-		    <li><a href="styleguide/product_item.php?id=2">Banana Chocolate</a></li>-->
 
 			<?php 
-
-			include_once "../lib/php/functions.php";
-			include_once "../parts/templates.php";
 			
 			$result= makeQuery(
 				makeConn(),

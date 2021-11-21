@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include_once "../lib/php/functions.php";
+//M11 #5-1 개별추가
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">

@@ -11,8 +11,9 @@ $image_elements = array_reduce($images, function($r,$o){
 	return $r. "<img src = '$o'>";
 
 });
+//print_p([$_GET,$_POST,$_SESSION]);
 
-//print_p($product);
+//print_p($_SESSION);
 
 ?>
 
@@ -45,7 +46,12 @@ $image_elements = array_reduce($images, function($r,$o){
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
+				<form class="card soft flat" method="post" action="styleguide/cart_actions.php?action=add-to-cart">
+
+					<input type="hidden" name="product-id" value ="<?=$product->id?>">
+
+
+
 					<div class="card-section">
 							<button class="back-btn"><a href="styleguide/product_list.php?id=<?=$product->id?>">Go Back</a></button>
 						<h2 class="prodcut-name"><?=$product->name?></h2>
@@ -53,30 +59,39 @@ $image_elements = array_reduce($images, function($r,$o){
 						<p class="prduct-description"><?=$product->description?></p>
 					</div>
 					
+					<div class="card-section">		
+							<label for="product-amount"  class="form-label">Amount</label>
+							<div class="form-select">
+								<select id="product-amount" name="product-amount">
+									<option>1</option>
+								    <option>2</option>
+								    <option>3</option>
+								    <option>4</option>
+								    <option>5</option>
+								    <option>6</option>
+								    <option>7</option>
+								    <option>8</option>
+								    <option>9</option>
+								    <option>10</option>
+								</select>
+							</div>
+					</div>	
 					<div class="card-section">
-						<label for="product-amount"  class="form-label">Amount</label>
-						<div class="form-select">
-							<select name="" id="product-amount">
-								<option>1</option>
-							    <option>2</option>
-							    <option>3</option>
-							    <option>4</option>
-							    <option>5</option>
-							    <option>6</option>
-							    <option>7</option>
-							    <option>8</option>
-							    <option>9</option>
-							    <option>10</option>
-							</select>
-							
-						</div>
+							<label for="product-type"  class="form-label">Types</label>
+							<div class="form-select">
+								<select id="product-type" name="product-type">
+									<option>Regular</option>
+								    <option>Low Sugar</option>
+								    <option>Gluten Free</option>
+								</select>	
+							</div>	
 					</div>
-
-
 					<div class="card-section">
-						<a href="styleguide/product_added_to_cart.php?id=<?=$product->id?>" class="form-button">Add To Cart</a>
+						<!-- <a href="styleguide/product_added_to_cart.php?id=<?=$product->id?>" class="form-button">Add To Cart</a> -->
+						<input type="submit" class="form-button" value="Add To Cart">
+
 					</div>
-				</div>
+				</form>
 
 
 			</div>

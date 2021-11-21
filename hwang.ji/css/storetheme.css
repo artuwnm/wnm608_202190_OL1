@@ -132,6 +132,14 @@ li{list-style: none;}
 	}
 }
 
+span.badge:not(:empty)::after{
+	content: ")";
+}
+
+span.badge:not(:empty)::before{
+	content: "(";
+}
+
 
 .images-main img{
 	width: 100%;

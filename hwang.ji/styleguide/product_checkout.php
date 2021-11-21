@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+
+include_once "../lib/php/functions.php";
+
+//개별 추가
+include_once "../parts/templates.php";
+$cart_itmes = getCartItems();
+
+
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,10 +21,24 @@
 <body>
 	<?php include "../parts/navbar.php"; ?>
 
-
 	<div class="container">
-		<div class="card soft">
-		   <h2>Prodct Checkout</h2>
+
+		<!-- products form cart 개별추가-->
+		<div class="container">
+			<div class="col-xs-12 col-md-7">
+				<h2>ORDER SUMMARY</h2>
+		 		<div class="card soft"> <!--class="flat"-->
+		 			<?=array_reduce($cart_itmes,'cartListTemplateForCheckout')?>
+		 			<?=cartTotalsForCheckout()?>
+		 	 	</div>	
+			</div>
+		</div>
+		<!-- //products form cart -->
+		
+		
+   		<h2>Prodct Checkout</h2>
+		<div class="card soft">			
+		   <!-- <h2>Prodct Checkout</h2> -->
 
 			<form class="form">
 				<h3>Address</h3>

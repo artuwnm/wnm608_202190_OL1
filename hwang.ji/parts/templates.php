@@ -11,7 +11,6 @@ function productListTemplate($r,$o){
 			<figcaption class="flex-none">
 				<div>$o->name</div>	
 				<div>&dollar;$o->price</div>
-
 			</figcaption>
 		</figure>
 	</a>
@@ -20,22 +19,136 @@ function productListTemplate($r,$o){
 	HTML;
 }
 
+function selectAmount($amount=1,$total=10){
+	$output = "<select name='amount'>";
+	for($i=1;$i<=$total;$i++){
+		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
+	}
+	$output .= "</select>";
+	return $output;
+}
+
+
+/* cartpage added product list - left */
 
 function cartListTemplate($r,$o){
+	$totalfixed = number_format($o->total,2,'.','');
+	$selectamount = selectAmount($o->amount,10);
 	return $r.<<<HTML
-	<div class="display-flex">
+	<div class="display-flex card-section">
 		<div class="flex-none images-thumbs">
 			<img src="$o->thumbnail">
 		</div>
 		<div class="flex-stretch">
 			<strong>$o->name</strong>
-			<div>Delete</div>
+			<form action="styleguide/cart_actions.php?action=delete-cart-item" method="post">
+				<input type="hidden" name="id" value="$o->id">
+				<input type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em;">
+			</form>
 		</div>
 		<div class="flex-none">
-			&dollar;$o->price
+			<div>&dollar;$totalfixed</div>
+			<form action="styleguide/cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+				<input type="hidden" name="id" value="$o->id">
+				<div class="form-select" style="font-size: 0.8em;">
+					$selectamount
+				</div>	
+		
+			</form>
 		</div>
 	</div>
 
 HTML;}
 
- // $r. "<div>$o->name</div>"
+
+/* cartpage price - right */
+
+function cartTotals(){
+	$cart = getCartItems();
+
+	$cartprice = array_reduce($cart,function($r,$o){return $r+$o->total;},0);
+
+	$pricefixed = number_format($cartprice,2,'.','');
+	$taxfixed = number_format($cartprice*0.0725,2,'.','');
+	$taxedfixed = number_format($cartprice*1.0725,2,'.','');
+
+
+	return <<<HTML
+		<div class="card-section display-flex">
+			<div class="flex-stretch">Sub Total</div>
+			<div class="flex-none">&dollar;$pricefixed</div>
+		</div>
+		<div class="card-section display-flex">
+			<div class="flex-stretch">Taxes</div>
+			<div class="flex-none">&dollar;$taxfixed</div>
+		</div>
+		<div class="card-section display-flex">
+			<div class="flex-stretch"><strong>Total</strong></div>
+			<div class="flex-none"><strong>&dollar;$taxedfixed</strong></div>
+		</div>
+		<div class="card-section">
+			<a href="styleguide/product_checkout.php" class="form-button">Checkout</a>
+		</div>
+
+
+
+	HTML;
+}
+
+
+
+/* --------- For check out page product list --------- */
+
+function cartListTemplateForCheckout($r,$o){
+	$totalfixed = number_format($o->total,2,'.','');
+	$selectamount = selectAmount($o->amount,10);
+	
+	return $r.<<<HTML
+	<div class="display-flex card-section">
+		<div class="flex-none images-thumbs">
+			<img src="$o->thumbnail">
+		</div>
+		<div class="flex-stretch">
+			<strong>$o->name ($o->amount)</strong>
+		</div>
+		<div>&dollar;$totalfixed</div>
+	</div>
+
+HTML;}
+
+function cartTotalsForCheckout(){
+	$cart = getCartItems();
+
+	$cartprice = array_reduce($cart,function($r,$o){return $r+$o->total;},0);
+
+	$pricefixed = number_format($cartprice,2,'.','');
+	$taxfixed = number_format($cartprice*0.0725,2,'.','');
+	$taxedfixed = number_format($cartprice*1.0725,2,'.','');
+
+
+	return <<<HTML
+		<div class="card-section display-flex">
+			<div class="flex-stretch">Sub Total</div>
+			<div class="flex-none">&dollar;$pricefixed</div>
+		</div>
+		<div class="card-section display-flex">
+			<div class="flex-stretch">Taxes</div>
+			<div class="flex-none">&dollar;$taxfixed</div>
+		</div>
+		<div class="card-section display-flex">
+			<div class="flex-stretch"><strong>Total</strong></div>
+			<div class="flex-none"><strong>&dollar;$taxedfixed</strong></div>
+		</div>
+
+
+	HTML;
+}
+
+/* --------- //For check out page product list --------- */
+
+
+
+
+
+
+
