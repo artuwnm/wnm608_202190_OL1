@@ -70,10 +70,11 @@ $image_elements = array_reduce($images, function($r,$o){
 
                     <div class="card-section">
                         
-                        <label for="product-type"  class="form-label">Types</label>
+                        <label for="product-type"  class="form-label">Size</label>
                             <div class="form-select">
                                 <select id="product-type" name="product-type">
-                                    <option>color</option>
+                                    <option>Big</option>
+                                    <option>Small</option>
                                 </select>   
                             </div>  
                     </div>
