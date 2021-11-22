@@ -1,7 +1,7 @@
 
 <?php
 
-	include_once "../lib/php/functions.php";
+	include_once "lib/php/functions.php";
 	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
 	$images = explode(",", $product->images);
@@ -10,7 +10,7 @@
 		return $r. "<img src='img/$o'>";
 	});
 
-	//print_p($product);
+//print_p($_SESSION);
 
 
 ?><!DOCTYPE html>
@@ -21,21 +21,23 @@
 	<title>Product Item</title>
 
 	
-	<?php include "../parts/meta.php"; ?>
+<?php include "parts/meta.php"; ?>
 
-	<script src="js/product_thumbs.js"></script>
 
 </head>
 <body>
 
-	<?php include "../parts/navbar.php"; ?>
+
+<?php include "parts/navbar.php"; ?>
+
+<script src="js/product_thumbs.js"></script>
 	
 	<div class="container">
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="images-main">
-						<img src="img/<?= $product->thumbnail ?>">
+						<img src="img/<?= $product->images ?>">
 					</div>
 				</div>
 			</div>
@@ -43,7 +45,9 @@
 
 
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
+				<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
+
+					<input type="hidden" name="product-id" value="<?= $product->id ?>">
 					<div class="card-section">
 						<h2 class="product-title"><?=$product->name?></h2>
 						<div class="product-pirce">&dollar;<?= $product->price ?></div>
@@ -51,8 +55,8 @@
 
 					<div class="card-section">
 						<label for="product-amount" class="form-label">Amount</label>
-						<div class="form-select" id="product-amount">
-							<select>
+						<div class="form-select">
+							<select id="product-amount" name="product-amount">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -71,9 +75,9 @@
 
 
 					<div class="card-section">
-						<a href="admin/product_added_to_cart.php?id= $product->id ?>" class="form-button">Add To Cart</a>
+						<input type="submit" class="form-button" value="Add To Cart">
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 

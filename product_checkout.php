@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+<?php
+
+include_once "lib/php/functions.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Product Checkout</title>
 
-	<?php include "../parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 <body>
 	
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
@@ -51,10 +55,7 @@
 					</div>
 				</div>
 
-				<div class="form-control">
-					<input type="submit" class="from-button" value="submit">
-
-				</div>
+	
 
 
 			    </form>
@@ -95,7 +96,7 @@
 
 		<div class="form-control">
 			<!--<input type="submit" class="from-button" value="submit"> -->
-			<a href="admin/product_confirmation.php" class="form-button">Complete Checkout</a>
+			<a href="product_confirmation.php" class="form-button">Complete Checkout</a>
 		</div>
 
 	</form>
