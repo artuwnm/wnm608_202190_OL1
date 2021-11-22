@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik:ital,wght@0,400;1,300&display=swap');
-/*CSS RESET*/
 
 *,*::after, *::before {
 	box-sizing: border-box;
@@ -105,7 +103,8 @@ a:hover {
 
 .nav a {
 	display: block;
-	padding: 0.2em 0.5em;
+	padding: 0 1.5em ;
+}
 }
 
 .nav a:hover {
@@ -135,7 +134,7 @@ a:hover {
 
 .nav-pills a {
 	border-radius: 2em;
-	padding: 0.5em 1em;
+	padding: 1em 1.5em;
 }
 
 .nav-crumbs a {
@@ -193,13 +192,16 @@ a:hover {
 }
 
 .navbar h1{
-	font-size: 1.5em;
+	font-size: 1em;
 	margin: 0;
 	font-family: var(--font-sans);
 }
-.navbar a{
-	padding: 0 0.5em ;
-}
+
+
+
+
+
+
 
 
 
@@ -357,10 +359,17 @@ a:hover {
     text-align: center;
 
 }
+
+
+.form-button.inline {
+	width: initial;
+}
+
 .form-button:hover {
     text-decoration: none;
     border: 2px solid #DDB7AB;
 }
+
 .form-button:active {
     background-color: var(--color-green-light)
 }
@@ -514,13 +523,55 @@ a:hover {
 }
 
 
-.images-main img{
+
+
+
+/*product img*/
+.main-wrp img{
+	width: 43%;
+
+}
+
+.line{
+	margin-top: -0.2em;
 	width: 100%;
-	height: 40vh;
+	height: 1.5em;
+	background-color: var(--color-main-medium);
+}
+
+.main-txt{
+	width: 43%;
+	
+	text-align: center;
+}
+
+.main-txt p{
+	line-height: 1.5em;
+}
+
+.best{
+	margin: 5% auto;
+	text-align: center;
+	width: 800px;
+}
+
+.underline{
+	width: 15%;
+	margin: -0.5em auto -0.4em;
+	height: 0.2em;
+	background-color: var(--color-main-medium);
+}
+.best p{
+	font-size: 1em;
+}
+
+.best .grid{
+	margin: 1em 0 2em;
+}
+
+.logo{
+	margin-top: 0.5em;
+	height:30%;
 	object-fit: contain;
 }
-.images-thumbs img{
-	width: 8em;
-	height: 6em;
-	object-fit: contain;
-}
+

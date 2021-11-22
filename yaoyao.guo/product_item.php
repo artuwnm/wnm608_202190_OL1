@@ -37,7 +37,10 @@ $image_elements = array_reduce($images, function($r,$o){
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
-                <div class="card soft flat">
+                <form class="card soft flat" method="post" action="styleguide/cart_actions.php?action=add-to-cart">
+                    
+                    <input type="hidden" name="product-id" value ="<?=$product->id?>">
+
                     <div class="card-section">
                         <button class="round-btn"><a href="styleguide/product_list.php?id=<?=$product->id?>">Go Back</a></button>
                         <h3 class="prodcut-name"><?=$product->name?></h3>
@@ -48,7 +51,7 @@ $image_elements = array_reduce($images, function($r,$o){
                     <div class="card-section">
                         <label for="product-amount"  class="form-label">Amount</label>
                         <div class="form-select">
-                            <select name="" id="product-amount">
+                            <select name="product-amount" id="product-amount">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -66,17 +69,27 @@ $image_elements = array_reduce($images, function($r,$o){
 
 
                     <div class="card-section">
-                        <a href="styleguide/product_added_to_cart.php?id=<?=$product->id?>" class="form-button">Add To Cart</a>
+                        
+                        <label for="product-type"  class="form-label">Types</label>
+                            <div class="form-select">
+                                <select id="product-type" name="product-type">
+                                    <option>color</option>
+                                </select>   
+                            </div>  
                     </div>
-                </div>
+
+                   
+                    <div class="card-section">
+                        <input type="submit" class="form-button" value="Add To Cart">
+                    </div>
+
+                </form>
 
 
             </div>
         </div>
 
-    <!--    <div class="card soft dark">
-            <p class="prduct-description"><?=$product->description?></p>
-       </div> -->   
+
     </div>
 
 </body>

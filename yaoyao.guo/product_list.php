@@ -1,4 +1,9 @@
 
+<?php
+include_once "../lib/php/functions.php";
+include_once "../parts/templates.php";
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +22,6 @@
 
 	
 				<?php
-				include_once "../lib/php/functions.php";
-				include_once "../parts/templates.php";
 
 				$result= makeQuery(
 				makeConn(),
@@ -35,9 +38,9 @@
 
 			?>
 				
-			</div>
+			
 
-		</div>
+		
 	</div>
 	
 </body>

@@ -1,16 +1,25 @@
 	
-	<header class="navbar">
+	
+<?php
+
+include_once "../lib/php/functions.php";
+
+?>
+
+<header class="navbar">
 		<div class="container display-flex">
 			<div class="flext-none">
-				<h1 style="color:#fff;">PetUs</h1>
+				<a href="index.php"><img src="img/logo.png" alt="" class="logo"></a>
 			</div>	
 			<div class="flex-stretch"></div>
 			<nav class="navbar nav nav-flex flex-none">
 				<ul>
-					<!-- li*3>a[href=#]>{Link $} -->
-					<li><a href="index.php">Home</a></li>
-					<li><a href="styleguide/product_list.php">Shop</a></li>
-					<li><a href="styleguide/cart.php">Cart</a></li>
+					<li><a href="index.php">HOME</a></li>
+					<li><a href="styleguide/product_list.php">STORE</a></li>
+					<li><a href="styleguide/product_cart.php">
+					<span>CART</span>
+					<span class="badge"><?=makeCartBadge();?></span>
+					</a></li>
 				</ul>
 			</nav>
 		</div>

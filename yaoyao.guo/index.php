@@ -1,3 +1,8 @@
+<?
+
+include_once "lib/php/functions.php";
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +22,6 @@
 		<h2><i>Dear Pet Parents~</i></h2>
 	</div>
 
-	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
 	<div class="container">
 		<article id="article1" class="article card hard">
 			<div class="display-flex flex-align-center">
