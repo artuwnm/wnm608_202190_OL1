@@ -29,45 +29,7 @@
     </div>
   </header>
 
-  <div class="container">
-	<h1 id="figures">KICKS ON FIRE</h1>
-
-		<div class="grid gap" id="productgrids">	
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-							<img src="../img/vapormax_1.jpg" alt="">
-							<figcaption>
-								<div>Nike Vapor Max</div>
-				
-							</figcaption>	
-					</figure>
-			</div>
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-							<img src="../img/airmax97_1.jpg" alt="">
-							<figcaption>
-								<div>'97 Air Max Black</div>
-							</figcaption>	
-					</figure>
-			</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-							<img src="../img/cdg_1.jpg" alt="">
-							<figcaption>
-								<div>CDG X Converse White Low</div>
-				
-							</figcaption>	
-					</figure>
-			</div>
-
-
-		</div>
-
-		<div class="form-control">
-			<button type="button" class="form-button">
-				<a href="product_list_proj.php">SHOP ALL SHOES</a>
-			</button>
-		</div>
+ <h1>About Kickin Hard</h1>
 
 
 

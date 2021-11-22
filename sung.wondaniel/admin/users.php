@@ -41,6 +41,7 @@ if(isset($_GET['action'])) {
    			header("location:{$_SERVER['PHP_SELF']}?id=$id");
    			break;
    		case "delete":
+   			header("location:{$_SERVER['PHP_SELF']}");
    			break;
 	}
 }
