@@ -17,22 +17,22 @@
             <!--.col-xs-6.col-md-3*4>.card>{Card} -->
             <div class="col-xs-6 col-md-3">
                 <div class="card soft">
-                  <img src="https:via.placeholder.com/500" alt="" class="media-image">
+                  <img src="img/store/penguin_souvenir_thumb.jpg" alt="" class="media-image">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="card soft">
-                  <img src="https:via.placeholder.com/500" alt="" class="media-image">
+                  <img src="img/store/girl_souvenir_thumb.jpg" alt="" class="media-image">
                 </div>
             </div>
              <div class="col-xs-6 col-md-3">
                 <div class="card soft">
-                  <img src="https:via.placeholder.com/500" alt="" class="media-image">
+                  <img src="img/store/bear_soft_thumb.jpg" alt="" class="media-image">
                 </div>
             </div>
              <div class="col-xs-6 col-md-3">
                 <div class="card soft">
-                  <img src="https:via.placeholder.com/500" alt="" class="media-image">
+                  <img src="img/store/duck_vintage_thumb.jpg" alt="" class="media-image">
                 </div>
             </div>  
          </div>
