@@ -466,6 +466,10 @@ a:hover {
 	width: 100%;
 }
 
+.form-button.inline {
+	width: initial;
+}
+
 .form-button {
 	display: inline-block;
 	background-color: var(--color-neutral-light);
