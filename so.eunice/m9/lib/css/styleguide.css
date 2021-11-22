@@ -30,7 +30,6 @@
 	--color-coral: #FF8984;
 	--color-yellow: #FFFCE6;
 	--color-caramel: #E8C49E;
-	--color-offwhite: #FAFAFA;
 
 	--header-height: 3rem;
 	--spacing: 1rem;
@@ -92,7 +91,7 @@ a:hover {
 /*layout Classes*/
 
 .container {
-	max-width: 1000px;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -111,7 +110,7 @@ a:hover {
 .flex-align-center { align-items: center; }
 .flex-justify-center { justify-content: center; }
 
-.flex-column { flex-direction: column; }
+
 
 /*small classes*/
 
@@ -127,7 +126,7 @@ a:hover {
 
 .nav ul {
 	list-style: none;
-	margin-top: 1em;
+	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
@@ -140,13 +139,13 @@ a:hover {
 
 	.nav a:hover{
 		background-color:var(--color-primary-light);
-		color: var(--color-primary-medium);
+		color: var(--color-white);
 		text-decoration: none;
 	}
 
 	.nav .active a{
 		background-color:var(--color-primary-light);
-		color: var(--color-primary-medium);
+		color: var(--color-white);
 	}
 
 
@@ -225,7 +224,7 @@ a:hover {
 
 
 .navbar {
-	background-color:var(--color-offwhite);
+	background-color:var(--color-neutral-light);
 	color:var(--color-primary-medium);
 	line-height:var(--header-height);
 }
@@ -234,7 +233,7 @@ a:hover {
 		font-size: 1em;
 		margin: 0;
 		font-family: var(--font-sans);
-		color:var(--color-primary-medium);
+		color:var(--color-white);
 		font-weight: 700;
 	}
 
@@ -243,11 +242,7 @@ a:hover {
 		padding: 0 0.5em;
 		font-weight: 700;
 	}
-.navlogo{
-	height: 60px;
-	margin-top: 0.5em;
 
-}
 
 /* Card */
 .card {
@@ -285,12 +280,7 @@ a:hover {
 		padding: 0;
 	}
 
-.card-section~ .card-section {
-	border-top: 1px solid var(--color-neutral-light);
-}
-.card-section {
-	padding: 1em;
-}
+
 
 /*View Window*/
 
@@ -346,8 +336,6 @@ a:hover {
 .figure {
 	margin: 0;
 	background-color: var(--color-white);
-	border-radius: 0.25em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }
 .figure img {

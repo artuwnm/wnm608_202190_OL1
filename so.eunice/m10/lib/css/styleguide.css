@@ -30,7 +30,7 @@
 	--color-coral: #FF8984;
 	--color-yellow: #FFFCE6;
 	--color-caramel: #E8C49E;
-	--color-offwhite: #FAFAFA;
+	--color-offwhite: #f4f4f4;
 
 	--header-height: 3rem;
 	--spacing: 1rem;
@@ -111,7 +111,7 @@ a:hover {
 .flex-align-center { align-items: center; }
 .flex-justify-center { justify-content: center; }
 
-.flex-column { flex-direction: column; }
+
 
 /*small classes*/
 
@@ -127,7 +127,7 @@ a:hover {
 
 .nav ul {
 	list-style: none;
-	margin-top: 1em;
+	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
@@ -146,7 +146,7 @@ a:hover {
 
 	.nav .active a{
 		background-color:var(--color-primary-light);
-		color: var(--color-primary-medium);
+		color: var(--color-white);
 	}
 
 
@@ -243,11 +243,7 @@ a:hover {
 		padding: 0 0.5em;
 		font-weight: 700;
 	}
-.navlogo{
-	height: 60px;
-	margin-top: 0.5em;
 
-}
 
 /* Card */
 .card {
@@ -346,8 +342,6 @@ a:hover {
 .figure {
 	margin: 0;
 	background-color: var(--color-white);
-	border-radius: 0.25em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }
 .figure img {
