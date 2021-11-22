@@ -24,6 +24,7 @@ $cart_itmes = getCartItems();
 	<?php include "../parts/navbar.php"; ?>
 
 
+
 	<div class="container">
 		<h2>Cart</h2>
 		 <div class="grid gap">

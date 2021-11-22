@@ -132,6 +132,13 @@ li{list-style: none;}
 	}
 }
 
+
+
+span.cart-basket:empty::before{
+	content: "There is no item in the cart.";
+}
+
+
 span.badge:not(:empty)::after{
 	content: ")";
 }
@@ -140,11 +147,8 @@ span.badge:not(:empty)::before{
 	content: "(";
 }
 
-span.cart-basket:empty::before{
-	content: "There is no item in the cart.";
-}
 
-}
+
 
 .images-main img{
 	width: 100%;
