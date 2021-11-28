@@ -16,12 +16,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 	<!-- header>h1+p -->
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Book World</h1>
+				<!-- <h1>Book World</h1> -->
+				<div><a href="../../m12/index.php"><img src="../../img/bookworld_logo.png" style="height: 60px; margin-top: 0.5em;"></a></div>
 			</div>
 			<div class="flex-stretch"></div>
 			
@@ -184,12 +186,12 @@
 	
 	<div class="container" id="viewwindow">
 
-
 		<h3>View Window</h3>
 		<div class="card">
-			<div class="view-window" style="background-image: url('../img/mock-hero-1.png');">
+			<!-- <div class="view-window" style="background-image: url('../img/fluffy_pancake.jpg');"> -->
+
+			<div class="view-window" style="background-image: url('../../img/mock-hero-1.png');">
 		</div> 		
-	
 	</div>
 
 <!-- Navigations -->
@@ -652,43 +654,133 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<h3 id="checkboxes">Check Boxes</h3>
+		<div class="card soft">
+			<!-- !!!! use label warp around checkbox, use id, for id-->
+			<!-- <label>Label <input type="checkbox" id="input-1"></label>
+			<label for="input-1">Label</label> -->
+			<h4>Basic Checkbox</h4>
+			<label>Label <input type="checkbox" id="input-1"></label>
+			<label for="input-1">Label</label>
+
+			<h4>Heart Checkbox</h4>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
 			</div>
 
-			<h3 id="checkboxes">Check Boxes</h3>
-			<div class="card soft">
-				<!-- !!!! use label warp around checkbox, use id, for id-->
-				<!-- <label>Label <input type="checkbox" id="input-1"></label>
-				<label for="input-1">Label</label> -->
-				<h4>Basic Checkbox</h4>
-				<label>Label <input type="checkbox" id="input-1"></label>
-				<label for="input-1">Label</label>
+			<h4>Toggle</h4>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1"></label>
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+				<div class="flex-none">
+					<div class="toggle" style="font-size: 2em;">
+				<input type="checkbox" id="toggle-2" class="hidden">
+				<label for="toggle-2"></label>
+				</div>
+			</div>
+			
+		</div>
+				
+	</div>
 
-				<h4>Heart Checkbox</h4>
-				<div class="favorite">
-					<input type="checkbox" id="heart-example" class="hidden">
-					<label for="heart-example">&hearts;</label>
+	<div class="container card soft">
+		<h4 id="controls">Billing Info</h4>
+			<form>
+				<div class="form-control">
+					<label class="form-label">First Name</label>
+					<input type="text" placeholder="John" class="form-input">
 				</div>
 
-				<h4>Toggle</h4>
-				<div class="toggle">
-					<input type="checkbox" id="toggle-1" class="hidden">
-					<label for="toggle-1"></label>
+				<div class="form-control">
+					<label class="form-label">Last Name</label>
+					<input type="text" placeholder="Smith" class="form-input">
 				</div>
-				<div class="display-flex flex-align-center">
+
+				<div class="form-control">
+					<label class="form-label">Address 1</label>
+					<input type="text" placeholder="123 10th Street" class="form-input">
+				</div>
+
+				<div class="form-control">
+					<label class="form-label">Address 2 (Apt#)</label>
+					<input type="text" placeholder="Unit A" class="form-input">
+				</div>
+
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">City</label>
+					</div>
 					<div class="flex-stretch">
-						<label for="toggle-2" class="form-label">Display Warning?</label>
+						<input type="text" placeholder="New York City" class="form-input">
 					</div>
 					<div class="flex-none">
-						<div class="toggle" style="font-size: 2em;">
-					<input type="checkbox" id="toggle-2" class="hidden">
-					<label for="toggle-2"></label>
-				</div>
+						<label class="form-label">Zip Code</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="number" placeholder="10013" class="form-input">
 					</div>
 				</div>
-				
-			</div>
-		</div>
+				<div class="form-control">
+					<label class="form-label">State</label>
+					<input type="text" placeholder="New York" class="form-input">
+				</div>
+				<div class="form-control">
+					<input type="sumbit" class="form-button" value="Submit">
+				</div>
+			</form>
 	</div>
+
+	<div class="container card soft">
+		<h4 id="controls">Credit Card Info</h4>
+			<form>
+				<div class="form-control">
+					<label class="form-label">Name on Card</label>
+					<input type="text" placeholder="John Smith" class="form-input">
+				</div>
+
+				<div class="form-control">
+					<label class="form-label">Card Number</label>
+					<input type="number" placeholder="1234 1234 1234 1234" class="form-input">
+				</div>
+
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">Expiration</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="text" placeholder="MM/YY" class="form-input">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">CVV</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="number" placeholder="CVV" class="form-input">
+					</div>
+				</div>
+				<div class="form-control">
+					<label class="form-label">Zip Code</label>
+					<input type="number" placeholder="10011" class="form-input">
+				</div>
+
+				<div class="form-control">
+					<input type="sumbit" class="form-button" value="Submit">
+				</div>
+
+			</form>
+	</div>
+
+</div>
+
+		
+
 
 </body>
 </html>

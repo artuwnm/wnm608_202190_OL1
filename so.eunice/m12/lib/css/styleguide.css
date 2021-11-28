@@ -405,6 +405,7 @@ a:hover {
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
+    border: 1px solid var(--color-primary-medium);
 
     color: var(--color-white);
     font-weight: 700;
@@ -415,14 +416,24 @@ a:hover {
 .form-button.inline {
 	width: initial;
 }
+
 .form-button.secondary {
-	background-color: var(--color-neutral-light);
-	color: var(--color-neutral-dark);
+	background-color: var(--color-white);
+	color: var(--color-primary-medium);
+	border: 1px solid var(--color-primary-light);
+	font-weight: 400;
+}
+
+.form-button.secondary:hover {
+	background-color: var(--color-primary-light);
+	color: var(--color-primary-medium);
 	font-weight: 400;
 }
 
 .form-button:hover {
 	text-decoration: none;
+	background-color: var(--color-primary-light);
+	color: var(--color-primary-medium);
 }
 
 
@@ -436,7 +447,7 @@ a:hover {
     	padding: 0.5em 1.5em;
     	display: flex;
     	padding: 0.5em 1em;
-    	border: solid 1px var(--color-primary-medium);
+    	border: solid 1px var(--color-primary-light);
 }
 
 .hotdog.dark {
@@ -445,7 +456,7 @@ a:hover {
 }
 
 .hotdog.light {
-	background-color: var(--color-neutral-light);
+	background-color: var(--color-white);
 	color: var(--color-neutral-dark);
 }
 
