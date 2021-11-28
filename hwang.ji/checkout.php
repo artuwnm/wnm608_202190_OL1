@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Checkout Page</title>
 
-	<?php include "../parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 <body>
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
@@ -69,7 +69,7 @@
 				</div>
 				<div class="form-control">
 					<!-- <input type="submit" class="form-button" value="SUBMIT"> -->
-					<a href="styleguide/product_confirmation.php" class="form-button">Complete Checkout</a>
+					<a href="product_confirmation.php" class="form-button">Complete Checkout</a>
 				</div>
 				
 			</form>

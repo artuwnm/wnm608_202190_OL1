@@ -1,9 +1,9 @@
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 
 //개별 추가
-include_once "../parts/templates.php";
+include_once "parts/templates.php";
 $cart_itmes = getCartItems();
 
 
@@ -15,11 +15,11 @@ $cart_itmes = getCartItems();
 	<meta charset="UTF-8">
 	<title>Checkout Page</title>
 
-	<?php include "../parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 <body>
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
 
@@ -94,7 +94,7 @@ $cart_itmes = getCartItems();
 				</div>
 				<div class="form-control">
 					<!-- <input type="submit" class="form-button" value="SUBMIT"> -->
-					<a href="styleguide/product_confirmation.php" class="form-button">Complete Checkout</a>
+					<a href="product_confirmation.php" class="form-button">Complete Checkout</a>
 				</div>
 				
 			</form>
