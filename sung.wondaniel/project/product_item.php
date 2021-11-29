@@ -79,7 +79,7 @@ $image_elements = array_reduce($images,function($r,$o){
 		</div>
 
 		<div class="card soft dark">
-			<p><?= $product-> brand ?></p>
+			<p><?= $product-> description ?></p>
 		</div>
 	</div>
 

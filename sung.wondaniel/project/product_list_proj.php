@@ -14,35 +14,59 @@ include_once "../parts/templates.php";
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Racing+Sans+One&display=swap" rel="stylesheet">
 
+
+	<script src="../lib/js/functions.js"></script>
+	<script src="../js/templates.js"></script>
+	<script src="../js/product_list.js"></script>
+
 </head>
 <body>
+		
+	<?php include "navbar_proj.php"; ?>
 	
-	<?php include "navbar_proj.php"; ?>	
-
-
 	<div class="container">
-			<h2>Product List</h2>
+			<h2>Products</h2>
+
+			<div class="form-control">
+				<form class="hotdog light" id="product-search">
+					<input type="search" placeholder="Search Products">
+				</form>
+			</div>
+			<div class="form-control">
+		     <div class="card soft">
+			  <div class="display-flex">
+			  	<div class="flex-stretch display-flex">
+				<div class="flex-none">
+					<button data-filter="category" data-value="" type="button" class="form-button">All</button>
+				</div>
+
+				<div class="flex-none">
+					<button data-filter="category" data-value="running" type="button" class="form-button">Running</button>
+				</div>
+
+				<div class="flex-none">
+					<button data-filter="category" data-value="fashion" type="button" class="form-button">Fashion</button>
+				</div>
+			</div>
+			<div class="flex-none">
+				<div class="form-select">
+						<select class="js-sort">
+							<option value="1">Newest</option>
+							<option value="2">Oldest</option>
+							<option value="3">Price Low</option>
+							<option value="4">Price High</option>
+						</select>
+					   </div>
+					   </div>
+					 </div>
+					</div>
+					</div>
+	
 
 
+			<div class='productlist grid gap'></div>
 
-				<?php
-
-				$result = makeQuery(
-					makeConn(),
-					"
-					SELECT *
-					FROM `products`
-					ORDER BY `date_create` DESC
-					LIMIT 12
-					"
-				);
-
-				echo "<div class='productlist grid gap'>", array_reduce($result,'productListTemplate'), "</div>";
-
-				?>
 	</div>
-
-
 
 </body>
 </html>
