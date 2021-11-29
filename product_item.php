@@ -51,7 +51,9 @@
 					<div class="card-section">
 						<h2 class="product-title"><?=$product->name?></h2>
 						<div class="product-pirce">&dollar;<?= $product->price ?></div>
+						<p><?=$product->description ?></p>
 					</div>
+		
 
 					<div class="card-section">
 						<label for="product-amount" class="form-label">Amount</label>
@@ -81,9 +83,6 @@
 			</div>
 		</div>
 
-		<div class="card soft medium">
-			<p><?=$product->description ?></p>			
-		</div>
 
 	</div>
 </body>
