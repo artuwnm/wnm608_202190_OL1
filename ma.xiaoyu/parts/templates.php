@@ -41,7 +41,7 @@ return $r. <<<HTML
      <img src="img/store/$o->thumbnail"> 
   </div>
   <div class="flex-stretch">
-     <strong>$o->name ($o->amount)</strong>
+     <strong>$o->name</strong>
      <form action="cart_actions.php?action=delete-cart-item" method="post">
         <input type="hidden" name="id" value="$o->id">
         <input type="submit" class="form-button inline" value="Delete" style="font-size:0.8em">

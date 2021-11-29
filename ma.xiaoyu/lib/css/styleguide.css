@@ -330,7 +330,7 @@ a:hover {
 /* FIGURE */
 .figure {
 	margin:0;
-	background-color:var(--color-white);
+	background-color:var(--color-light-background);
     height: 100%; 
 }
 .figure img {

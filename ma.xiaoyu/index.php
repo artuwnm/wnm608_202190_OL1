@@ -1,41 +1,31 @@
+<?php include_once "lib/php/functions.php"; ?>
 <!doctype html>
+
 <html lang="en"> 
 <head>
     <title>OH MY TOKYO</title>
     <?php include "parts/meta.php"; ?>
+    <script src="lib/js/functions.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        queryAllPromotion();
+    </script>
 </head>
 <body>
     <?php include "parts/navbar.php"; ?>
 
       <div class="container">
-         <div class="card soft" style="height:300px">
-         </div>
+         <div class="figure top-img soft">
+            <div class ="flex-stretch">     
+            <img src="img/home/home_cover.JPEG" alt="">
+        </div>
+        </div>
        </div>
   
       <div class="container">
-        <div class="grid gap xs-small md-medium">
-            <!--.col-xs-6.col-md-3*4>.card>{Card} -->
-            <div class="col-xs-6 col-md-3">
-                <div class="card soft">
-                  <img src="img/store/penguin_souvenir_thumb.jpg" alt="" class="media-image">
-                </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <div class="card soft">
-                  <img src="img/store/girl_souvenir_thumb.jpg" alt="" class="media-image">
-                </div>
-            </div>
-             <div class="col-xs-6 col-md-3">
-                <div class="card soft">
-                  <img src="img/store/bear_soft_thumb.jpg" alt="" class="media-image">
-                </div>
-            </div>
-             <div class="col-xs-6 col-md-3">
-                <div class="card soft">
-                  <img src="img/store/duck_vintage_thumb.jpg" alt="" class="media-image">
-                </div>
-            </div>  
-         </div>
+        <h2  style="text-align: center; margin-top:50px">New Arrivals</h2>
+        <div class="promotion-list grid gap xs-small md-medium"></div>
       </div>
 
 
@@ -44,7 +34,7 @@
 
         <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
         <div class="container">
-        	<article id="article1" class="article card soft">
+        	<article id="article1" class="article card hard">
             <div class="display-flex-aligh-center">
               <div class="flex-stretch"> 
               <h2>Love for our little beast around the world</h2>
@@ -64,18 +54,7 @@
         	   </div>
           </article>
         </div>
-        <div class="view-window" style="background-color:var(--color-dark-background)">
-           
-        </div>  
-        <div class="container">
-        	<article id="article3"  class="article card hard">
-             <h2>UNIQUE AND ETHICALLY PRODUCED</h2>
-             <div class="article-body">
-                <p>We know how special our dogs are to the family unit and in that spirit we created a shop that is filled with items that we feel is as special to us as it will be to our furry friends. We hope you like it. </p>  
-             </div>
-          </article>   
-     
-    
+        <!-- <div class="view-window" style="background-color:var(--color-dark-background)"></div>   -->
 
     </body>             
     

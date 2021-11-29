@@ -133,14 +133,19 @@
     object-fit:contain;
 }
 
+.top-img {
+    width:100%;
+    object-fit:contain;
+    overflow:hidden;
+}
 
 
 
-span.badge::after {
+span.badge:not(:empty)::after {
     content: ')';
 }
 
-span.badge::before {
+span.badge:not(:empty)::before {
     content: '(';
 }
 
