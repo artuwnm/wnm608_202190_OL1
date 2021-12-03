@@ -1,7 +1,7 @@
 <?php 
 
-include_once "../lib/php/functions.php";
-include_once "../parts/templates.php";
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $cart_itmes = getCartItems();
 
@@ -13,13 +13,13 @@ $cart_itmes = getCartItems();
 	<meta charset="UTF-8">
 	<title>Cart</title>
 
-	<?php include "../parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 <body>
 	
 
-	<?php include "../parts/navbar.php"; ?>
+	<?php include "parts/navbar.php"; ?>
 
 
 	<div class="container">
@@ -27,7 +27,7 @@ $cart_itmes = getCartItems();
 		 <div class="grid gap">
 		 	<div class="col-xs-12 col-md-7">
 		 		<div class="card soft"> <!--class="flat"-->
-		 			<?=array_reduce($cart_itmes,'cartListTemplate')?>
+		 			<span class=" cart-basket"><?=array_reduce($cart_itmes,'cartListTemplate')?></span>
 		 		</div>	
 		 	</div>
 		 	<div class="col-xs-12 col-md-5">

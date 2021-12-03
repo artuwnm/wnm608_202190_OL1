@@ -1,7 +1,7 @@
 <?php
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 
-$product =  makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
 $images = explode(",", $product->images);
 
@@ -16,10 +16,10 @@ $image_elements = array_reduce($images, function($r,$o){
 <head>
     <meta charset="UTF-8">
     <title>Store: <?= $product->title ?></title>
-    <?php include "../parts/meta.php" ?>
+    <?php include "parts/meta.php" ?>
 </head>
 <body>
-    <?php include "../parts/navbar.php" ?>
+    <?php include "parts/navbar.php" ?>
 
     <script src="js/product_thumbs.js"></script>
 
@@ -37,12 +37,12 @@ $image_elements = array_reduce($images, function($r,$o){
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
-                <form class="card soft flat" method="post" action="styleguide/cart_actions.php?action=add-to-cart">
+                <form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
                     
                     <input type="hidden" name="product-id" value ="<?=$product->id?>">
 
                     <div class="card-section">
-                        <button class="round-btn"><a href="styleguide/product_list.php?id=<?=$product->id?>">Go Back</a></button>
+                        <button class="round-btn"><a href="product_list.php?id=<?=$product->id?>">Go Back</a></button>
                         <h3 class="prodcut-name"><?=$product->name?></h3>
                         <div class="prduct-price">&dollar;<?=$product->price?></div>
                         <p class="prduct-description"><?=$product->description?></p>

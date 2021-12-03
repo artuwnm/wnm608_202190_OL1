@@ -2,7 +2,7 @@
 
 function productListTemplate($r,$o){
    return $r.<<<HTML
-   <a class="col-xs-12 col-md-4" href="styleguide/product_item.php?id=$o->id">
+   <a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
       <figure class="figure product display-flex flex-column">
          <div class="flex-stretch">
             <img src="$o->thumbnail" alt="">
@@ -38,14 +38,14 @@ function cartListTemplate($r,$o){
       </div>
       <div class="flex-stretch">
          <strong>$o->name ($o->amount)</strong>
-         <form action="styleguide/cart_actions.php?action=delete-cart-item" method="post">
+         <form action="cart_actions.php?action=delete-cart-item" method="post">
             <input type="hidden" name="id" value="$o->id">
             <input type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em;">
          </form>
       </div>
       <div class="flex-none">
          <div>&dollar;$totalfixed</div>
-         <form action="styleguide/cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+         <form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
             <input type="hidden" name="id" value="$o->id">
             <div class="form-select" style="font-size: 0.8em;">
                $selectamount
@@ -83,7 +83,7 @@ function cartTotals(){
          <div class="flex-none"><strong>&dollar;$taxedfixed</strong></div>
       </div>
       <div class="card-section">
-         <a href="styleguide/product_checkout.php" class="form-button">Checkout</a>
+         <a href="product_checkout.php" class="form-button">Checkout</a>
       </div>
    HTML;
 }

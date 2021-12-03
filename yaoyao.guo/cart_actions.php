@@ -1,8 +1,7 @@
 
 <?php
 
-include_once "../lib/php/functions.php";
-
+include_once "lib/php/functions.php";
 
 switch($_GET['action']){
 	

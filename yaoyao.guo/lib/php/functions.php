@@ -41,7 +41,7 @@ function getCart(){
    return isset($_SESSION['cart']) ? $_SESSION['cart']:[];
 }
 
-function addToCart($id,$amount,$type){
+function addToCart($id,$amount,$types){
    //$_SESSION['cart'] = [];
    $cart = getCart();
 
@@ -56,13 +56,15 @@ function addToCart($id,$amount,$type){
       $_SESSION['cart'][] = (object)[
       "id"=>$id,
       "amount"=>$amount,
-      "type"=>$type
+      "types"=>$types
 
    ];
 
    }
 
 }
+
+
 
 function resetCart(){ $_SESSION['cart'] = [];}
 
@@ -98,4 +100,9 @@ function getCartItems(){
 
    },$data);
 
-   }
+   //print_p($data);
+
+   //die($ids);
+
+
+}

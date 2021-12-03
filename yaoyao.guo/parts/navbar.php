@@ -2,7 +2,7 @@
 	
 <?php
 
-include_once "../lib/php/functions.php";
+include_once "lib/php/functions.php";
 
 ?>
 
@@ -15,8 +15,8 @@ include_once "../lib/php/functions.php";
 			<nav class="navbar nav nav-flex flex-none">
 				<ul>
 					<li><a href="index.php">HOME</a></li>
-					<li><a href="styleguide/product_list.php">STORE</a></li>
-					<li><a href="styleguide/product_cart.php">
+					<li><a href="product_list.php">STORE</a></li>
+					<li><a href="product_cart.php">
 					<span>CART</span>
 					<span class="badge"><?=makeCartBadge();?></span>
 					</a></li>
