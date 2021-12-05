@@ -17,7 +17,7 @@ $empty_user = (object)[
 // file_put_contnents json_encode explode $_POST
 //CRUD, Create Read Update Delete
 
-//print_p([$_GET, $_POST]); 디버깅이나 전송된 데이터 확인용
+//print_p([$_GET, $_POST]); 디버깅 / 전송된 데이터 확인용
 
 if (isset($_GET['action'])){
 	switch($_GET['action']){
@@ -179,9 +179,8 @@ HTML;
 				<ul>
 				<?php 
 					for($i=0;$i<count($users);$i++){
-						echo "<li> 
-							<a href='users.php?id=$i'>{$users[$i]->name}</a>
-							</li>";
+						//echo "<li> <a href='users.php?id=$i'>{$users[$i]->name}</a> </li>";
+						echo "<li> <a href='admin/users.php?id=$i'>{$users[$i]->name}</a> </li>";
 					} 
 				 ?>
 
