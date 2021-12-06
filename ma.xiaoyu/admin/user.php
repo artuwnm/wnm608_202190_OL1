@@ -148,6 +148,7 @@ function isSubmit() {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>User Admin Page</title>
     <?php include "../parts/meta.php"; ?>
     <link rel="stylesheet" href="lib/css/admin_user.css">
@@ -168,6 +169,7 @@ function isSubmit() {
             </nav>
         </div>
     </header>
+
     
 
     <div class="container">

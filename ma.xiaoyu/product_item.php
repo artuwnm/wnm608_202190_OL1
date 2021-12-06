@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -9,8 +10,6 @@ $images = array_map('trim', explode(",", $product->image));
 $image_elements = array_reduce($images,function($r,$o){
     return $r."<img src='img/store/$o'>";
 });
-
-print_p($_SESSION);
 ?>
 
 
@@ -47,6 +46,7 @@ print_p($_SESSION);
 
                     <div class="card-section">
                         <h2 class="product-name"><?= $product->name ?></h2>
+                        <div class="product-category"><?= $product->category ?></div>
                         <div class="product-price">&dollar;<?= $product->price ?></div>
                     </div>
 
@@ -75,12 +75,19 @@ print_p($_SESSION);
                </form>
             </div>
          </div>
+
+         <div class="card soft dark">
+        <p><?= $product->description ?></p>   
+        </div>
+    
+        <h2>Recommended Products</h2>
+        <?php
+          recommendedSimilar($product->category,$product->id);
+        ?>
     </div>
    
-    <div class="card soft dark">
-        <p><?= $product->description ?></p>
-        
-    </div>
+    
+
     
 </body>
 </html>
