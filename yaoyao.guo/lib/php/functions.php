@@ -2,20 +2,20 @@
 
 session_start();
 
-function print_p($v){
-   echo "<pre>", print_r($v), "</pre>";
+function print_p($v) {
+   echo "<pre>",print_r($v),"</pre>";
 }
 
-function file_get_jason($filename){
+function file_get_json($filename){
    $file = file_get_contents($filename);
    return json_decode($file);
-} 
+}
 
-include_once "auth.php";
+include "auth.php";
 function makeConn(){
    $conn = new mysqli(...MYSQLIAuth());
-   if($conn->connect_errno) die($conn->connect_error);
-   $conn->set_charset('utf8');
+   if($conn -> connect_errno) die($conn -> connect_error);
+   $conn -> set_charset('utf8');
    return $conn;
 }
 
@@ -29,10 +29,10 @@ function makePDOConn(){
 }
 
 function makeQuery($conn,$qry){
-   $result = $conn->query($qry);
-   if($conn->errno) die($conn->error);
+   $result = $conn -> query($qry);
+   if($conn -> errno) die($conn -> error);
    $a = [];
-   while($row = $result->fetch_object()){
+   while($row = $result -> fetch_object()){
       $a[]= $row;
    }
    return $a;
@@ -50,34 +50,27 @@ function getCart(){
 }
 
 function addToCart($id,$amount,$types){
-   //$_SESSION['cart'] = [];
    $cart = getCart();
 
    $p = array_find($cart,function($o) use($id) {return $o->id==$id;});
 
    if($p){
       $p->amount += $amount;
-
-   }
-
-   else{
+   } else{
       $_SESSION['cart'][] = (object)[
       "id"=>$id,
       "amount"=>$amount,
       "types"=>$types
-
-   ];
-
-   }
+   ];}
 
 }
+
 
 
 
 function resetCart(){ $_SESSION['cart'] = [];}
 
 function cartItemById($id){
-   //return array_find(getCart(),function($o)use($id){return $o->id==$_GET['id'];});
    return array_find(getCart(),function($o)use($id){return $o->id==$id;});
 }
 
@@ -92,22 +85,19 @@ function makeCartBadge(){
 
 function getCartItems(){
    $cart = getCart();
-
    if(empty($cart)) return[];
 
    $ids = implode(",",array_map(function($o){return $o->id;},$cart));
-
    $data = makeQuery(makeConn(), "SELECT * From `products` WHERE `id` IN ($ids)");
 
    return array_map(function($o) use($cart){
-
       $p = cartItemById($o->id);
       $o->amount = $p->amount;
       $o->total = $p->amount * $o->price;
       return $o; 
-
    },$data);
 
 
 }
+
 ?>

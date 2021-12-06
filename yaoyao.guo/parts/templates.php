@@ -2,7 +2,6 @@
 
 function productListTemplate($r,$o){
    return $r.<<<HTML
-
    <a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
       <figure class="figure product display-flex flex-column">
          <div class="flex-stretch">
@@ -14,10 +13,8 @@ function productListTemplate($r,$o){
          </figcaption>
       </figure>
    </a>
-
    HTML;
 }
-
 
 function selectAmount($amount=1,$total=10){
    $output = "<select name='amount'>";
@@ -29,7 +26,7 @@ function selectAmount($amount=1,$total=10){
 }
 
 
-/* Cartpage added product list - left */
+/* cartpage added product list - left */
 
 function cartListTemplate($r,$o){
    $totalfixed = number_format($o->total,2,'.','');
@@ -40,14 +37,14 @@ function cartListTemplate($r,$o){
          <img src="$o->thumbnail">
       </div>
       <div class="flex-stretch">
-         <strong>$o->name ($o->amount)</strong>
+         <strong>$o->name</strong>
          <form action="cart_actions.php?action=delete-cart-item" method="post">
             <input type="hidden" name="id" value="$o->id">
-            <input type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em;">
+            <input type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em; margin-top: 0.5em;">
          </form>
       </div>
       <div class="flex-none">
-         <div>&dollar;$totalfixed</div>
+         <div style="margin-bottom: 0.5em;">&dollar;$totalfixed</div>
          <form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
             <input type="hidden" name="id" value="$o->id">
             <div class="form-select" style="font-size: 0.8em;">
@@ -60,7 +57,7 @@ function cartListTemplate($r,$o){
 HTML;}
 
 
-/* Cartpage price - right */
+/* cartpage price - right */
 
 function cartTotals(){
    $cart = getCartItems();
@@ -92,6 +89,7 @@ function cartTotals(){
 }
 
 
+
 function recommendedProducts($a){
    $products = array_reduce($a,'productListTemplate');
    echo <<<HTML
@@ -111,7 +109,12 @@ function recommendedSimilar($cat, $id=0, $limit=3){
 }
 
 
-/* Check out page product list */
+
+
+
+
+
+/* --------- For check out page product list(ORDER SUMMARY) --------- */
 
 function cartListTemplateForCheckout($r,$o){
    $totalfixed = number_format($o->total,2,'.','');
@@ -128,7 +131,6 @@ function cartListTemplateForCheckout($r,$o){
       <div>&dollar;$totalfixed</div>
    </div>
 HTML;}
-
 
 function cartTotalsForCheckout(){
    $cart = getCartItems();
@@ -155,3 +157,4 @@ function cartTotalsForCheckout(){
       </div>
    HTML;
 }
+?>

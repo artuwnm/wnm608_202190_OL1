@@ -5,7 +5,7 @@ include "../lib/php/functions.php";
 
 
 $filename = "../data/users.json";
-$users = file_get_jason($filename);
+$users = file_get_json($filename);
 
 $empty_user = (object)[
 	"name" =>"",

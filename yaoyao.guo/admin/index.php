@@ -2,20 +2,16 @@
 
 include "../lib/php/functions.php";
 include "../parts/templates.php";
-include "../data/api.php";
-
-
-$products = makeStatement("products_admin_all",[]);
 
 
 $empty_product = (object)[
 
-	"name"=>"Plain Glazed 2",
-	"description"=>"The donut ring is fluffy and airy, with a glossy sugar coating that has a rich flavor.",
-	"price"=>"4.50",
-	"category"=>"ring",
-	"thumbnail"=>"img/product_7.png",
-	"images"=>"img/product_7.png"
+	"name"=>"Donutz Squeaky Plush Toy 2",
+	"description"=>"Description ZippyPaws Donutz Squeaky Plush No Stuffing Dog Toy features a fun, cute donut design. Each donut is filled with two propriety crescent-shaped squeakers. These fun toys are designed for small- and medium-sized dogs who love to squeak, with no stuffing to ensure they last longer with less mess.",
+	"price"=>"$3.79",
+	"category"=>"toys",
+	"thumbnail"=>"img/toy3.jpg",
+	"images"=>"img/toy3_1.jpg"
 
 ];
 
@@ -189,24 +185,20 @@ $output = $id == "new" ? "<div class='card soft'>$form </div>":
 	</div>
 ";
 
-$delete = $id == "new" ? "" : "<button class='back-btn'><a href ='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a></button>";
+$delete = $id == "new" ? "" : "<button class='round-btn'><a href ='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a></button>";
 
 echo <<<HTML
 	<div class="card soft">
 		<nav class="display-flex" style="margin-bottom: -0.8em;">
 		    <!--href="admin/users.php"-->
-			<div class="flex-stretch"><button class="back-btn"><a href="{$_SERVER['PHP_SELF']}">Back</a></button></div>
+			<div class="flex-stretch"><button class="round-btn"><a href="{$_SERVER['PHP_SELF']}">Back</a></button></div>
 			<div class="flex-none">$delete</div>
 		</nav>
 	</div>
 $output
 HTML;
 
-//# 13-3 원래코드
-//return <<<HTML
-//<div> $o->name</div>
-//<div> $o->price</div>
-//HTML;
+
 }
 
 ?><!DOCTYPE html>
@@ -222,7 +214,7 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Product Admin</h1>
+				<h1 style="color:white; padding: 1em;">Product Admin</h1>
 
 			</div>
 			<div class="flex-stretch"></div>
