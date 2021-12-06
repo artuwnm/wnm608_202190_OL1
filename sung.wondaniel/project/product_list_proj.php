@@ -45,7 +45,7 @@ include_once "../parts/templates.php";
 				</div>
 
 				<div class="flex-none">
-					<button data-filter="category" data-value="fashion" type="button" class="form-button">Fashion</button>
+					<button data-filter="category" data-value="daily" type="button" class="form-button">Daily</button>
 				</div>
 			</div>
 			<div class="flex-none">

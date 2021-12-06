@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include_once "../lib/php/functions.php";
+include_once "../parts/templates.php"
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -20,7 +25,7 @@
         <div class="flex-stretch"></div>    
           <nav class="flex-none nav">
             <ul class="container display-flex">
-                <li ><a href="index_proj.php">Home</a></li>
+                <li ><a href="index.php">Home</a></li>
                 <li ><a href="product_list_proj.php">Store</a></li>
                 <li><a href="about.php" href-#="">About</a></li>
                 <li ><a href="cart_proj.php">Cart</a></li>
@@ -32,35 +37,15 @@
   <div class="container">
 	<h1 id="figures">KICKS ON FIRE</h1>
 
-		<div class="grid gap" id="productgrids">	
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-							<img src="../img/vapormax_1.jpg" alt="">
-							<figcaption>
-								<div>Nike Vapor Max</div>
-				
-							</figcaption>	
-					</figure>
-			</div>
-			<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-							<img src="../img/airmax97_1.jpg" alt="">
-							<figcaption>
-								<div>'97 Air Max Black</div>
-							</figcaption>	
-					</figure>
-			</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-							<img src="../img/cdg_1.jpg" alt="">
-							<figcaption>
-								<div>CDG X Converse White Low</div>
-				
-							</figcaption>	
-					</figure>
-			</div>
 
 
+
+		<div class="container">
+			<h2>Latest Running Shoes</h2>
+			<?php recommendedCategory("running"); ?>
+
+			<h2>Latest Daily Shoes</h2>
+			<?php recommendedCategory("daily"); ?>
 		</div>
 
 		<div class="form-control">
@@ -68,8 +53,6 @@
 				<a href="product_list_proj.php">SHOP ALL SHOES</a>
 			</button>
 		</div>
-
-
 
 </body>
 </html>
