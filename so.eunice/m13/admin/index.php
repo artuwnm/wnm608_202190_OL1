@@ -4,18 +4,101 @@ include "../lib/php/functions.php";
 
 $empty_product = (object) [
 	"title"=>"",
-	"author"=>"",
-	"description"=>"",
-	"price"=>"",
-	"category"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
-	"publisher"=>"",
-	"illustrator"=>""
+	"price"=>"8.89",
+	"quantity"=>"29",
+	"author"=>"George Orwell",
+	"category"=>"Fiction",
+	"description"=>"George Orwell's timeless and timely allegorical novel—a scathing satire on a downtrodden society’s blind march towards totalitarianism.",
+	"thumbnail"=>"animal_farm_thumb.png",
+	"images"=>"animal_farm_01.png, animal_farm_02.png",
+	"publisher"=>"Signet"
 ];
 
 
 
+
+
+//LOGIC
+
+try {
+if(isset($_GET['action'])) {
+	$conn = makePDOConn();
+	switch($_GET['action']) {
+		case "update":
+			$statement = $conn->prepare("UPDATE
+				`products`
+				SET 
+					`title`=?,
+					`price`=?,
+					`quantity`=?,
+					`author`=?,
+					`category`=?,
+					`description`=?,
+					`thumbnail`=?,
+					`images`=?,
+					`publisher`=?,
+					`date_modify`=NOW()
+				WHERE `id`=?
+				");
+			$statement->execute([
+				$_POST['product-title'],
+				$_POST['product-price'],
+				$_POST['product-quantity'],
+				$_POST['product-author'],
+				$_POST['product-category'],
+				$_POST['product-description'],
+				$_POST['product-thumbnail'],
+				$_POST['product-images'],
+				$_POST['product-publisher'],
+				$_GET['id']
+			]);
+			header("location:{$_SERVER['PHP_SELF']}?id={$_GET['id']}");
+			break;
+		case "create":
+			$statement = $conn->prepare("UPDATE
+			`products`
+			(	
+				`title`,
+				`price`,
+				`quantity`,
+				`author`,
+				`category`,
+				`description`,
+				`thumbnail`,
+				`images`,
+				`publisher`,
+				`date_create`,
+				`date_modify`
+
+			)
+				
+			VALUES(?,?,?,?,?,?,?,?,?,NOW(),NOW())
+			");
+			$statement->execute([
+				$_POST['product-title'],
+				$_POST['product-price'],
+				$_POST['product-quantity'],
+				$_POST['product-author'],
+				$_POST['product-category'],
+				$_POST['product-description'],
+				$_POST['product-thumbnail'],
+				$_POST['product-images'],
+				$_POST['product-publisher']
+
+			]);
+			$id = $conn->lastInsertId();
+			header("location:{$_SERVER['PHP_SELF']}?id=$id");
+			break;
+		case "delete":
+			$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
+			$statement->execute([$_GET['id']]);
+			header("location:{$_SERVER['PHP_SELF']}");
+			break;
+	}
+}
+} catch(PDOException $e) {
+	die($e->getMessage());
+}
 
 
 
@@ -62,6 +145,10 @@ $display = <<<HTML
 		<span>&dollar;$o->price</span>
 	</div>
 	<div class="form-control">
+		<label class="form-label">Quantity</label>
+		<span>$o->quantity</span>
+	</div>
+	<div class="form-control">
 		<label class="form-label">Author</label>
 		<span>$o->author</span>
 	</div>
@@ -72,6 +159,10 @@ $display = <<<HTML
 	<div class="form-control">
 		<label class="form-label">Description</label>
 		<span>$o->description</span>
+	</div>
+	<div class="form-control">
+		<label class="form-label">Publisher</label>
+		<span>$o->publisher</span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Thumbnail</label>
@@ -87,30 +178,42 @@ HTML;
 $form = <<<HTML
 
 <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
-	<h4>$addoredit User</h4>
+	<h4>$addoredit Product</h4>
 	<div class="form-control">
-		<label class="form-label" for="user-title">Title</label>
-		<input class="form-input" name="user-title" id="user-title" type="text" value="$o->title" placeholder="Enter the Product Title">	
+		<label class="form-label" for="product-title">Title</label>
+		<input class="form-input" name="product-title" id="product-title" type="text" value="$o->title" placeholder="Enter the Product Title">	
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="user-price">Price</label>
-		<input class="form-input" name="user-price" id="user-price" type="number" min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter the Product Price">	
+		<label class="form-label" for="product-price">Price</label>
+		<input class="form-input" name="product-price" id="product-price" type="number" min="0" max="1000" step="0.01" value="$o->price" placeholder="Enter the Product Price">	
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="user-category">Category</label>
-		<input class="form-input" name="user-category" id="user-category" type="text" value="$o->category" placeholder="Enter the Product Category">	
+		<label class="form-label" for="product-quantity">Quantity</label>
+		<input class="form-input" name="product-quantity" id="product-quantity" type="number" min="0" max="1000" step="1" value="$o->quantity" placeholder="Enter the Product quantity">	
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="user-description">Description</label>
-		<textarea class="form-input" name="user-description" id="user-description" placeholder="Enter the Product Description">$o->description</textarea>	
+		<label class="form-label" for="product-author">Author</label>
+		<input class="form-input" name="product-author" id="product-author" type="text" value="$o->author" placeholder="Enter the Product Author">	
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="user-thumbnail">Thumbnail</label>
-		<input class="form-input" name="user-thumbnail" id="user-thumbnail" type="text" value="$o->thumbnail" placeholder="Enter the Product Thumbnail">	
+		<label class="form-label" for="product-category">Category</label>
+		<input class="form-input" name="product-category" id="product-category" type="text" value="$o->category" placeholder="Enter the Product Category">	
 	</div>
 	<div class="form-control">
-		<label class="form-label" for="user-images">Other Images</label>
-		<input class="form-input" name="user-images" id="user-images" type="text" value="$o->images" placeholder="Enter the Product Images">	
+		<label class="form-label" for="product-description">Description</label>
+		<textarea class="form-input" name="product-description" id="product-description" placeholder="Enter the Product Description">$o->description</textarea>	
+	</div>
+	<div class="form-control">
+		<label class="form-label" for="product-publisher">Publisher</label>
+		<input class="form-input" name="product-publisher" id="product-publisher" type="text" value="$o->publisher" placeholder="Enter the Publisher">	
+	</div>
+	<div class="form-control">
+		<label class="form-label" for="product-thumbnail">Thumbnail</label>
+		<input class="form-input" name="product-thumbnail" id="product-thumbnail" type="text" value="$o->thumbnail" placeholder="Enter the Product Thumbnail">	
+	</div>
+	<div class="form-control">
+		<label class="form-label" for="product-images">Other Images</label>
+		<input class="form-input" name="product-images" id="product-images" type="text" value="$o->images" placeholder="Enter the Product Images">	
 	</div>
 
 	<div class="form-control">
@@ -123,6 +226,7 @@ HTML;
 $output = $id == "new" ? "<div class='card soft'>$form</div>" :
 	"<div class='grid gap'>
 		<div class='col-xs-12 col-md-7'><div class='card soft'>$display</div></div>
+		
 		<div class='col-xs-12 col-md-5'><div class='card soft'>$form</div></div>
 	</div>
 	";
@@ -191,7 +295,7 @@ HTML;
 
 				<?php 
 
-				$result = makeQuery(makeConn(), "SELECT * FROM `products`");
+				$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY `date_create` DESC");
 
 				echo array_reduce($result,'productListItem');
 
@@ -200,7 +304,7 @@ HTML;
 
 				
 
-			<?php }?>
+			<?php } ?>
 
 	</div>
 </body>
