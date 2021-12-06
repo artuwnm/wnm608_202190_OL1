@@ -1,9 +1,9 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -18,50 +18,37 @@ include_once "lib/php/functions.php";
 	<?php include "parts/navbar.php"; ?>
 
 
+<div class="view-window" style="background-image:url(img/cover_1.JPG)">
+	<div class="fill-parent display-flex flex-align-center flex-justify-center">
+	</div>
+	</div>
+
+<div class="container">
+	<div class="card soft">
+		<h2>My Happy Soap</h2>
+		<p>Find Your Daily Scent!</p>
+	</div>
 
 
-			<div class="grid gap" id="products">
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure">
-						<img src="img/coco.png"  alt="">
-						<figcaption>
-							<div class="caption-body">
-								<div><a href="product_list.php">Coco</a></div>
-								<div>$15.00</div>
-							</div>					
-						</figcaption>
-					</figure>
-				</div>
+		<div class="container">
 
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure">
-						<img src="img/pivoine.png" alt="">
-						<figcaption>
-							<div class="caption-body">
-								<div><a href="product_list.php">Pivoine</a></div>
-								<div>$15.00</div>
-							</div>					
-						</figcaption>
-					</figure>
-				</div>
+			<h2>Latest Added</h2>
+			
+			<?php recommendedCategory("musk");?>
 
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure">
-						<img src="img/mistral.png" alt="">
-						<figcaption>
-							<div class="caption-body">
-								<div><a href="product_list.php">Mistral</a></div>
-								<div>$15.00</div>
-							</div>					
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-			<div>
+			<h2>Gift For Her</h2>
+			<?php recommendedCategory("floral");?>
+
+		</div>
+
+
+
+		<div>
 			<button class="form-button"><a href="product_list.php">View All Products</a></button>
 		</div>
 
 	</div>
+</div>
 
 </body>
 </html>
