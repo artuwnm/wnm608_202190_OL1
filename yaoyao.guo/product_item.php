@@ -1,5 +1,6 @@
 <?php
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -9,8 +10,8 @@ $image_elements = array_reduce($images, function($r,$o){
     return $r. "<img src = '$o'>";
 
 })
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,6 +90,11 @@ $image_elements = array_reduce($images, function($r,$o){
 
             </div>
         </div>
+        <h2>Recommended Products</h2>
+        <?php
+        recommendedSimilar($product->category,$product->id);
+
+        ?>
 
 
     </div>

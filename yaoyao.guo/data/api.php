@@ -12,8 +12,8 @@ switch($data->type){
 	case "products_all":
 		$output['result'] = makeQuery(makeConn(), "SELECT * 
 			FROM `products` 
-			ORDER BY `date_create` DESC
-			LIMIT 15");
+			ORDER BY `date_create` 
+			DESC LIMIT 12");
 		break;
 
 	case"product_search":
@@ -23,23 +23,23 @@ switch($data->type){
 				`name` LIKE '%$data->search%' OR
 				`description` LIKE '%$data->search%' OR
 				`category` LIKE '%$data->search%'
-			ORDER BY `date_create`  DESC
-			LIMIT 15");
+			ORDER BY `date_create` 
+			DESC LIMIT 12");
 		break;
 
 	case"product_filter":
 		$output['result'] = makeQuery(makeConn(), "SELECT * 
 			FROM `products` 
 			WHERE `$data->column` LIKE '$data->value'
-			ORDER BY `date_create`  DESC
-			LIMIT 15");
+			ORDER BY `date_create` 
+			DESC LIMIT 12");
 		break;
 
 	case"product_sort":
 		$output['result'] = makeQuery(makeConn(), "SELECT * 
 			FROM `products` 
 			ORDER BY `$data->column` $data->dir 
-			LIMIT 15");
+			LIMIT 12");
 		break;	
 
 
@@ -47,3 +47,10 @@ switch($data->type){
 }
 
 echo json_encode($output,JSON_NUMERIC_CHECK|JSON_UNESCAPED_UNICODE);
+
+?>
+
+
+
+
+

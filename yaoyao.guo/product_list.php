@@ -77,32 +77,10 @@ include_once "parts/templates.php";
 			</div>
 
 
-
-			<div class='productlist grid gap'></div>
-
-
-
-			<?php
-
-			$result= makeQuery(
-			makeConn(),
-			"
-			SELECT * 
-			FROM `products`
-			ORDER BY `date_create` DESC
-			LIMIT 15
-			"
-		);
-	
-
-		echo "<div class='productlist grid gap'>", array_reduce($result, 'productListTemplate'),"</div>";
-
-		?>
-			
-		
+		<div class='productlist grid gap'></div>
+	</div>
 
 	
-</div>
-
 </body>
+
 </html>

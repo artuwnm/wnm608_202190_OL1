@@ -143,7 +143,7 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>User Admin</h1>
+				<h1 style="color:white; padding: 1em;">User Admin</h1>
 
 			</div>
 			<div class="flex-stretch"></div>

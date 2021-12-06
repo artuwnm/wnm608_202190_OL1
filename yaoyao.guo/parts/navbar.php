@@ -1,15 +1,20 @@
-	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">	
 	
 <?php
 
 include_once "lib/php/functions.php";
 
+
 ?>
 
 <header class="navbar">
 		<div class="container display-flex">
-			<div class="flext-none">
-				<a href="index.php"><img src="img/logo.png" alt="" class="logo"></a>
+			<div class="flex-none">
+				<a href="index.php">
+					<h1 style="color:white; font-size: 2em; font-family:'Fuzzy Bubbles', cursive;">PetUs</h1>
+				</a>
 			</div>	
 			<div class="flex-stretch"></div>
 			<nav class="navbar nav nav-flex flex-none">
