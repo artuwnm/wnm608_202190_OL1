@@ -13,7 +13,7 @@ switch($data->type) {
 		$output['result'] = makeQuery(makeConn(),"SELECT * 
 			FROM `products` 
 			ORDER BY `date_create` DESC 
-			LIMIT 12");
+			");
 		break;
 
 	case "product_search":
