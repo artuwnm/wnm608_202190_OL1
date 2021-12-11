@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="m14/lib/css/styleguide.css">
 <link rel="stylesheet" type="text/css" href="m14/lib/css/gridsystem.css">
 <link rel="stylesheet" type="text/css" href="m14/css/storetheme.css">
+<link rel="icon" type="image/png" href="m14/img/bookworld_favicon.png"/>
 
 <link rel="stylesheet" href="https://use.typekit.net/coc1xhb.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
