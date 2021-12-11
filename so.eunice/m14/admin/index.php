@@ -10,7 +10,7 @@ $empty_product = (object) [
 	"category"=>"Fiction",
 	"description"=>"George Orwell's timeless and timely allegorical novel—a scathing satire on a downtrodden society’s blind march towards totalitarianism.",
 	"thumbnail"=>"animal_farm_thumb.png",
-	"images"=>"animal_farm_01.png, animal_farm_02.png",
+	"images"=>"animal_farm_01.png,animal_farm_02.png",
 	"publisher"=>"Signet"
 ];
 

@@ -20,7 +20,12 @@ $cart_product = cartItemById($_GET['id']);
 		<div class="container">
 		<div class="card soft">
 			<h3>You added "<?= $product->title ?>" to your cart.</h3>
-			<p>There are now <?= $cart_product->amount ?> of "<?= $product->title ?>"" in your cart.</p>
+			<p>There are now <strong><?= $cart_product->amount ?></strong> of <strong>"<?= $product->title ?>""</strong> in your cart.</p>
+			<div class="images-thumbs">
+				<img src="img/<?=$product->thumbnail ?>">
+			</div>
+			<br>
+
 			<div class="display-flex">
 				<div class="flex-none"><a href="../so.eunice/m14/product_list.php">Continue Shopping</a></div>
 				<div class="flex-stretch"></div>
