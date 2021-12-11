@@ -7,6 +7,7 @@ include_once "lib/php/functions.php";
 	
 	<base href="http://euniceso.net/aau/wnm608/so.eunice/m14">
 	
+	<input type="checkbox" id="menu" class="hidden">
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
@@ -15,6 +16,9 @@ include_once "lib/php/functions.php";
 				</a></div>
 			</div>
 			<div class="flex-stretch"></div>
+			<div class="flex-none menu-button">
+				<label for="menu">&equiv;</label>
+			</div>
 			<nav class="nav nav-flex flex-none">
 				<ul>
 					<!-- li*3>a[href=#]>{Link $} -->

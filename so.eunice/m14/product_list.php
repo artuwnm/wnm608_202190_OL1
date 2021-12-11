@@ -32,26 +32,28 @@ include_once "parts/templates.php";
 			</div>
 			<div class="form-control">
 				<div class="card soft">
-					<div class="display-flex">
-						<div class="flex-stretch display-flex">
-							<div class="flex-none margin_right">
+					<div class="display-flex flex-wrap">
+						
+						<div class="flex-stretch display-flex flex-wrap">
+							<div class="flex-none filterbutton-margin">
 								<button data-filter="category" data-value="" type="button" class="form-button secondary">All</button>
 							</div>
-							<div class="flex-none margin_right">
+							<div class="flex-none filterbutton-margin">
 								<button data-filter="category" data-value="Design" type="button" class="form-button secondary">Design</button>
 							</div>
-							<div class="flex-none margin_right">
+							<div class="flex-none filterbutton-margin">
 								<button data-filter="category" data-value="Children Classic" type="button" class="form-button secondary">Children</button>
 							</div>
-							<div class="flex-none margin_right">
+							<div class="flex-none filterbutton-margin">
 								<button data-filter="category" data-value="Fiction" type="button" class="form-button secondary">Fiction</button>
 							</div>
-							<div class="flex-none">
+							<div class="flex-none filterbutton-margin">
 								<button data-filter="category" data-value="Scandinavian Noir" type="button" class="form-button secondary">Scandinavian Noir</button>
 							</div>
 						</div>
-					
+
 						<div class=" display-flex"></div>
+
 						<div class="display-none">
 							<div class="form-select" >
 								<select class="js-sort">
@@ -62,7 +64,7 @@ include_once "parts/templates.php";
 									
 								</select>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
