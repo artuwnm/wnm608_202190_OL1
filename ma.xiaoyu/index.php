@@ -14,7 +14,7 @@ include_once "parts/templates.php";
         queryAllPromotion();
     </script>
 </head>
-<body>
+<body class="flush">
     <?php include "parts/navbar.php"; ?>
 
     <div class="container">
@@ -37,21 +37,10 @@ include_once "parts/templates.php";
 
         <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
         <div class="container">
-        	<article id="article1" class="article card hard">
-            <div class="display-flex-aligh-center">
-              
-              <div class="flex-none">
-        	       <small> Last updated on 12/5/2021</small>
-              </div>
-            </div>
-        		<div class="article-body">
-        			<p></p>
-            </div>	
-          </article>
-          <article id="article2"  class="article card hard">
-             <h2>How we ship our love</h2>
-             <div class="article-body">
-                <p>WYou will love these products! Free shipping on orders over $75 </p>  
+            <article id="article2"  class="article card hard">
+            <h2>How we ship our love</h2>
+                <div class="article-body">
+                <p>You will love these products! Free shipping on orders over $75 </p>  
         	   </div>
           </article>
         </div>
