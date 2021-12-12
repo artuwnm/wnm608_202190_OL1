@@ -27,6 +27,14 @@ body{
 
 
 
+.logo{
+	margin-top: 0.5em;
+	width: 70%;
+}
+
+
+
+
 li{list-style: none;}
 
 @media(max-width:800px){
@@ -38,13 +46,33 @@ li{list-style: none;}
 		padding-left: 0.5em;
 	}
 }
+.menu-button label{display:none;}
 @media(max-width:400px){
-	.nav .display-flex{
+	.navbar .display-flex{
+		flex-wrap: wrap;
+	}
+	.navbar .nav{
+		width: 100%;
+		display: none;
+	}
+
+	.navbar .nav-flex ul{
 		display: block;
 	}
 	.navbar .nav ul li{
 		line-height: 2em;
 	}
+	.menu-button label{
+		display: block;
+		padding:  0 1em;
+	}
+	#menu:checked+.navbar .nav{
+		display: block;
+	}
+	.logo{
+		width: 60%;
+	}
+	
 }
 
 .figure.product{
@@ -160,6 +188,9 @@ span.badge:not(:empty)::before{
 	height: 6em;
 	object-fit: contain;
 }
+
+
+
 
 
 

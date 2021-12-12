@@ -82,6 +82,7 @@ a{
 .flex-justify-center{justify-content: center;} /*left&right*/
 
 .flex-column{flex-direction: column;}
+.flex-wrap{flex-wrap: wrap;}
 
 
 
@@ -185,6 +186,7 @@ a{
 	color: var(--color-white);
 	line-height: var(--header-height);
 	padding:  0.3em 0 0;
+	margin-bottom: 1em;
 }
 
 .navbar>div{
@@ -199,6 +201,15 @@ a{
 .navbar a{
 	padding:  0 0.5em;
 }
+
+.flush>.navbar{
+	margin-bottom: 0;
+}
+
+
+
+
+
 
 /* CARD  */
 .card{
@@ -234,6 +245,10 @@ a{
 .card.flat{
 	padding: 0;
 }
+[class*='col-']>.card{
+	height: 100%;
+	margin: 0;
+}
 
 .card-section~.card-section{
 	border-top: 1px solid var(--color-neutral-light);
@@ -242,8 +257,6 @@ a{
 .card-section{
 	padding: 1em;
 }
-
-
 
 .view-window{
 	height: 50vh;
@@ -489,10 +502,6 @@ a{
 	margin: 1em 0 2em;
 }
 
-.logo{
-	margin-top: 0.5em;
-	width: 80%;
-}
 
 
 /*ul{
