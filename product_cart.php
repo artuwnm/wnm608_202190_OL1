@@ -5,7 +5,7 @@
 
 	//$cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (4,7,10)");
 
-	$cart_items = getCartItems();
+	$cart = getCart();
 
 
 ?><!DOCTYPE html>
@@ -23,10 +23,16 @@
 
 	<div class="container">
 		<h2>In Your Cart</h2>
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-7">
-					<div class="card soft">
-						<?= array_reduce($cart_items, 'cartListTemplate') ?>
+
+		<?php
+
+		if(count($cart)) {
+			?>
+
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-7">
+				<div class="card soft">
+					<?= array_reduce($cart_items, 'cartListTemplate') ?>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-5">
@@ -34,8 +40,22 @@
 						<?= cartTotals() ?>
 
 			    </div>
-				</div>
 			</div>
+		</div>
+		<?php
+		} else {
+			?>
+			<div class="card soft">
+				<p>No items in cart</p>
+			</div>
+
+				<h3>Other Recommendations</h3>
+				<?php recommendedAnything(6); ?>
+			
+			<?php
+		}
+		?>
+
 		</div>
 	
 </body>

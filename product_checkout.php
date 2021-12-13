@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+$cart = getCartItems();
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,8 @@ include_once "lib/php/functions.php";
 
 
 	<div class="container">
+		<div class="grid gap">
+		<div class="col-xs-12 col-md-7">	
 		<div class="card soft">
 			<h2>Product Checkout</h2>
 			
@@ -99,8 +102,23 @@ include_once "lib/php/functions.php";
 			<a href="product_confirmation.php" class="form-button">Complete Checkout</a>
 		</div>
 
-	</form>
+			</form>
 
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-5">
+			<div class="card soft">
+				<h2>Item Review</h2>
+				<?php array_reduce($cart, function($r,$o){
+					$totalfixed = number_format($o->total,2,'.','');
+					return $r."<div class='display-flex'>
+					<div class='flex-stretch'>$o->name</div>
+					<div class='flex-stretch'>&dollar;$totalfixed</div>
+					</div>";
+
+				}) ?>
+			</div>
+		</div>
 	</div>
 </div>
 
