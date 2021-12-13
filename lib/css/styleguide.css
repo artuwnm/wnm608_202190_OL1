@@ -225,7 +225,9 @@ a:hover {
 	background-color: var(--color-main-medium);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
+
 
 
 .navbar h1 {
@@ -238,6 +240,10 @@ a:hover {
 	padding:0 0.5em;
 }
 
+.flush>.navbar {
+	margin-bottom: 0;
+
+}
 /* CARD */
 
 .card {
@@ -329,6 +335,11 @@ a:hover {
 		padding: 0;
 	}
 
+
+[class*='col-']>.grid-card {
+	height: 100%;
+	margin: 0;
+}
 
 
 .view-window {
@@ -442,7 +453,6 @@ a:hover {
 	background-color: transparent;
 	border-width: 0;
 	font:  inherit;
-	-webkit-appearance: none;
 	color: inherit;
 	width: 100%;
 	outline: 0;
@@ -478,6 +488,7 @@ a:hover {
 	text-align: center;
 	padding: 0.5em 1em;
 }
+
 .form-button:hover {
 	text-decoration: none;
 }
