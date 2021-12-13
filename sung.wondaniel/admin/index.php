@@ -25,7 +25,7 @@ $empty_product = (object) [
 
 try {
 	$conn = makePDOConn();
-	switch($_GET['action']) {
+	switch(@$_GET['action']) {
 		case "update":
 			$statement = $conn->prepare("UPDATE
 			  `products`

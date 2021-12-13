@@ -75,7 +75,8 @@ a: hover{
 .flex-align-center { align-items:  center; }
 .flex-justify-center { justify-items:  center; }
 
-.flex-column {flex-direction: }
+.flex-column {flex-direction: column; }
+.flex-wrap {flex-wrap: wrap; }
 
 
 /* Small Class */
@@ -189,8 +190,10 @@ a: hover{
 	background-color:var(--color-main-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 
 }
+
 
 	.navbar h1{
 		font-size: 1em;
@@ -199,6 +202,10 @@ a: hover{
 	}
 	.navbar a{
 		padding: 0 0.5em ;
+	}
+
+	.flush>.navbar {
+		margin-bottom: 0;
 	}
 
 /* CARD */
@@ -465,3 +472,8 @@ a: hover{
 	line-height: 1.5em;
 }
 
+
+[class*='col-']>.card{
+	height:100%;
+	margin:0;
+}

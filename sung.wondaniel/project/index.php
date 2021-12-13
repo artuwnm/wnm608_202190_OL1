@@ -15,7 +15,7 @@ include_once "../parts/templates.php"
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Racing+Sans+One&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="flush">
 		
   <header class="navbar">
     <div class="container display-flex">
