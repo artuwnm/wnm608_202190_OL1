@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Store</title>
+
+	<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="css/storetheme.css">
+
+	<link rel="stylesheet" href="https://use.typekit.net/coc1xhb.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+	<!-- header>h1+p -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Fluffy Pancakes</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			
+			<!-- nav.nav>ul>li*4>a[href=#article$]>{link $} -->
+			<nav class="flex-none nav">
+				 <ul class="container display-flex">
+				 	<li><a href="#article1">Menu</a></li>
+				 	<li><a href="#article2">Discount</a></li>
+				 	<li><a href="#article3">About Us</a></li>
+				 	<li><a href="#article4">RSVP</a></li>
+				 </ul>
+			</nav>
+		</div>
+	</header>
+
+<!-- grid system -->
+	<div class="container">
+		<div class="card soft">
+			<h2>Grid</h2>
+			<div class="grid">
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="container">
+		<div class="card soft">
+			<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<!-- .container>article#aricle$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
+	 	<div class="container">
+	 		<article id="article1" class="article card soft">
+	 			<div class="display-flex flex-align-center">
+	 				<div class="flex-stretch">
+	 					<h2>Fluffy Pancakes</h2>
+	 				</div>
+	 				<div class="flex-none">
+	 					<small style="color: var(--color-coral);">More Details</small>
+	 				</div>
+	 			</div>
+	 			<div class="article-body">
+	 				<p>Our fluffy pancakes are always made fresh and in the view of our guests.  We use only the best ingredients sourced throughout the world to create that fluffy and flavorful taste.</p>
+	 				<p>Our signature flavors:</p>
+	 				<ul>
+	 					<li>Original</li>
+	 					<li>Chocolate flavor</li>
+	 					<li>Strawberry flavor</li>
+	 				</ul>
+	 			</div>
+	 		</article>
+	 	</div>
+
+	 	<div class="view-window" style="background-image: url('img/fluffy_pancake.jpg');">
+	 		
+	 	</div>
+
+	 	<div class="container">
+	 		<article id="article2" class="article card soft">
+	 			<h2>20% Off</h2>
+	 			<div class="article-body">
+	 				<p>We are offering 20% off for orders $60 and up this fall!</p>
+	 			</div>
+	 		</article>
+	 		<article id="article3" class="article card soft">
+	 			<h2>About Us</h2>
+	 			<div class="article-body">
+	 				<p>Fluffy Pancakes is the first to bring this fluffy and delicious Japanese style pancakes in the city. We make authentic Japanese style pancake.</p>
+	 				<p>We are located at</p>
+	 				<address>
+	 					123 Apple Ave,<br>
+	 					San Francisco, CA 94104 
+	 				</address>
+	 				<p>Open hour: Tue-Sun 11am-7pm</p>
+
+	 			</div>
+	 		</article>
+	 		<article id="article4" class="article card hard">
+	 			<h2>RSVP</h2>
+	 			<div class="article-body">
+	 				<p>We accept reservations for weekend orders. Please book via email or phone.</p>
+	 				<p>booking@fluffypancakes.com</p>
+	 				<p>+1 415 1234567</p>
+
+	 			</div>
+	 		</article>
+	 	</div>
+
+
+</body>
+</html>

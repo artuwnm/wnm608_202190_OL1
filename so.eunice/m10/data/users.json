@@ -1,0 +1,33 @@
+[
+	{
+		"name":"Eunice So",
+		"type":"Student",
+		"email":"euniceso.design@gmail.com",
+		"classes":[606,608,617]
+	},
+	{
+		"name":"Alfred Pennyworth",
+		"type":"Butler",
+		"email":"alfred@batcave.com",
+		"classes":[606,608,617,601]
+	},
+	{
+		"name":"Diana Prince",
+		"type":"Army nurse",
+		"email":"dianaprince@ww.com",
+		"classes":[606,608,617,601]
+	},
+	{
+		"name":"Hercule Poirot",
+		"type":"Private investigator",
+		"email":"herculepoirot@hp.com",
+		"classes":[606,608,617,601]
+	},
+	{
+		"name":"Harry Hole",
+		"type":"Police officer",
+		"email":"harryhole@oslopd.com",
+		"classes":[606,608,617]
+	}
+
+]
