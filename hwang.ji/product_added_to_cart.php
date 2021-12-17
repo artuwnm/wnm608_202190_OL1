@@ -42,8 +42,7 @@ $cart_itmes = getCartItems();
 			<img src="<?= $product->thumbnail ?>" alt="" style="width: 25%;">
 			<!-- //products form cart -->
 
-			<div class="display-flex" style="margin: 0 auto; justify-content: center;">
-				
+			<div class="added-page-btn" style="margin: 0 auto;">
 					<div class="round-btn" style="margin-top: 0.5em;"><a href="product_list.php">Continue Shopping</a></div>			  	
 			  		<div class="round-btn" style="margin-top: 0.5em;"><a href="product_cart.php">Go To Cart</a></div>
 			</div>

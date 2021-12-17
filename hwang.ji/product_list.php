@@ -49,7 +49,7 @@ include_once "parts/templates.php";
 						</div>
 				
 						<div class="flex-none">
-							<div class="form-select">
+							<div class="form-select sort-product">
 								<select class="js-sort">
 									<option value="1">Newest</option>
 									<option value="2">Oldest</option>
