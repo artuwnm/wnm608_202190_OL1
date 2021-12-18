@@ -1,7 +1,7 @@
 # Yaoyao Guo
 
 ## Revlevant Links
-- http://gyyashley.com/aau/wnm608/yaoyao.guo
+- http://gyyashley.com/aau/wnm608/yaoyao.guo/index.php
 - http://gyyashley.com/aau/wnm608/yaoyao.guo/styleguide
 - http://gyyashley.com/aau/wnm608/yaoyao.guo/admin/admin
 
