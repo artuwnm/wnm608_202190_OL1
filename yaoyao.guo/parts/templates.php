@@ -82,9 +82,7 @@ function cartTotals(){
          <div class="flex-stretch"><strong>Total</strong></div>
          <div class="flex-none"><strong>&dollar;$taxedfixed</strong></div>
       </div>
-      <div class="card-section">
-         <a href="product_checkout.php" class="form-button">Checkout</a>
-      </div>
+      
    HTML;
 }
 
@@ -95,6 +93,11 @@ function recommendedProducts($a){
    echo <<<HTML
    <div class="grid gap productlist">$products</div>
    HTML;
+}
+
+function recommendedAnything($limit=3){
+   $result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY rand() LIMIT $limit");
+   recommendedProducts($result);
 }
 
 function recommendedCategory($cat, $limit=3){

@@ -43,16 +43,17 @@ $image_elements = array_reduce($images, function($r,$o){
                     <input type="hidden" name="product-id" value ="<?=$product->id?>">
 
                     <div class="card-section">
-                        <button class="round-btn"><a href="product_list.php?id=<?=$product->id?>">Go Back</a></button>
-                        <h3 class="prodcut-name"><?=$product->name?></h3>
-                        <div class="prduct-price">&dollar;<?=$product->price?></div>
-                        <p class="prduct-description"><?=$product->description?></p>
+                        <h2 class="product-name"><?= $product->name ?></h2>
+                        <div class="product-category"><?= $product->category ?></div>
+                        <div class="product-price">&dollar;<?= $product->price ?></div>
                     </div>
                     
                     <div class="card-section">
+
                         <label for="product-amount"  class="form-label">Amount</label>
                         <div class="form-select">
                             <select name="product-amount" id="product-amount">
+                        
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -90,6 +91,13 @@ $image_elements = array_reduce($images, function($r,$o){
 
             </div>
         </div>
+
+
+         <div class="card hard">
+        <p><?= $product->description ?></p>   
+        </div>
+
+
         <h2>Recommended Products</h2>
         <?php
         recommendedSimilar($product->category,$product->id);

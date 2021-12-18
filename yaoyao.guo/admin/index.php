@@ -8,7 +8,7 @@ $empty_product = (object)[
 
 	"name"=>"Donutz Squeaky Plush Toy 2",
 	"description"=>"Description ZippyPaws Donutz Squeaky Plush No Stuffing Dog Toy features a fun, cute donut design. Each donut is filled with two propriety crescent-shaped squeakers. These fun toys are designed for small- and medium-sized dogs who love to squeak, with no stuffing to ensure they last longer with less mess.",
-	"price"=>"$3.79",
+	"price"=>"4.49",
 	"category"=>"toys",
 	"thumbnail"=>"img/toy3.jpg",
 	"images"=>"img/toy3_1.jpg"

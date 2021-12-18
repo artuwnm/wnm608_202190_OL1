@@ -14,7 +14,7 @@ include_once "lib/php/functions.php";
 
 </head>
 
-<body>
+<body class="flush">
 	<?php include "parts/navbar.php"; ?>
 
 
