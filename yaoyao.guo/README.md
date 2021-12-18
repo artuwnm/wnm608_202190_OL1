@@ -3,7 +3,7 @@
 ## Revlevant Links
 - http://gyyashley.com/aau/wnm608/yaoyao.guo/index.php
 - http://gyyashley.com/aau/wnm608/yaoyao.guo/styleguide
-- http://gyyashley.com/aau/wnm608/yaoyao.guo/admin/admin
+- http://gyyashley.com/aau/wnm608/yaoyao.guo/admin/
 
 ## Extra Links
 - http://gyyashley.com/aau/wnm608/yaoyao.guo/notes/reading_data.php
