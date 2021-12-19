@@ -1,0 +1,58 @@
+[
+	{
+		"name":"Yoomi Yi",
+		"type":"Student",
+		"email":"yoomiyi90@gmail.com",
+		"classes":[605,608,613]
+	},
+
+	{
+		"name":"Daniel Sung",
+		"type":"Student",
+		"email":"daniel@gmail.com",
+		"classes":[605,608]
+	},
+
+	{
+
+		"name":"Rina Park",
+		"type":"Student",
+		"email":"rina@gmail.com",
+		"classes":[605,608]
+	},
+
+	{
+
+		"name":"Jay Ryoo",
+		"type":"CEO",
+		"email":"jay@gmail.com",
+		"classes":[605,608]
+	},
+
+	{
+
+		"name":"Min Bang",
+		"type":"Student",
+		"email":"min@gmail.com",
+		"classes":[605,608]
+	},
+
+	{
+
+		"name":"Grace Kim",
+		"type":"Student",
+		"email":"grace@gmail.com",
+		"classes":[605,608]
+	},
+
+		{
+
+		"name":"Jennifer Lee",
+		"type":"Student",
+		"email":"jennifer@gmail.com",
+		"classes":[605,608]
+	}
+
+
+
+]
