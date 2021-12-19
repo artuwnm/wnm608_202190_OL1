@@ -1,10 +1,10 @@
 # Jiang Yilong
 
 ## Relevant Links
-http://yilongjiang.com
-http://yilongjiang.com/jdraws/aau/wnm608/jiang.yilong
-http://yilongjiang.com/jdraws/aau/wnm608/jiang.yilong/styleguide
-http://yilongjiang.com/jdraws/aau/wnm608/jiang.yilong/admin
+- http://yilongjiang.com
+- http://yilongjiang.com/jdraws/aau/wnm608/jiang.yilong
+- http://yilongjiang.com/jdraws/aau/wnm608/jiang.yilong/styleguide
+- http://yilongjiang.com/jdraws/aau/wnm608/jiang.yilong/admin
 
 
 ## Extra Links
