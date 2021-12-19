@@ -1,0 +1,42 @@
+[
+
+
+	{
+		"name":"Yilong Jiang",
+		"type":"student",
+		"email":"704039609@qq.com",
+		"classes":[605,608]
+	},
+
+	{
+		"name":"Yubing zhang",
+		"type":"Student",
+		"email":"123456789@qq.com",
+		"classes":[605,608]
+	},
+
+	{
+		"name":"Jiao Li",
+		"type":"Student",
+		"email":"478975127@qq.com",
+		"classes":[605, 608]
+	},
+	{
+		"name":"Lisheng wang",
+		"type":"Teacher",
+		"email":"784517489@qq.com",
+		"classes":[608, 613]
+	},
+	
+	{
+		"name":"Qiwen Zhou",
+		"type":"Student",
+		"email":"4784542989@qq.com",
+		"classes":[608, 650]
+	}
+	
+
+	
+
+
+]
