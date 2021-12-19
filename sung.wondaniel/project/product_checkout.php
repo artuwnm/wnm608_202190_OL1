@@ -27,7 +27,7 @@ $cart = getCartItems();
 			<div class="card-section">
 			<?php
 			echo array_reduce($cart,function($r,$o){
-				$totalfixed = number_format((float)$o->model,2,'.','');
+				$totalfixed = number_format($o->total,2,'.','');
 				return $r."<div class='display-flex'>
 				<div class='flex-stretch'>$o->model</div>
 				<div class='flex-none'>&dollar;$totalfixed</div>	

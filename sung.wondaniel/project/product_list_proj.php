@@ -36,11 +36,11 @@ include_once "../parts/templates.php";
 		     <div class="card soft">
 			  <div class="display-flex flex-wrap">
 			  	<div class="flex-stretch display-flex">
-				<div class="flex-none">
+				<div class="flex-none" style="margin-right: 0.3em;">
 					<button data-filter="category" data-value="" type="button" class="form-button">All</button>
 				</div>
 
-				<div class="flex-none">
+				<div class="flex-none" style="margin-right: 0.3em;">
 					<button data-filter="category" data-value="running" type="button" class="form-button">Running</button>
 				</div>
 

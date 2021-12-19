@@ -16,29 +16,15 @@ include_once "../parts/templates.php"
 
 </head>
 <body class="flush">
+
+	<?php include "navbar_proj.php"; ?>
 		
-  <header class="navbar">
-    <div class="container display-flex">
-        <div class="flex-none">
-  	         <h1>Kickin Hard</h1>
-        </div>
-        <div class="flex-stretch"></div>    
-          <nav class="flex-none nav">
-            <ul class="container display-flex">
-                <li ><a href="index.php">Home</a></li>
-                <li ><a href="product_list_proj.php">Store</a></li>
-                <li><a href="about.php" href-#="">About</a></li>
-                <li ><a href="cart_proj.php">Cart</a></li>
-            </ul>
-          </nav>
-    </div>
-  </header>
 
   <div class="container">
 	<h1 id="figures">KICKS ON FIRE</h1>
-
-
-
+		<div style="width:100%;">
+			<img src="../img/main1.png" alt style="width:100%;">
+		</div>
 
 		<div class="container">
 			<h2>Latest Running Shoes</h2>
@@ -53,6 +39,6 @@ include_once "../parts/templates.php"
 				<a href="product_list_proj.php">SHOP ALL SHOES</a>
 			</button>
 		</div>
-
+	</div>
 </body>
 </html>

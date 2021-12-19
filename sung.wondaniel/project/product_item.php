@@ -36,7 +36,7 @@ $image_elements = array_reduce($images,function($r,$o){
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
-					<div class="images=main">
+					<div class="images-main">
 					<img src="../img/<?= $product->thumbnail ?>">
 					</div>
 					<div class="images-thumbs">
@@ -69,7 +69,9 @@ $image_elements = array_reduce($images,function($r,$o){
 							<option>9</option>
 							<option>10</option>
 						</select>
-					   </div>	
+					   </div>
+
+					   	
 					</div>
 
 					<div class="card-section">
