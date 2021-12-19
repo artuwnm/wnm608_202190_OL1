@@ -1,0 +1,54 @@
+[
+	{
+		"name":"Daniel Sung",
+		"type":"Student",
+		"email":"won.sung.1991@gmail.com",
+		"classes":[608]
+	},	
+
+{
+		"name":"Jason Stan",
+		"type":"Student",
+		"email":"j.lee.1993@gmail.com",
+		"classes":[605]
+},
+
+{
+		"name":"Laura Markoupulous",
+		"type":"Instructor",
+		"email":"lmarkou@gmail.com",
+		"classes":[601,604,606]
+},
+
+{
+		"name":"Joseph Calvaros",
+		"type":"Coach",
+		"email":"jocajoca@gmail.com",
+		"classes":[203,403,202]
+},
+
+
+{
+		"name":"Lucky Hofsteder",
+		"type":"Associate Lecturer",
+		"email":"luckyme7@gmail.com",
+		"classes":[101, 103]
+},
+
+
+{
+		"name":"Jeremy Scott",
+		"type":"Designer",
+		"email":"jsco380@gmail.com",
+		"classes":[401,404,601]
+},
+
+{
+		"name":"Kathy Wong",
+		"type":"Lecturer",
+		"email":"kwonkwon123@gmail.com",
+		"classes":[303,403,602]
+}
+
+
+]
