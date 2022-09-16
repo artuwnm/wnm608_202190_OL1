@@ -53,7 +53,7 @@ include_once "lib/php/functions.php";
 		<div class="container">
 			<div class="card soft" style = text-align:center;>
 			
-				<button class="round-btn"><a href="../yaoyao.guo/styleguide/product_list.php">SHOP NOW</a></button>
+				<button class="round-btn"><a href="../yaoyao.guo/product_list.php">SHOP NOW</a></button>
 			</div>
 		</div>
 	</div>
